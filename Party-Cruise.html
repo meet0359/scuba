@@ -29,7 +29,7 @@
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=670972202622714&ev=PageView&noscript=1" /></noscript>
+      src="https://www.facebook.com/tr?id=670972202622714&ev=PageView&noscript=1"  loading="lazy" /></noscript>
   <!-- End Meta Pixel Code -->
   <meta charset="utf-8">
 
@@ -59,8 +59,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
   <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" /></noscript>
 
 
   <!-- Source Code Protection Styles -->
@@ -718,7 +718,7 @@
               <div class="footer-widget info-widget">
                 <div class="logo">
                   <a href="index.html"><img src="images/gallery/6.webp"
-                      alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral."></a>
+                      alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." width="160" height="160"></a>
                 </div>
                 <div class="info">
                   <ul>
@@ -777,7 +777,7 @@
                 <div class="widget-inner">
                   <!--Review Block-->
                   <img src="images/gallery/logo canva 10.webp"
-                    alt="Logo featuring a diver's mask with fish and coral, labeled 'ScubaDivingAdventure.in.'">
+                    alt="Logo featuring a diver's mask with fish and coral, labeled 'ScubaDivingAdventure.in.'" width="1280" height="960">
                 </div>
               </div>
             </div>
