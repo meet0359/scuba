@@ -1,0 +1,47 @@
+[20-Jun-2025 12:55:46 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php:27
+Stack trace:
+#0 /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php(27): array_filter(NULL, Object(Closure))
+#1 {main}
+  thrown in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php on line 27
+[20-Jun-2025 12:56:04 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php:27
+Stack trace:
+#0 /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php(27): array_filter(NULL, Object(Closure))
+#1 {main}
+  thrown in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php on line 27
+[20-Jun-2025 13:53:55 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php:27
+Stack trace:
+#0 /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php(27): array_filter(NULL, Object(Closure))
+#1 {main}
+  thrown in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php on line 27
+[20-Jun-2025 13:54:58 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php:27
+Stack trace:
+#0 /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php(27): array_filter(NULL, Object(Closure))
+#1 {main}
+  thrown in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php on line 27
+[20-Jun-2025 13:55:07 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php:27
+Stack trace:
+#0 /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php(27): array_filter(NULL, Object(Closure))
+#1 {main}
+  thrown in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php on line 27
+[20-Jun-2025 13:55:19 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php:27
+Stack trace:
+#0 /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php(27): array_filter(NULL, Object(Closure))
+#1 {main}
+  thrown in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php on line 27
+[20-Jun-2025 13:56:43 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php:27
+Stack trace:
+#0 /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php(27): array_filter(NULL, Object(Closure))
+#1 {main}
+  thrown in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php on line 27
+[20-Jun-2025 13:59:10 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, null given in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php:27
+Stack trace:
+#0 /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php(27): array_filter(NULL, Object(Closure))
+#1 {main}
+  thrown in /home/customer/www/scubadivingadventure.in/public_html/comments-api/fetchComments.php on line 27
+[20-Jun-2025 17:50:47 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/scubadivingadventure.in/public_html/comments-api/submitComment.php on line 18
+[20-Jun-2025 17:57:45 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/scubadivingadventure.in/public_html/comments-api/submitComment.php on line 18
+[20-Jun-2025 18:12:00 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/scubadivingadventure.in/public_html/comments-api/submitComment.php on line 18
+[10-Jul-2025 18:17:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/scubadivingadventure.in/public_html/comments-api/submitComment.php on line 15
+[10-Jul-2025 18:17:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/scubadivingadventure.in/public_html/comments-api/submitComment.php on line 16
+[10-Jul-2025 18:17:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/scubadivingadventure.in/public_html/comments-api/submitComment.php on line 17
+[10-Jul-2025 18:17:50 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/scubadivingadventure.in/public_html/comments-api/submitComment.php on line 18

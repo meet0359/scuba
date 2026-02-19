@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^scubadivingadventure.in [NC]
+RewriteRule ^(.*)$ http://www.scubadivingadventure.in/$1 [L,R=301]

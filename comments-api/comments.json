@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Riya",
+        "email": "Aman@gmail.com",
+        "message": "good",
+        "slug": "scuba-diving-for-beginners",
+        "timestamp": "2025-06-20 18:40:48",
+        "approved": true
+    },
+    {
+        "name": "vikas",
+        "email": "Kirto@gmail.com",
+        "message": "Best blog for scuba diving beginners.",
+        "slug": "scuba-diving-for-beginners",
+        "timestamp": "2025-06-21 06:42:55",
+        "approved": true
+    },
+    {
+        "name": "",
+        "email": "",
+        "message": "",
+        "slug": "",
+        "timestamp": "2025-07-10 18:17:50",
+        "approved": true
+    }
+]
