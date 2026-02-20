@@ -71,11 +71,22 @@
   </noscript>
 
   <!-- Responsive File -->
-  <link href="css/responsive.css" rel="stylesheet" />
-  <link href="css/owl.css" rel="stylesheet" />
+  <link rel="preload" href="css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link href="css/responsive.css" rel="stylesheet" />
+  </noscript>
+  <link rel="preload" href="css/owl.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link href="css/owl.css" rel="stylesheet" />
+  </noscript>
   <link rel="preload" href="css/fontawesome-all.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript>
     <link rel="stylesheet" href="css/fontawesome-all.css" />
+  </noscript>
+  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
   </noscript>
   <link rel="preload" href="css/simple-line-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript>
@@ -85,7 +96,10 @@
   <noscript>
     <link rel="stylesheet" href="css/themify-icons.css" />
   </noscript>
-  <link href="css/flaticon.css" rel="stylesheet" />
+  <link rel="preload" href="css/flaticon.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link href="css/flaticon.css" rel="stylesheet" />
+  </noscript>
   <link rel="preload" href="images/scuba9.webp" as="image" fetchpriority="high" />
   <link rel="preload" href="css/datetimepicker.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript>
@@ -106,7 +120,7 @@
   <!-- Responsive Settings -->
 
   <meta https-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--[if lt IE 9
       ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
     ><![endif]-->
@@ -150,16 +164,11 @@
               <div class="info">
                 <ul class="clearfix">
                   <li class="phone">
-                    <a href="tel:8287768117"><span class="flaticon-telephone-1"></span>
+                    <a href="tel:8287768117" aria-label="Call Us: +91 82877 68117"><span
+                        class="flaticon-telephone-1"></span>
                       8287768117</a>
                   </li>
 
-                  <li>
-                    <link rel="stylesheet"
-                      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-
-
-                  </li>
                 </ul>
               </div>
             </div>
@@ -302,7 +311,7 @@
 
                 <!--Nav Toggler-->
                 <div class="max-nav-toggler">
-                  <button class="theme-btn toggle-btn">
+                  <button class="theme-btn toggle-btn" aria-label="Toggle Navigation">
                     <span class="flaticon-circled"></span>
                   </button>
                 </div>
@@ -367,7 +376,7 @@
       <!-- Hidden Navigation Bar -->
       <section class="hidden-bar right-align">
         <div class="hidden-bar-closer">
-          <button><span class="flaticon-letter-x"></span></button>
+          <button aria-label="Close"><span class="flaticon-letter-x"></span></button>
         </div>
 
         <!-- Hidden Bar Wrapper -->
@@ -449,7 +458,7 @@
               <div class="content-box">
                 <div class="content clearfix">
                   <div class="inner">
-                    <h1>Water Sports & <br />Scuba Diving Packages</h1>
+                    <h2>Water Sports & <br />Scuba Diving Packages</h2>
                     <div class="text">
                       Best Scuba Diving and Watersports in Goa & Andaman
                       Islands. Safe and secured dive in Goa & Andaman for
