@@ -197,7 +197,7 @@
       <!-- Hidden Bar Wrapper -->
       <div class="hidden-bar-wrapper">
         <div class="logo">
-          <a href="index.html"><img src="images/gallery/logo canva 10.webp" width="800" height="600" loading="lazy" alt="Logo featuring a diver's mask with fish and coral, labeled ScubaDivingAdventure.in." /></a>
+          <a href="index.html"><img src="images/gallery/logo canva 10.webp" width="800" height="600" loading="lazy" alt="Logo featuring a diver's mask with fish and coral, labeled ScubaDivingAdventure.in."  srcset="images/gallery/logo canva 10-mobile.webp 412w, images/gallery/logo canva 10.webp 1280w" sizes="(max-width: 600px) 412px, 1280px" /></a>
         </div>
         <div class="content-box">
           <h3>Get In Touch</h3>
@@ -402,7 +402,7 @@
                         <div class="inner-box">
                           <div class="image-box">
                             <a
-                              href="https://api.whatsapp.com/send?phone=918287768117&text=Hello, its great to know about scubadivingadventure.in. Help me with the  details, Videos and further process"><img src="images/s48.webp" alt="Yellow scuba fins with black accents on a bright blue background." title="Scuba diving fins" loading="lazy" width="1000" height="667" /></a>
+                              href="https://api.whatsapp.com/send?phone=918287768117&text=Hello, its great to know about scubadivingadventure.in. Help me with the  details, Videos and further process"><img src="images/s48.webp" alt="Yellow scuba fins with black accents on a bright blue background." title="Scuba diving fins" loading="lazy" width="1000" height="667"  srcset="images/s48-mobile.webp 412w, images/s48.webp 1000w" sizes="(max-width: 600px) 412px, 1000px" /></a>
                           </div>
                           <div class="lower-box clearfix">
                             <div class="lower-content">
@@ -812,7 +812,7 @@
           <!--Image Column-->
           <div class="image-column col-xl-4 col-lg-12 col-sm-12">
             <div class="inner wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <img src="images/gallery/3.jpeg" alt="scubadiving-in-andaman" title="scubadiving" loading="lazy" width="720" height="720" />
+              <img src="images/gallery/3.jpeg" alt="scubadiving-in-andaman" title="scubadiving" loading="lazy" width="720" height="720"  srcset="images/gallery/3-mobile.webp 412w, images/gallery/3.jpeg 720w" sizes="(max-width: 600px) 412px, 720px" />
             </div>
           </div>
         </div>
@@ -1782,7 +1782,7 @@
                 <div class="tour-widget reviews-widget">
                   <div class="widget-inner">
                     <!--Review Block-->
-                    <img loading="lazy" src="images/gallery/logo canva 10.webp" alt="Logo featuring a diver's mask with fish and coral, labeled 'ScubaDivingAdventure.in.'" width="1280" height="960" />
+                    <img loading="lazy" src="images/gallery/logo canva 10.webp" alt="Logo featuring a diver's mask with fish and coral, labeled 'ScubaDivingAdventure.in.'" width="1280" height="960"  srcset="images/gallery/logo canva 10-mobile.webp 412w, images/gallery/logo canva 10.webp 1280w" sizes="(max-width: 600px) 412px, 1280px" />
                   </div>
                 </div>
               </div>
@@ -1875,6 +1875,19 @@
       </div>
     </section>
   </div>
+
+
+<script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('sw.js').then(function(registration) {
+            console.log('ServiceWorker registration successful');
+        }).catch(function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+}
+</script>
 
 </body>
 

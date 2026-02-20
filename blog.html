@@ -334,7 +334,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="hidden-bar-wrapper">
 
                 <div class="logo">
-                    <a href="index.html"><img loading="lazy" src="images/gallery/logo canva 10.webp" alt="" width="1280" height="960" /></a>
+                    <a href="index.html"><img loading="lazy" src="images/gallery/logo canva 10.webp" alt="" width="1280" height="960"  srcset="images/gallery/logo canva 10-mobile.webp 412w, images/gallery/logo canva 10.webp 1280w" sizes="(max-width: 600px) 412px, 1280px" /></a>
                 </div>
                 <div class="content-box">
                     <h3>Get In Touch</h3>
@@ -978,6 +978,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
       })();
     </script>
+
+<script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('sw.js').then(function(registration) {
+            console.log('ServiceWorker registration successful');
+        }).catch(function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+}
+</script>
+
 </body>
 </html>
 
