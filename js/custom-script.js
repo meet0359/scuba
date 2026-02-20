@@ -780,10 +780,17 @@
 	   When document is loading, do
 	   ========================================================================== */
 
-	$(window).on('load', function () {
+	function initOnLoad() {
 		handlePreloader();
 		enableDefaultMasonry();
 		sortableMasonry();
-	});
+	}
+
+	$(window).on('load', initOnLoad);
+
+	// Handle case where window is already loaded (race condition with deferred scripts)
+	if (document.readyState === 'complete') {
+		initOnLoad();
+	}
 
 })(window.jQuery);

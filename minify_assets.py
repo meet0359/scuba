@@ -27,30 +27,35 @@ def minify_js(js):
 
 def process_files():
     css_files = ['css/responsive.css', 'css/owl.css', 'css/flaticon.css', 'css/fontawesome-all.css', 'css/style.css']
-    js_files = ['js/jquery.js', 'js/scrollbar.js', 'js/appear.js', 'js/wow.js', 'js/validate.js', 'js/sticky.js', 'js/datetimepicker.js', 'js/jquery-ui.min.js']
+    js_files = [
+        ('js/jquery.js', 'js/jquery.js'),
+        ('js/scrollbar.js', 'js/scrollbar.js'),
+        ('js/appear.js', 'js/appear.js'),
+        ('js/wow.js', 'js/wow.js'),
+        ('js/validate.js', 'js/validate.js'),
+        ('js/sticky.js', 'js/sticky.js'),
+        ('js/datetimepicker.js', 'js/datetimepicker.js'),
+        ('js/jquery-ui.min.js', 'js/jquery-ui.min.js'),
+        ('js/custom-script.js', 'js/custom-script.min.js')
+    ]
 
     for fpath in css_files:
         if os.path.exists(fpath):
             with open(fpath, 'r') as f:
                 content = f.read()
             minified = minify_css(content)
-            # Save to .min.css if it doesn't exist, otherwise overwrite?
-            # User wants to reduce payload, let's create .min versions or overwrite.
-            # Usually better to overwrite if the HTML expects the original name, 
-            # OR create .min and update HTML.
-            # I'll overwrite for simplicity in this case as it's a static site.
             with open(fpath, 'w') as f:
                 f.write(minified)
             print(f"Minified CSS: {fpath}")
 
-    for fpath in js_files:
-        if os.path.exists(fpath):
-            with open(fpath, 'r') as f:
+    for input_path, output_path in js_files:
+        if os.path.exists(input_path):
+            with open(input_path, 'r') as f:
                 content = f.read()
             minified = minify_js(content)
-            with open(fpath, 'w') as f:
+            with open(output_path, 'w') as f:
                 f.write(minified)
-            print(f"Minified JS: {fpath}")
+            print(f"Minified JS: {input_path} -> {output_path}")
 
 if __name__ == "__main__":
     process_files()
