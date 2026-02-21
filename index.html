@@ -23,30 +23,51 @@
       visibility: hidden;
     } */
 
-    /* .preloader .icon {
+    .preloader .icon {
       width: 60px;
       height: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
-    } */
+    }
 
     .infinity-path {
-      fill: none;
-      stroke: #ff4d4d;
-      stroke-width: 4;
-      stroke-dasharray: 250;
-      stroke-dashoffset: 250;
-      animation: dash 2.5s linear infinite;
-    }
+  fill: none;
+  stroke: #ff4d4d;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 80 170; /* smaller dash */
+  animation: dashMove 1.2s linear infinite;
+}
 
-    @keyframes dash {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-
+@keyframes dashMove {
+  from { stroke-dashoffset: 0; }
+  to   { stroke-dashoffset: -250; }
+}
     /* Preloader Styles End */
+
+    /*
+      Override rules coming from the big minified stylesheet.  The
+      external CSS sets
+      ".preloader .icon { position:fixed;left:0;top:0;width:100%;height:100% }"
+      which flips the little SVG from one side of the screen to the other
+      when the stylesheet finishes loading.  By forcing the small size and
+      centering here we guarantee the spinner never jumps.
+    */
+    .preloader .icon {
+      /* keep the SVG sized as intended */
+      width: 60px !important;
+      height: 30px !important;
+
+      /* centre the element regardless of container size */
+      position: absolute !important;
+      left: 50% !important;
+      top: 50% !important;
+      transform: translate(-50%, -50%) !important;
+
+      /* no background image – we use the inline SVG */
+      background: none !important;
+    }
   </style>
 
   <meta charset="utf-8" />
