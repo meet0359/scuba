@@ -4,27 +4,36 @@
 
 	//Hide Loading Box (Preloader)
 	function handlePreloader() {
-		$('body').addClass('page-loaded');
 		if ($('.preloader').length) {
-			$('.preloader').delay(1000).fadeOut(0);
+			$('.preloader').delay(1000).fadeOut(0, function () {
+				$('body').addClass('page-loaded');
+			});
+		} else {
+			$('body').addClass('page-loaded');
 		}
 	}
 
 	//Update Header Style and Scroll to Top
+	var _scrollTimer;
 	function headerStyle() {
 		if ($('.main-header').length) {
 			var windowpos = $(window).scrollTop();
 			var siteHeader = $('.main-header');
 			var scrollLink = $('.scroll-to-top');
 			var sticky_header = $('.main-header .sticky-header');
+
 			if (windowpos > 180) {
-				siteHeader.addClass('fixed-header');
-				sticky_header.addClass("animated slideInDown");
-				scrollLink.fadeIn(300);
+				if (!siteHeader.hasClass('fixed-header')) {
+					siteHeader.addClass('fixed-header');
+					sticky_header.addClass("animated slideInDown");
+					scrollLink.fadeIn(300);
+				}
 			} else {
-				siteHeader.removeClass('fixed-header');
-				sticky_header.removeClass("animated slideInDown");
-				scrollLink.fadeOut(300);
+				if (siteHeader.hasClass('fixed-header')) {
+					siteHeader.removeClass('fixed-header');
+					sticky_header.removeClass("animated slideInDown");
+					scrollLink.fadeOut(300);
+				}
 			}
 		}
 	}
@@ -765,7 +774,8 @@
 	   ========================================================================== */
 
 	$(window).on('scroll', function () {
-		headerStyle();
+		if (_scrollTimer) window.cancelAnimationFrame(_scrollTimer);
+		_scrollTimer = window.requestAnimationFrame(headerStyle);
 	});
 
 	/* ==========================================================================
@@ -773,7 +783,9 @@
 	   ========================================================================== */
 
 	$(window).on('resize', function () {
-		enableDefaultMasonry();
+		window.requestAnimationFrame(function () {
+			enableDefaultMasonry();
+		});
 	});
 
 	/* ==========================================================================
@@ -782,8 +794,10 @@
 
 	function initOnLoad() {
 		handlePreloader();
-		enableDefaultMasonry();
-		sortableMasonry();
+		window.requestAnimationFrame(function () {
+			enableDefaultMasonry();
+			sortableMasonry();
+		});
 	}
 
 	$(window).on('load', initOnLoad);
