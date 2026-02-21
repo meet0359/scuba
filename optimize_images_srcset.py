@@ -20,19 +20,25 @@ def process_html_file(filepath):
         if src.startswith('http') or src.startswith('//') or src.startswith('data:'):
             continue
             
+        # resolve path
+        dir_path = os.path.dirname(filepath)
+        img_path_on_disk = os.path.abspath(os.path.join(dir_path, src))
+        
+        if not os.path.exists(img_path_on_disk):
+            continue
+
+        # Check for automatic recompression if size > 200KB
+        file_size = os.path.getsize(img_path_on_disk)
+        if file_size > 200 * 1024 and not src.endswith('-mobile.webp'):
+            # Only recompress once per session (check if we already recorded this image)
+            recompress_image(img_path_on_disk, quality=75)
+
         # skip if already has srcset
         if 'srcset=' in img_tag.lower():
             continue
             
         # skip if it's already a mobile image
         if '-mobile.' in src:
-            continue
-            
-        # resolve path
-        dir_path = os.path.dirname(filepath)
-        img_path_on_disk = os.path.join(dir_path, src)
-        
-        if not os.path.exists(img_path_on_disk):
             continue
             
         try:
@@ -55,7 +61,7 @@ def process_html_file(filepath):
                         print(f"  Creating {mobile_src} from {src}")
                         # Resize and save
                         mobile_img = img.resize((mobile_w, mobile_h), Image.Resampling.LANCZOS)
-                        mobile_img.save(mobile_path_on_disk, 'WEBP', quality=80)
+                        mobile_img.save(mobile_path_on_disk, 'WEBP', quality=75)
                     
                     srcset_str = f' srcset="{mobile_src} 412w, {src} {width}w" sizes="(max-width: 600px) 412px, {width}px"'
                     
@@ -76,20 +82,36 @@ def process_html_file(filepath):
         f.write(content)
 
 # Specific re-compression of large background/hero images
+processed_images = set()
+
 def recompress_image(filepath, quality=60):
+    if filepath in processed_images:
+        return
+        
     if os.path.exists(filepath):
         print(f"Recompressing {filepath}")
         try:
             with Image.open(filepath) as img:
                 img.save(filepath, 'WEBP', quality=quality)
+            processed_images.add(filepath)
         except Exception as e:
             print(f"  Error recompressing {filepath}: {e}")
 
 base_dir = '/Users/meetshah/Downloads/public_html 2'
 
-# Recompress specific large files flagged in Lighthouse
-recompress_image(os.path.join(base_dir, 'images/s46.webp'))
-recompress_image(os.path.join(base_dir, 'images/scuba9.webp'), quality=65)
+# Recompress specific large files flagged in the research
+high_impact_images = [
+    'images/s46.webp',
+    'images/s57.webp',
+    'images/scuba9.webp',
+    'images/Andaman/havelock-island-andamans-_73_11zon.webp',
+    'images/goa-tour/Parasailing_in_Prasonisi._Rhodes,_Greece_71_11zon.webp',
+    'images/goa-tour/4680252_15_11zon.webp',
+    'images/watersports monsoon.webp'
+]
+
+for img_rel_path in high_impact_images:
+    recompress_image(os.path.join(base_dir, img_rel_path), quality=65)
 
 for root_dir, dirs, files in os.walk(base_dir):
     # skip temp or .git
