@@ -74,11 +74,29 @@ def process_html_file(filepath):
     )
 
     # 2. Add Google Fonts preconnect + preload right after <link href="css/style.min.css" ...>
-    # Check if we already have the fonts preconnect
+    # but we want the font links to appear *before* other styles so the requests
+    # begin as early as possible.  We'll also attempt to warm up the actual
+    # woff2 files by fetching the CSS from Google and preloading each font URL.
     if 'fonts.googleapis.com' not in content:
+        insertion = GOOGLE_FONTS_PRECONNECT
+
+        # fetch the CSS to harvest font definitions and optionally inline them.
+        inline_css = ''
+        try:
+            import urllib.request, ssl
+            ctx = ssl.create_default_context()
+            css_text = urllib.request.urlopen(GOOGLE_FONTS_URL, context=ctx, timeout=5).read().decode('utf-8')
+            # we may not be able to preload woff2 URLs (Google often serves ttf),
+            # but we can inline the whole stylesheet so the font requests start
+            # as soon as the HTML parser reaches this block.
+            inline_css = '<style>' + css_text + '</style>'
+        except Exception:
+            inline_css = ''
+
+        # place the combined block before the first stylesheet link in head
         content = re.sub(
             r'(<link href="css/style\.min\.css" rel="stylesheet" />)',
-            r'\1\n' + GOOGLE_FONTS_PRECONNECT,
+            insertion + '\n' + inline_css + '\n\1',
             content
         )
 

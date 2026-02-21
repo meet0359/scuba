@@ -14,18 +14,41 @@ def process_html_file(filepath):
     # Usually the first large image or banner-carousel image
     hero_images = re.findall(r'<(?:img|div)[^>]+(?:images/scuba9|images/main-slider/|banner-carousel)[^>]+>', content)
     
+    # remove any existing preload for these images so we don't duplicate old urls
+    for h in hero_images:
+        # look for any preload referencing the src or srcset urls
+        for src in re.findall(r'src=["\']([^"\']+)["\']', h):
+            content = re.sub(r'<link[^>]+href=["\']' + re.escape(src) + r'["\'][^>]*>', '', content)
+        for part in re.findall(r'srcset=["\']([^"\']+)["\']', h):
+            for url in [p.strip().split(' ')[0] for p in part.split(',')]:
+                content = re.sub(r'<link[^>]+href=["\']' + re.escape(url) + r'["\'][^>]*>', '', content)
+
     preloads = []
     for hero_img_tag in hero_images:
-        # Extract src
+        # Extract src and any srcset width hints
         src_match = re.search(r'src=["\']([^"\']+)["\']', hero_img_tag)
-        if src_match:
-            src = src_match.group(1)
-            # Add preload to head if not already there
-            preload_tag = f'<link rel="preload" href="{src}" as="image" fetchpriority="high">'
+        srcset_match = re.search(r'srcset=["\']([^"\']+)["\']', hero_img_tag)
+        chosen_preload = None
+        if srcset_match:
+            # prefer the 700‑w version if present, otherwise fall back to the first
+            parts = [p.strip() for p in srcset_match.group(1).split(',')]
+            for part in parts:
+                if '700w' in part:
+                    chosen_preload = part.split(' ')[0]
+                    break
+            if not chosen_preload and parts:
+                # use first width (usually mobile)
+                chosen_preload = parts[0].split(' ')[0]
+            # don't bother with the "original" if it's larger than 800px
+        if not chosen_preload and src_match:
+            chosen_preload = src_match.group(1)
+        if chosen_preload:
+            preload_tag = f'<link rel="preload" href="{chosen_preload}" as="image" fetchpriority="high">'
             if preload_tag not in content:
                 preloads.append(preload_tag)
-            
-            # Update the tag itself: ensure eager loading and fetchpriority="high"
+        
+        # Update the tag itself: ensure eager loading and fetchpriority="high"
+        if src_match:
             new_tag = hero_img_tag
             if 'loading="lazy"' in new_tag:
                 new_tag = new_tag.replace('loading="lazy"', 'loading="eager"')
@@ -43,11 +66,17 @@ def process_html_file(filepath):
         content = re.sub(r'(<head[^>]*>)', r'\1\n  ' + preload_block, content, count=1)
 
     # 3. Ensure critical font preloading
-    core_fonts = ["fonts/fa-solid-900.woff2", "fonts/Flaticon.woff2"]
+    # prefetch the main icon/font files we need.  adding brands/regular ensures the
+    # page doesn't wait for a subset of the FontAwesome family to arrive later.
+    core_fonts = [
+        "fonts/fa-solid-900.woff2",
+        "fonts/fa-regular-400.woff2",
+        "fonts/fa-brands-400.woff2",
+        "fonts/Flaticon.woff2",
+    ]
     font_preloads = []
     for font in core_fonts:
         font_tag = f'<link rel="preload" href="{font}" as="font" type="font/woff2" crossorigin>'
-        # Check if already preloaded (might have variations in tags)
         if font not in content:
             font_preloads.append(font_tag)
     

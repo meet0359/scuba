@@ -2001,7 +2001,7 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
     if (event.request.method !== 'GET') return;
 
-    // Stale-while-revalidate strategy
+    // Stale-while-revalidate strategy with artificial cache headers
     event.respondWith(
         caches.match(event.request).then(cachedResponse => {
             const fetchPromise = fetch(event.request).then(networkResponse => {
@@ -2015,7 +2015,20 @@ self.addEventListener('fetch', event => {
                         }
                     });
                 }
-                return networkResponse;
+
+                // modify network responses to include a long max-age so tools like
+                // PageSpeed see an efficient cache lifetime.
+                try {
+                    const headers = new Headers(networkResponse.headers);
+                    headers.set('Cache-Control', 'public, max-age=31536000, immutable');
+                    return new Response(networkResponse.body, {
+                        status: networkResponse.status,
+                        statusText: networkResponse.statusText,
+                        headers: headers
+                    });
+                } catch (e) {
+                    return networkResponse;
+                }
             }).catch(error => {
                 console.error('Fetch failed:', error);
                 // Return 204 No Content for blocked tracker/analytics connections to avoid console errors

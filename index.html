@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+  <link rel="preload" href="images/scuba9-700w.webp" as="image" fetchpriority="high">
+  
+  <link rel="preload" href="fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
   <style>
     /* Preloader Styles Start */
     .preloader {
@@ -74,7 +78,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Preload critical resources -->
-  <link rel="preload" href="images/scuba9.webp" as="image" fetchpriority="high">
+  
   <link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Flaticon.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -365,7 +369,7 @@
 
   <meta https-equiv="X-UA-Compatible" content="IE=edge" />
   <!--[if lt IE 9
-      ]><script async async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+      ]><script async async async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
     ><![endif]-->
   <!--[if lt IE 9]><script defer src="js/respond.js"></script><![endif]-->
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" as="style"
@@ -706,7 +710,7 @@
       <!--End Banner Section -->
 
       <!-- Lazy Loading & Carousel Initialization Script -->
-      <script>window.addEventListener("load",function(){window.addEventListener("load",function(){
+      <script>window.addEventListener("load",function(){window.addEventListener("load",function(){window.addEventListener("load",function(){
         document.addEventListener("DOMContentLoaded", function () {
           const lazySlides = document.querySelectorAll(".lazy-slide");
           let loadedSlides = 0;
@@ -2419,15 +2423,15 @@
       !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '670972202622714'); fbq('track', 'PageView');
     }
     if ('requestIdleCallback' in window) { requestIdleCallback(loadDeferredScripts); } else { setTimeout(loadDeferredScripts, 3000); }
-  });});</script>
+  });});});</script>
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=670972202622714&ev=PageView&noscript=1" loading="lazy" /><iframe
       src="https://www.googletagmanager.com/ns.html?id=GTM-KRT96J8" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- <script async async src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script> -->
+  <!-- <script async async async src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script> -->
   <!-- Include this at the end of the body -->
   <!-- Load Contentful -->
-  <!-- <script async async src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+  <!-- <script async async async src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 
 <script>
   const client = contentful.createClient({
