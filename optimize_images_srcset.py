@@ -27,25 +27,25 @@ def process_html_file(filepath):
         if not os.path.exists(img_path_on_disk):
             continue
 
-        # Check for automatic recompression if size > 200KB
+        # Check for automatic recompression if size > 50KB
         file_size = os.path.getsize(img_path_on_disk)
-        if file_size > 200 * 1024 and not src.endswith('-mobile.webp'):
+        if file_size > 50 * 1024 and not src.endswith('-mobile.webp') and '-700w.webp' not in src:
             # Only recompress once per session (check if we already recorded this image)
-            recompress_image(img_path_on_disk, quality=75)
+            recompress_image(img_path_on_disk, quality=60)
 
-        # skip if already has srcset
-        if 'srcset=' in img_tag.lower():
-            continue
-            
-        # skip if it's already a mobile image
-        if '-mobile.' in src:
+        # skip if it's already a mobile or intermediate image
+        if '-mobile.' in src or '-700w.' in src:
             continue
             
         try:
             with Image.open(img_path_on_disk) as img:
                 width, height = img.size
                 
-                # We only create mobile source if width >= 500
+                # Cleanup existing srcset/sizes to avoid duplication
+                clean_img_tag = re.sub(r'\s+srcset=["\'][^"\']*["\']', '', img_tag)
+                clean_img_tag = re.sub(r'\s+sizes=["\'][^"\']*["\']', '', clean_img_tag)
+                
+                # We only create responsive sources if width >= 500
                 if width >= 500:
                     base, ext = os.path.splitext(src)
                     
@@ -61,14 +61,28 @@ def process_html_file(filepath):
                         print(f"  Creating {mobile_src} from {src}")
                         # Resize and save
                         mobile_img = img.resize((mobile_w, mobile_h), Image.Resampling.LANCZOS)
-                        mobile_img.save(mobile_path_on_disk, 'WEBP', quality=75)
-                    
-                    srcset_str = f' srcset="{mobile_src} 412w, {src} {width}w" sizes="(max-width: 600px) 412px, {width}px"'
-                    
-                    if img_tag.endswith('/>'):
-                        new_img_tag = img_tag[:-2] + srcset_str + ' />'
+                        mobile_img.save(mobile_path_on_disk, 'WEBP', quality=65)
+
+                    # Intermediate desktop width for ~686px display (often cited in Lighthouse)
+                    mid_w = 700
+                    if width >= 750: # Use 750 so we don't upscale too much if width=800
+                        mid_h = int(height * (700 / width))
+                        mid_src = f"{base}-700w.webp"
+                        mid_path_on_disk = os.path.join(dir_path, mid_src)
+                        
+                        if not os.path.exists(mid_path_on_disk):
+                            print(f"  Creating {mid_src} from {src}")
+                            mid_img = img.resize((mid_w, mid_h), Image.Resampling.LANCZOS)
+                            mid_img.save(mid_path_on_disk, 'WEBP', quality=60)
+                        
+                        srcset_str = f' srcset="{mobile_src} 412w, {mid_src} 700w, {src} {width}w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, {width}px"'
                     else:
-                        new_img_tag = img_tag[:-1] + srcset_str + '>'
+                        srcset_str = f' srcset="{mobile_src} 412w, {src} {width}w" sizes="(max-width: 600px) 412px, {width}px"'
+                    
+                    if clean_img_tag.endswith('/>'):
+                        new_img_tag = clean_img_tag[:-2] + srcset_str + ' />'
+                    else:
+                        new_img_tag = clean_img_tag[:-1] + srcset_str + '>'
                         
                     unique_tags[img_tag] = new_img_tag
         except Exception as e:
@@ -84,12 +98,12 @@ def process_html_file(filepath):
 # Specific re-compression of large background/hero images
 processed_images = set()
 
-def recompress_image(filepath, quality=60):
+def recompress_image(filepath, quality=55):
     if filepath in processed_images:
         return
         
     if os.path.exists(filepath):
-        print(f"Recompressing {filepath}")
+        print(f"Recompressing {filepath} (quality={quality})")
         try:
             with Image.open(filepath) as img:
                 img.save(filepath, 'WEBP', quality=quality)
@@ -104,6 +118,10 @@ high_impact_images = [
     'images/s46.webp',
     'images/s57.webp',
     'images/scuba9.webp',
+    'images/scuba10.webp',
+    'images/s56.webp',
+    'images/s70.webp',
+    'images/scuba13.webp',
     'images/Andaman/havelock-island-andamans-_73_11zon.webp',
     'images/goa-tour/Parasailing_in_Prasonisi._Rhodes,_Greece_71_11zon.webp',
     'images/goa-tour/4680252_15_11zon.webp',
@@ -111,7 +129,7 @@ high_impact_images = [
 ]
 
 for img_rel_path in high_impact_images:
-    recompress_image(os.path.join(base_dir, img_rel_path), quality=65)
+    recompress_image(os.path.join(base_dir, img_rel_path), quality=55)
 
 for root_dir, dirs, files in os.walk(base_dir):
     # skip temp or .git
