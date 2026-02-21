@@ -6,3 +6,21 @@
 .logo-box .logo { min-height: 80px; }
 
 .nav-content { min-height: 60px; }
+
+/* CLS Overrides and Optimizations */
+.banner-carousel { min-height: 600px; background: #061138; }
+.banner-carousel .slide-item { min-height: 600px; }
+.offer-carousel-box { min-height: 400px; }
+.services-carousel { min-height: 400px; }
+.testimonial-carousel-two { min-height: 250px; }
+
+/* Hidden Bar stability */
+.hidden-bar { 
+    visibility: hidden; 
+    pointer-events: none; 
+    transition: all 700ms ease;
+}
+.hidden-bar.visible-sidebar { 
+    visibility: visible !important; 
+    pointer-events: auto; 
+}

@@ -6,10 +6,14 @@
 	function handlePreloader() {
 		if ($('.preloader').length) {
 			$('.preloader').delay(1000).fadeOut(0, function () {
-				$('body').addClass('page-loaded');
+				window.requestAnimationFrame(function () {
+					$('body').addClass('page-loaded');
+				});
 			});
 		} else {
-			$('body').addClass('page-loaded');
+			window.requestAnimationFrame(function () {
+				$('body').addClass('page-loaded');
+			});
 		}
 	}
 
@@ -126,21 +130,26 @@
 		var hiddenBar = $('.hidden-bar');
 		var hiddenBarOpener = $('.max-nav-toggler .toggle-btn');
 		var hiddenBarCloser = $('.hidden-bar-closer');
-		// $('.hidden-bar-wrapper').mCustomScrollbar();
 
 		//Show Sidebar
 		hiddenBarOpener.on('click', function () {
-			hiddenBar.addClass('visible-sidebar');
+			window.requestAnimationFrame(function () {
+				hiddenBar.addClass('visible-sidebar');
+			});
 		});
 
 		//Hide Sidebar
 		hiddenBarCloser.on('click', function () {
-			hiddenBar.removeClass('visible-sidebar');
+			window.requestAnimationFrame(function () {
+				hiddenBar.removeClass('visible-sidebar');
+			});
 		});
 
 		$(document).keydown(function (e) {
 			if (e.keyCode === 27) {
-				hiddenBar.removeClass('visible-sidebar');
+				window.requestAnimationFrame(function () {
+					hiddenBar.removeClass('visible-sidebar');
+				});
 			}
 		});
 
