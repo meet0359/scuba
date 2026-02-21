@@ -2,6 +2,50 @@
 <html lang="en">
 
 <head>
+  <style>    /* Preloader Styles Start */
+    .preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      z-index: 999999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    }
+    
+    .preloader.loaded {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .preloader .icon {
+      width: 60px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .infinity-path {
+      fill: none;
+      stroke: #ff4d4d;
+      stroke-width: 4;
+      stroke-dasharray: 250;
+      stroke-dashoffset: 250;
+      animation: dash 2.5s linear infinite;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    /* Preloader Styles End */</style>
+  
   <link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/Flaticon.woff2" as="font" type="font/woff2">
 	<meta charset="utf-8" />
@@ -107,12 +151,18 @@
 		padding: 5px;
 	}
 	.last-page {
-		border: none;
-	}
-	</style>
+		border: none;</style>
 </head>
 
 <body>
+  <!-- Preloader -->
+<div class="preloader">
+  <div class="icon">
+    <svg width="60" height="30" viewBox="0 0 100 50">
+      <path class="infinity-path" d="M31.6,3.5C5.9,3.5,5.9,46.5,31.6,46.5c15.4,0,23.1-21.5,36.8-21.5c13.7,0,21.4,21.5,36.8,21.5c25.7,0,25.7-43,0-43 c-15.4,0-23.1,21.5-36.8,21.5C54.7,25,47,3.5,31.6,3.5z" />
+    </svg>
+  </div>
+</div>
 	<div id="top">
 		<nav>www.scubadivingadventure.in HTML Site Map</nav>
 		<h3>
