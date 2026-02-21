@@ -1872,7 +1872,7 @@ Flaticon SVG Sprite: Sailing IconsCreation date: 16/12/2019 14:25-->
     </div>
 
 <script>
-if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
     window.addEventListener('load', function() {
         navigator.serviceWorker.register('../../sw.js').then(function(registration) {
             console.log('ServiceWorker registration successful');

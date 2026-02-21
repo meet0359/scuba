@@ -50,7 +50,8 @@ self.addEventListener('fetch', event => {
                 return networkResponse;
             }).catch(error => {
                 console.error('Fetch failed:', error);
-                return new Response('', { status: 408, statusText: 'Request timed out or blocked.' });
+                // Return 204 No Content for blocked tracker/analytics connections to avoid console errors
+                return new Response('', { status: 204, statusText: 'No Content' });
             });
 
             return cachedResponse || fetchPromise;

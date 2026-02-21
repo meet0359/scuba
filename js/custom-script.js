@@ -4,8 +4,8 @@
 
 	//Hide Loading Box (Preloader)
 	function handlePreloader() {
+		$('body').addClass('page-loaded');
 		if ($('.preloader').length) {
-			$('body').addClass('page-loaded');
 			$('.preloader').delay(1000).fadeOut(0);
 		}
 	}
