@@ -2,67 +2,19 @@
 <html lang="en">
 
 <head>
-  <link rel="preload" href="fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-  <style>    /* Preloader Styles Start */
-    .preloader {
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: #ffffff;
-      z-index: 999999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-    }
-    
-    .preloader.loaded {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    .preloader .icon {
-      width: 60px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .infinity-path {
-      fill: none;
-      stroke: #ff4d4d;
-      stroke-width: 4;
-      stroke-dasharray: 250;
-      stroke-dashoffset: 250;
-      animation: dash 2.5s linear infinite;
-    }
-
-    @keyframes dash {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-    /* Preloader Styles End */</style>
-  
-  <link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/Flaticon.woff2" as="font" type="font/woff2">
     <!-- Google Tag Manager -->
-<script>window.addEventListener("load",function(){window.addEventListener("load",function(){window.addEventListener("load",function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KRT96J8');});});});</script>
+})(window,document,'script','dataLayer','GTM-KRT96J8');</script>
 <!-- End Google Tag Manager -->
 
     <meta charset="utf-8">
 
     <!-- Security and protection meta tags -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <!-- X-Frame-Options removed by optimization script -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta name="referrer" content="no-referrer">
     <meta name="robots" content="INDEX, FOLLOW, noarchive, nosnippet, noimageindex">
@@ -81,16 +33,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        <link rel="preload" href="css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
    <noscript><link rel="stylesheet" href="css/responsive.css"></noscript>
    
-   <link rel="preload" href="css/fontawesome-all.css" as="font" onload="this.onload=null;this.rel='stylesheet'">
-   <noscript><link rel="stylesheet" href="css/fontawesome-all.css"></noscript>
-   <link rel="shortcut icon" href="images/gallery/logo%20icon.webp" type="image/x-icon" media="all">
-   <link rel="icon" href="images/gallery/logo%20icon.webp" type="image/x-icon" media="all">
+   <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" as="font" onload="this.onload=null;this.rel='stylesheet'">
+   <noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></noscript>
+   <link rel="shortcut icon" href="images/gallery/logo icon.webp" type="image/x-icon" media="all">
+   <link rel="icon" href="images/gallery/logo icon.webp" type="image/x-icon" media="all">
     <!-- Responsive Settings -->
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!--[if lt IE 9]><script async async async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script defer src="js/respond.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
     
 
 
@@ -160,18 +112,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       /* Blur effect when dev tools open */
       .dev-tools-detected {
         filter: blur(10px);
-        pointer-events: none;</style>
+        pointer-events: none;
+      }
+    </style>
 </head>
 
 <body>
-  <!-- Preloader -->
-<div class="preloader">
-  <div class="icon">
-    <svg width="60" height="30" viewBox="0 0 100 50">
-      <path class="infinity-path" d="M31.6,3.5C5.9,3.5,5.9,46.5,31.6,46.5c15.4,0,23.1-21.5,36.8-21.5c13.7,0,21.4,21.5,36.8,21.5c25.7,0,25.7-43,0-43 c-15.4,0-23.1,21.5-36.8,21.5C54.7,25,47,3.5,31.6,3.5z" />
-    </svg>
-  </div>
-</div>
     
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe async src="https://www.googletagmanager.com/ns.html?id=GTM-KRT96J8"
@@ -179,7 +125,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
     <div class="page-wrapper">
-        
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="icon"></div>
+        </div>
 
         <!-- Main Header -->
         <header class="main-header header-style-three">
@@ -193,12 +142,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="inner clearfix">
                         <!--Logo-->
                         <div class="logo-box">
-                            <div class="logo"><a href="andaman-tour-packages.html" title="andaman tour packages"><img loading="lazy" src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." title="andaman tour packages" width="160" height="160" style="aspect-ratio: 1/1; width: auto; height: auto; max-width: 100%;"></a></div>
+                            <div class="logo"><a href="andaman-tour-packages.html" title="andaman tour packages"><img src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." title="andaman tour packages"></a></div>
                         </div>
                         <div class="nav-content clearfix">
                             <div class="nav-outer clearfix">
                                 <!--Mobile Navigation Toggler-->
-                                <div class="mobile-nav-toggler" aria-label="Toggle Navigation" role="button" tabindex="0"><span class="icon flaticon-menu-1"></span></div>
+                                <div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
 
                                 <!-- Main Menu -->
                                 <nav class="main-menu navbar-expand-md navbar-light">
@@ -276,7 +225,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="auto-container clearfix">
                     <!--Logo-->
                     <div class="logo pull-left">
-                        <a href="andaman-tour-packages.html" title=""><img loading="lazy" src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." title="andaman tour package" width="160" height="160" style="aspect-ratio: 1/1; width: auto; height: auto; max-width: 100%;"></a>
+                        <a href="andaman-tour-packages.html" title=""><img src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." title="andaman tour package"></a>
                     </div>
                     <!--Right Col-->
                     <div class="pull-right clearfix">
@@ -304,7 +253,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="close-btn"><span class="icon flaticon-targeting-cross"></span></div>
 
                 <nav class="menu-box">
-                    <div class="nav-logo"><a href="andaman-tour-packages.html"><img loading="lazy" src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." title="andaman-tour-packages" width="160" height="160" style="aspect-ratio: 1/1; width: auto; height: auto; max-width: 100%;"></a></div>
+                    <div class="nav-logo"><a href="andaman-tour-packages.html"><img src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." title="andaman-tour-packages"></a></div>
                     <div class="menu-outer">
                         <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                     </div>
@@ -313,8 +262,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </nav>
             </div><!-- End Mobile Menu -->
         </header>
-
-    <main id="main-content">
         <!-- End Main Header -->
 
         <!--Search Popup-->
@@ -331,7 +278,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="hidden-bar-wrapper">
 
                 <div class="logo">
-                    <a href="andaman-tour-packages.html"><img loading="lazy" src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." width="160" height="160" style="aspect-ratio: 1/1; width: auto; height: auto; max-width: 100%;" /></a>
+                    <a href="andaman-tour-packages.html"><img src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." /></a>
                 </div>
                 <div class="content-box">
                     <h3>Get In Touch</h3>
@@ -438,7 +385,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                             <div class="image-box">
                                                 <figure class="image">
-                                                    <a class="lightbox-image" href="images/Andaman/Nicobar_80_11zon.webp"><img width="400" height="300" src="images/Andaman/Nicobar_80_11zon.webp" alt="Andaman Islands" title="Port Blair" loading="lazy" srcset="images/Andaman/Nicobar_80_11zon-mobile.webp 412w, images/Andaman/Nicobar_80_11zon.webp 612w" sizes="(max-width: 600px) 412px, 612px"></a>
+                                                    <a class="lightbox-image" href="images/Andaman/Nicobar_80_11zon.webp"><img src="images/Andaman/Nicobar_80_11zon.webp" alt="Andaman Islands" title="Port Blair"></a>
                                                 </figure>
                                                 <div class="zoom-btn">
                                                     <a class="lightbox-image zoom-link" href="images/Andaman/Nicobar_80_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand">Andaman islands</span></a>
@@ -450,7 +397,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                             <div class="image-box">
                                                 <figure class="image">
-                                                    <a class="lightbox-image" href="images/Andaman/IMG_20211104_153738_7_11zon.webp" alt="Boat Tour Andaman Islands" title="Port Blair"><img width="400" height="300" src="images/Andaman/IMG_20211104_153738_7_11zon.webp" alt="Boat Tour Andaman Islands" title="Port Blair" loading="lazy" srcset="images/Andaman/IMG_20211104_153738_7_11zon-mobile.webp 412w, images/Andaman/IMG_20211104_153738_7_11zon.webp 573w" sizes="(max-width: 600px) 412px, 573px"></a>
+                                                    <a class="lightbox-image" href="images/Andaman/IMG_20211104_153738_7_11zon.webp" alt="Boat Tour Andaman Islands" title="Port Blair"><img src="images/Andaman/IMG_20211104_153738_7_11zon.webp" alt="Boat Tour Andaman Islands" title="Port Blair"></a>
                                                 </figure>
                                                 <div class="zoom-btn">
                                                     <a class="lightbox-image zoom-link" href="images/Andaman/IMG_20211104_153738_7_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand">Boat Tour in Andaman islands</span></a>
@@ -461,7 +408,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                           <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                             <div class="image-box">
                                                 <figure class="image">
-                                                    <a class="lightbox-image" href="images/Andaman/IMG_20211104_150901_10_11zon.webp" alt="Ross island" title="Ross Island"><img width="400" height="300" src="images/Andaman/IMG_20211104_150901_10_11zon.webp" alt="Ross Island" title="Port Blair" loading="lazy" srcset="images/Andaman/IMG_20211104_150901_10_11zon-mobile.webp 412w, images/Andaman/IMG_20211104_150901_10_11zon-700w.webp 700w, images/Andaman/IMG_20211104_150901_10_11zon.webp 1152w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1152px"></a>
+                                                    <a class="lightbox-image" href="images/Andaman/IMG_20211104_150901_10_11zon.webp" alt="Ross island" title="Ross Island"><img src="images/Andaman/IMG_20211104_150901_10_11zon.webp" alt="Ross Island" title="Port Blair"></a>
                                                 </figure>
                                                 <div class="zoom-btn">
                                                     <a class="lightbox-image zoom-link" href="images/Andaman/IMG_20211104_150901_10_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand">Ross Island</span></a>
@@ -473,7 +420,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                           <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                             <div class="image-box">
                                                 <figure class="image">
-                                                    <a class="lightbox-image" href="images/Andaman/cellular jail_3_11zon.webp" alt="Cellular Jail" title="cellular Jail"><img width="400" height="300" src="images/Andaman/cellular jail_3_11zon.webp" alt="cellular Jail" title="Cellular Jail" loading="lazy" srcset="images/Andaman/cellular jail_3_11zon-mobile.webp 412w, images/Andaman/cellular jail_3_11zon-700w.webp 700w, images/Andaman/cellular jail_3_11zon.webp 903w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 903px"></a>
+                                                    <a class="lightbox-image" href="images/Andaman/cellular jail_3_11zon.webp" alt="Cellular Jail" title="cellular Jail"><img src="images/Andaman/cellular jail_3_11zon.webp" alt="cellular Jail" title="Cellular Jail"></a>
                                                 </figure>
                                                 <div class="zoom-btn">
                                                     <a class="lightbox-image zoom-link" href="images/Andaman/cellular jail_3_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand">Cellular Jail</span></a>
@@ -485,7 +432,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                                 <div class="image-box">
                                                     <figure class="image">
-                                                        <a class="lightbox-image" href="images/Andaman/Natural Bridge of Neil Island_77_11zon.webp" alt=" Neil Island" title="Natural rock Bridge"><img width="400" height="300" src="images/Andaman/Natural Bridge of Neil Island_77_11zon.webp" alt="Natural rock Bridge" title="Neil Island" loading="lazy" srcset="images/Andaman/Natural Bridge of Neil Island_77_11zon-mobile.webp 412w, images/Andaman/Natural Bridge of Neil Island_77_11zon-700w.webp 700w, images/Andaman/Natural Bridge of Neil Island_77_11zon.webp 1600w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1600px"></a>
+                                                        <a class="lightbox-image" href="images/Andaman/Natural Bridge of Neil Island_77_11zon.webp" alt=" Neil Island" title="Natural rock Bridge"><img src="images/Andaman/Natural Bridge of Neil Island_77_11zon.webp" alt="Natural rock Bridge" title="Neil Island"></a>
                                                     </figure>
                                                     <div class="zoom-btn">
                                                         <a class="lightbox-image zoom-link" href="images/Andaman/Natural Bridge of Neil Island_77_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand">Natural Bridge, Neil Island</span></a>
@@ -499,7 +446,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                              <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                                 <div class="image-box">
                                                     <figure class="image">
-                                                        <a class="lightbox-image" href="images/Andaman/kalapathar beach_11_11zon.webp" alt=" Neil Island" title="Kalapathar Beach"><img width="400" height="300" src="images/Andaman/kalapathar beach_11_11zon.webp" alt="Kalapathar Beach" title="Neil Island" loading="lazy" srcset="images/Andaman/kalapathar beach_11_11zon-mobile.webp 412w, images/Andaman/kalapathar beach_11_11zon-700w.webp 700w, images/Andaman/kalapathar beach_11_11zon.webp 799w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 799px"></a>
+                                                        <a class="lightbox-image" href="images/Andaman/kalapathar beach_11_11zon.webp" alt=" Neil Island" title="Kalapathar Beach"><img src="images/Andaman/kalapathar beach_11_11zon.webp" alt="Kalapathar Beach" title="Neil Island"></a>
                                                     </figure>
                                                     <div class="zoom-btn">
                                                         <a class="lightbox-image zoom-link" href="images/Andaman/kalapathar beach_11_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand">Kalapathar Beach, Neil Island</span></a>
@@ -511,7 +458,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                          <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                             <div class="image-box">
                                                 <figure class="image">
-                                                    <a class="lightbox-image" href="images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon.webp" alt=" Neil Island" title="Bharatpur Beach"><img width="400" height="300" src="images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon.webp" alt="Bharatpur Beach" title="Neil Island" loading="lazy" srcset="images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon-mobile.webp 412w, images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon-700w.webp 700w, images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon.webp 1000w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1000px"></a>
+                                                    <a class="lightbox-image" href="images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon.webp" alt=" Neil Island" title="Bharatpur Beach"><img src="images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon.webp" alt="Bharatpur Beach" title="Neil Island"></a>
                                                 </figure>
                                                 <div class="zoom-btn">
                                                     <a class="lightbox-image zoom-link" href="images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand">Bharatpur Beach, Neil Island</span></a>
@@ -522,7 +469,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                          <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                             <div class="image-box">
                                                 <figure class="image">
-                                                    <a class="lightbox-image" href="images/Andaman/IMG_20211104_113620_16_11zon.webp" alt=" Hotel in Andaman" title="Hotel in Andaman"><img width="400" height="300" src="images/Andaman/IMG_20211104_113620_16_11zon.webp" alt="Hotel in Andaman" title="Hotel in Andaman" loading="lazy" srcset="images/Andaman/IMG_20211104_113620_16_11zon-mobile.webp 412w, images/Andaman/IMG_20211104_113620_16_11zon-700w.webp 700w, images/Andaman/IMG_20211104_113620_16_11zon.webp 816w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 816px"></a>
+                                                    <a class="lightbox-image" href="images/Andaman/IMG_20211104_113620_16_11zon.webp" alt=" Hotel in Andaman" title="Hotel in Andaman"><img src="images/Andaman/IMG_20211104_113620_16_11zon.webp" alt="Hotel in Andaman" title="Hotel in Andaman"></a>
                                                 </figure>
                                                 <div class="zoom-btn">
                                                     <a class="lightbox-image zoom-link" href="images/Andaman/IMG_20211104_113620_16_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand">Green Resort stay</span></a>
@@ -702,7 +649,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                             <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                                                 <div class="image-box">
                                                                     <figure class="image">
-                                                                        <a class="lightbox-image" href="images/Andaman/best-time-to-visit-Andaman-and-nicobar-islands_44_11zon.webp" alt=" Andaman Island" title="Andaman Island"><img width="400" height="300" src="images/Andaman/best-time-to-visit-Andaman-and-nicobar-islands_44_11zon.webp" alt="Andaman Island" title="Andaman Island" loading="lazy" srcset="images/Andaman/best-time-to-visit-Andaman-and-nicobar-islands_44_11zon-mobile.webp 412w, images/Andaman/best-time-to-visit-Andaman-and-nicobar-islands_44_11zon-700w.webp 700w, images/Andaman/best-time-to-visit-Andaman-and-nicobar-islands_44_11zon.webp 1080w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1080px"></a>
+                                                                        <a class="lightbox-image" href="images/Andaman/best-time-to-visit-Andaman-and-nicobar-islands_44_11zon.webp" alt=" Andaman Island" title="Andaman Island"><img src="images/Andaman/best-time-to-visit-Andaman-and-nicobar-islands_44_11zon.webp" alt="Andaman Island" title="Andaman Island"></a>
                                                                     </figure>
                                                                     <div class="zoom-btn">
                                                                         <a class="lightbox-image zoom-link" href="images/Andaman/best-time-to-visit-Andaman-and-nicobar-islands_44_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand" style="position: relative;">Beautiful Andaman Island</span></a>
@@ -716,7 +663,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                                             <div class="image-box">
                                                                 <figure class="image">
-                                                                    <a class="lightbox-image" href="images/Andaman/cellular jail at port blair_2_11zon.webp" alt=" Cellular Jail" title="Cellular Jail"><img width="400" height="300" src="images/Andaman/celcellular jail at port blair_2_11zon.webp" alt="Cellular Jail" title="Cellular Jail" loading="lazy"></a>
+                                                                    <a class="lightbox-image" href="images/Andaman/cellular jail at port blair_2_11zon.webp" alt=" Cellular Jail" title="Cellular Jail"><img src="images/Andaman/celcellular jail at port blair_2_11zon.webp" alt="Cellular Jail" title="Cellular Jail"></a>
                                                                 </figure>
                                                                 <div class="zoom-btn">
                                                                     <a class="lightbox-image zoom-link" href="images/Andaman/celcellular jail at port blair_2_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand" style="position: relative;">Cellular Jail, Port Blair</span></a>
@@ -744,7 +691,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                             <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                                                 <div class="image-box">
                                                                     <figure class="image">
-                                                                        <a class="lightbox-image" href="images/Andaman/boat trip in andaman island_37_11zon.webp" alt=" Trip to Neil Island" title="Trip to Neil Island"><img width="400" height="300" src="images/Andaman/boat trip in andaman island_37_11zon.webp" alt="Trip to Neil Island" title="Trip to Neil Island" loading="lazy" srcset="images/Andaman/boat trip in andaman island_37_11zon-mobile.webp 412w, images/Andaman/boat trip in andaman island_37_11zon-700w.webp 700w, images/Andaman/boat trip in andaman island_37_11zon.webp 900w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 900px"></a>
+                                                                        <a class="lightbox-image" href="images/Andaman/boat trip in andaman island_37_11zon.webp" alt=" Trip to Neil Island" title="Trip to Neil Island"><img src="images/Andaman/boat trip in andaman island_37_11zon.webp" alt="Trip to Neil Island" title="Trip to Neil Island"></a>
                                                                     </figure>
                                                                     <div class="zoom-btn">
                                                                         <a class="lightbox-image zoom-link" href="images/Andaman/boat trip in andaman island_37_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand" style="position: relative;">Trip to Neil Island</span></a>
@@ -759,7 +706,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                             <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                                                 <div class="image-box">
                                                                     <figure class="image">
-                                                                        <a class="lightbox-image" href="images/Andaman/kalapathar beach 2_10_11zon.webp" alt=" Kalapathar baech" title="Havelock Beaches"><img width="400" height="300" src="images/Andaman/kalapathar beach 2_10_11zon.webp" alt="Kalapathar baech" title="Havelock Beaches" loading="lazy" srcset="images/Andaman/kalapathar beach 2_10_11zon-mobile.webp 412w, images/Andaman/kalapathar beach 2_10_11zon-700w.webp 700w, images/Andaman/kalapathar beach 2_10_11zon.webp 900w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 900px"></a>
+                                                                        <a class="lightbox-image" href="images/Andaman/kalapathar beach 2_10_11zon.webp" alt=" Kalapathar baech" title="Havelock Beaches"><img src="images/Andaman/kalapathar beach 2_10_11zon.webp" alt="Kalapathar baech" title="Havelock Beaches"></a>
                                                                     </figure>
                                                                     <div class="zoom-btn">
                                                                         <a class="lightbox-image zoom-link" href="images/Andaman/kalapathar beach 2_10_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand" style="position: relative;">Kalapathar Beach</span></a>
@@ -789,7 +736,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                             <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                                                 <div class="image-box">
                                                                     <figure class="image">
-                                                                        <a class="lightbox-image" href="images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon.webp" alt=" Bharatpur Beach, Neil Island" title="Bharatpur Beach, Neil Island"><img width="400" height="300" src="images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon.webp" alt="Bharatpur Beach, Neil Island" title="Bharatpur Beach, Neil Island" loading="lazy" srcset="images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon-mobile.webp 412w, images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon-700w.webp 700w, images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon.webp 1000w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1000px"></a>
+                                                                        <a class="lightbox-image" href="images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon.webp" alt=" Bharatpur Beach, Neil Island" title="Bharatpur Beach, Neil Island"><img src="images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon.webp" alt="Bharatpur Beach, Neil Island" title="Bharatpur Beach, Neil Island"></a>
                                                                     </figure>
                                                                     <div class="zoom-btn">
                                                                         <a class="lightbox-image zoom-link" href="images/Andaman/Bharatpur-beach-Niel-IslandAndaman-Islands-_48_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand" style="position: relative;">Bharatpur beach</span></a>
@@ -804,7 +751,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                             <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                                                 <div class="image-box">
                                                                     <figure class="image">
-                                                                        <a class="lightbox-image" href="images/Andaman/snorkeling_96_11zon.webp" alt=" Snorkeling" title="Neil Island"><img width="400" height="300" src="images/Andaman/snorkeling_96_11zon.webp" alt="Snorkeling" title="Neil Island" loading="lazy" srcset="images/Andaman/snorkeling_96_11zon-mobile.webp 412w, images/Andaman/snorkeling_96_11zon-700w.webp 700w, images/Andaman/snorkeling_96_11zon.webp 960w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 960px"></a>
+                                                                        <a class="lightbox-image" href="images/Andaman/snorkeling_96_11zon.webp" alt=" Snorkeling" title="Neil Island"><img src="images/Andaman/snorkeling_96_11zon.webp" alt="Snorkeling" title="Neil Island"></a>
                                                                     </figure>
                                                                     <div class="zoom-btn">
                                                                         <a class="lightbox-image zoom-link" href="images/Andaman/snorkeling_96_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand" style="position: relative;">Snorkeling at Neil Island</span></a>
@@ -816,7 +763,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                             <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                                                 <div class="image-box">
                                                                     <figure class="image">
-                                                                        <a class="lightbox-image" href="images/Andaman/neil-island.webp" alt=" Howrah Beach, Neil Island" title="Howrah Beach, Neil Island"><img width="400" height="300" src="images/Andaman/neil-island.webp" alt="Howrah Beach, Neil Island" title="Howrah Beach, Neil Island" loading="lazy" srcset="images/Andaman/neil-island-mobile.webp 412w, images/Andaman/neil-island.webp 720w" sizes="(max-width: 600px) 412px, 720px"></a>
+                                                                        <a class="lightbox-image" href="images/Andaman/neil-island.webp" alt=" Howrah Beach, Neil Island" title="Howrah Beach, Neil Island"><img src="images/Andaman/neil-island.webp" alt="Howrah Beach, Neil Island" title="Howrah Beach, Neil Island"></a>
                                                                     </figure>
                                                                     <div class="zoom-btn">
                                                                         <a class="lightbox-image zoom-link" href="images/Andaman/neil-island.webp" data-fancybox="gallery"><span class="icon flaticon-expand" style="position: relative;">Howrah Beach</span></a>
@@ -846,7 +793,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                                 <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                                                     <div class="image-box">
                                                                         <figure class="image">
-                                                                            <a class="lightbox-image" href="images/Andaman/northbay-view_84_11zon.webp" alt=" North bay" title="Ross Island"><img width="400" height="300" src="images/Andaman/northbay-view_84_11zon.webp" alt="Ross Island" title="North Bay" loading="lazy" srcset="images/Andaman/northbay-view_84_11zon-mobile.webp 412w, images/Andaman/northbay-view_84_11zon.webp 620w" sizes="(max-width: 600px) 412px, 620px"></a>
+                                                                            <a class="lightbox-image" href="images/Andaman/northbay-view_84_11zon.webp" alt=" North bay" title="Ross Island"><img src="images/Andaman/northbay-view_84_11zon.webp" alt="Ross Island" title="North Bay"></a>
                                                                         </figure>
                                                                         <div class="zoom-btn">
                                                                             <a class="lightbox-image zoom-link" href="images/Andaman/northbay-view_84_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand" style="position: relative;">Ross island</span></a>
@@ -864,7 +811,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                                     <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                                                         <div class="image-box">
                                                                             <figure class="image">
-                                                                                <a class="lightbox-image" href="images/Andaman/North-Bay-Island-1_82_11zon.webp" alt=" North Bay" title=" North Bay Island"><img width="400" height="300" src="images/Andaman/North-Bay-Island-1_82_11zon.webp" alt="North Bay" title="North Bay" loading="lazy" srcset="images/Andaman/North-Bay-Island-1_82_11zon-mobile.webp 412w, images/Andaman/North-Bay-Island-1_82_11zon-700w.webp 700w, images/Andaman/North-Bay-Island-1_82_11zon.webp 810w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 810px"></a>
+                                                                                <a class="lightbox-image" href="images/Andaman/North-Bay-Island-1_82_11zon.webp" alt=" North Bay" title=" North Bay Island"><img src="images/Andaman/North-Bay-Island-1_82_11zon.webp" alt="North Bay" title="North Bay"></a>
                                                                             </figure>
                                                                             <div class="zoom-btn">
                                                                                 <a class="lightbox-image zoom-link" href="images/Andaman/ North-Bay-Island-1_82_11zon.webp" data-fancybox="gallery"><span class="icon flaticon-expand" style="position: relative;"> North Bay Island</span></a>
@@ -1005,7 +952,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <div class="advisor-block">
                                             <div class="inner-box">
                                                 <div class="image-box">
-                                                    <a href="https://api.whatsapp.com/send?phone=918287768117&text=Hello, its great to know about scubadivingadventure.in. Help me with the Andaman package details and further process"><img width="400" height="300" src="images/Andaman/havelock_71_11zon.webp" alt="Andaman Tourism" title="Andaman Tour Package" loading="lazy" srcset="images/Andaman/havelock_71_11zon-mobile.webp 412w, images/Andaman/havelock_71_11zon-700w.webp 700w, images/Andaman/havelock_71_11zon.webp 975w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 975px"></a>
+                                                    <a href="https://api.whatsapp.com/send?phone=918287768117&text=Hello, its great to know about scubadivingadventure.in. Help me with the Andaman package details and further process"><img src="images/Andaman/havelock_71_11zon.webp" alt="Andaman Tourism" title="Andaman Tour Package"></a>
                                                 </div>
                                                 <div class="lower-box clearfix">
                                                     <div class="lower-content">
@@ -1035,7 +982,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <div class="inner-box">
                                             <div class="content">
                                                 <div class="icon-box"><span class="flaticon-quote-1"></span></div>
-                                                <div class="image"><img src="images/review/Rohan_6_11zon.webp" alt="Man standing on a rocky outcrop, wearing a turquoise shirt and sunglasses, overlooking a landscape." title="Customer Reviews" loading="lazy" width="286" height="272"></div>
+                                                <div class="image"><img src="images/review/Rohan_6_11zon.webp" alt="Man standing on a rocky outcrop, wearing a turquoise shirt and sunglasses, overlooking a landscape." title="Customer Reviews"></div>
                                                 <div class="info">
                                                     <h5>Rohan Khanna
                                                     </h5>
@@ -1059,7 +1006,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <div class="inner-box">
                                             <div class="content">
                                                 <div class="icon-box"><span class="flaticon-quote-1"></span></div>
-                                                <div class="image"><img src="images/review/Amit_8_11zon.webp" alt="Person standing on a boat, capturing a photo of a serene, calm body of water." title="Customer Reviews" loading="lazy" width="286" height="285"></div>
+                                                <div class="image"><img src="images/review/Amit_8_11zon.webp" alt="Person standing on a boat, capturing a photo of a serene, calm body of water." title="Customer Reviews"></div>
                                                 <div class="info">
                                                     <h5>Amit Shrivastav</h5>
                                                     <div class="designation">Freelancer</div>
@@ -1103,7 +1050,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="package-block-two col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <a href="andaman-havelock-island-tour-details.html"><img width="400" height="300" src="images/Andaman/sunset at havelock island_23_11zon.webp" alt="Havelock Island Tours" title="Andaman island Tours" loading="lazy" srcset="images/Andaman/sunset at havelock island_23_11zon-mobile.webp 412w, images/Andaman/sunset at havelock island_23_11zon-700w.webp 700w, images/Andaman/sunset at havelock island_23_11zon.webp 1078w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1078px"></a>
+                            <a href="andaman-havelock-island-tour-details.html"><img src="images/Andaman/sunset at havelock island_23_11zon.webp" alt="Havelock Island Tours" title="Andaman island Tours"></a>
                             <div class="pricing">
                                 <div class="price">
                                     <div class="price-title">From</div>
@@ -1142,7 +1089,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="package-block-two col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <a href="andaman-honeymoon-tour-package.html"><img width="400" height="300" src="images/Andaman/North-Bay-new-5_83_11zon.webp" alt="A large white boat navigates through clear blue waters near a tropical shoreline." title="A large white boat navigates through clear blue waters near a tropical shoreline." loading="lazy" srcset="images/Andaman/North-Bay-new-5_83_11zon-mobile.webp 412w, images/Andaman/North-Bay-new-5_83_11zon-700w.webp 700w, images/Andaman/North-Bay-new-5_83_11zon.webp 800w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 800px"></a>
+                            <a href="andaman-honeymoon-tour-package.html"><img src="images/Andaman/North-Bay-new-5_83_11zon.webp" alt="A large white boat navigates through clear blue waters near a tropical shoreline." title="A large white boat navigates through clear blue waters near a tropical shoreline."></a>
                             <div class="pricing">
                                 <div class="price">
                                     <div class="price-title">From</div>
@@ -1182,7 +1129,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="package-block-two col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <a href="offbeat-andaman-in-7-days.html"><img width="400" height="300" src="images/Andaman/Unexplored beach in andaman_24_11zon.webp" alt="Offbeat andaman tour" title="andaman tour package" loading="lazy" srcset="images/Andaman/Unexplored beach in andaman_24_11zon-mobile.webp 412w, images/Andaman/Unexplored beach in andaman_24_11zon-700w.webp 700w, images/Andaman/Unexplored beach in andaman_24_11zon.webp 900w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 900px"></a>
+                            <a href="offbeat-andaman-in-7-days.html"><img src="images/Andaman/Unexplored beach in andaman_24_11zon.webp" alt="Offbeat andaman tour" title="andaman tour package"></a>
                             <div class="pricing">
                                 <div class="price">
                                     <div class="price-title">From</div>
@@ -1223,9 +1170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      
      
      
-         </main>
-
-<!-- Main Footer -->
+     <!-- Main Footer -->
      <footer class="main-footer">
         <!--Widgets Section-->
         <div class="widgets-section">
@@ -1236,7 +1181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
                         <div class="footer-widget info-widget">
                             <div class="logo">
-                                <a href="andaman-tour-packages.html"><img loading="lazy" src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." width="160" height="160" style="aspect-ratio: 1/1; width: auto; height: auto; max-width: 100%;"></a>
+                                <a href="andaman-tour-packages.html"><img src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral."></a>
                             </div>
                             <div class="info">
                                 <ul>
@@ -1339,359 +1284,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a href="https://api.whatsapp.com/send?phone=918287768117&text=Hello, its great to know about scubadivingadventure.in. Help me with the package details and further process" class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
 </a>
-<div class="scroll-to-top scroll-to-target" aria-label="Scroll to top" data-target="html"><span class="icon flaticon-back"></span></div>
-<script defer src="js/jquery.js"></script>
-<script defer src="js/popper.min.js"></script>
-<script defer src="js/bootstrap.min.js"></script>
-<script defer src="js/jquery-ui.js"></script>
-<script defer src="js/jquery.fancybox.js"></script>
-<script defer src="js/owl.js"></script>
-<script defer src="js/appear.js"></script>
-<script defer src="js/wow.js"></script>
-<script defer src="js/scrollbar.js"></script>
-<script defer src="js/datetimepicker.js"></script>
-<script defer src="js/isotope.js"></script>
-<script defer src="js/element-in-view.js"></script>
-<script defer src="js/custom-script.js"></script>
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon flaticon-back"></span></div>
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/datetimepicker.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/element-in-view.js"></script>
+<script src="js/custom-script.js"></script>
 
 <!--Coockie-->
 
 
 
 
-    <!-- Source Code Protection JavaScript -->
-    <div class="dev-tools-warning" id="devToolsWarning">
-      <h2>⚠️ Access Restricted</h2>
-      <p>Developer tools are not allowed on this website for security reasons.</p>
-      <p>This content is protected by copyright law.</p>
-      <p>Please close developer tools to continue browsing.</p>
-      <p>Continued violation may result in legal action.</p>
-    </div>
-
-    <!-- Anti-copy protection overlay -->
-    <div id="protectionOverlay" style="
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.9);
-      color: white;
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 999999;
-      text-align: center;
-      font-family: Arial, sans-serif;
-    ">
-      <div>
-        <h1>🛡️ Content Protected</h1>
-        <p>This website's content is protected against unauthorized copying.</p>
-        <p>Please respect intellectual property rights.</p>
-      </div>
-    </div>
+    <!-- Source Code Protection JavaScript --></div>
     
-    <script>
-      // Advanced source code protection
-      (function() {
-        'use strict';
-        
-        // Disable right-click context menu
-        document.addEventListener('contextmenu', function(e) {
-          e.preventDefault();
-          return false;
-        });
-        
-        // Enhanced keyboard shortcut blocking
-        document.addEventListener('keydown', function(e) {
-          // Disable F12 (Developer Tools)
-          if (e.keyCode === 123) {
-            e.preventDefault();
-            return false;
-          }
-          
-          // Disable Ctrl+Shift+I (Developer Tools)
-          if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
-            e.preventDefault();
-            return false;
-          }
-          
-          // Disable Ctrl+Shift+J (Console)
-          if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
-            e.preventDefault();
-            return false;
-          }
-          
-          // Disable Ctrl+Shift+C (Element inspector)
-          if (e.ctrlKey && e.shiftKey && e.keyCode === 67) {
-            e.preventDefault();
-            return false;
-          }
-          
-          // Disable Ctrl+U (View Source)
-          if (e.ctrlKey && e.keyCode === 85) {
-            e.preventDefault();
-            return false;
-          }
-          
-          // Disable Ctrl+S (Save Page)
-          if (e.ctrlKey && e.keyCode === 83) {
-            e.preventDefault();
-            return false;
-          }
-          
-          // Disable Ctrl+A (Select All)
-          if (e.ctrlKey && e.keyCode === 65) {
-            e.preventDefault();
-            return false;
-          }
-          
-          // Disable Ctrl+C (Copy)
-          if (e.ctrlKey && e.keyCode === 67) {
-            e.preventDefault();
-            return false;
-          }
-          
-          // Disable Ctrl+V (Paste)
-          if (e.ctrlKey && e.keyCode === 86) {
-            e.preventDefault();
-            return false;
-          }
-          
-          // Disable Ctrl+X (Cut)
-          if (e.ctrlKey && e.keyCode === 88) {
-            e.preventDefault();
-            return false;
-          }
-          
-          // Disable Ctrl+P (Print)
-          if (e.ctrlKey && e.keyCode === 80) {
-            e.preventDefault();
-            return false;
-          }
-          
-          // Disable Ctrl+Shift+K (Firefox Console)
-          if (e.ctrlKey && e.shiftKey && e.keyCode === 75) {
-            e.preventDefault();
-            return false;
-          }
-          
-          // Disable Ctrl+Shift+E (Firefox Network)
-          if (e.ctrlKey && e.shiftKey && e.keyCode === 69) {
-            e.preventDefault();
-            return false;
-          }
-        });
-        
-        // Silent protection - no warnings shown
-        function showWarning(message) {
-          // Silent mode - no visual warnings
-          return;
-        }
-        
-        // Advanced developer tools detection
-        let devtools = {
-          open: false,
-          orientation: null
-        };
-        
-        let threshold = 160;
-        
-        setInterval(function() {
-          if (window.outerHeight - window.innerHeight > threshold || 
-              window.outerWidth - window.innerWidth > threshold) {
-            if (!devtools.open) {
-              devtools.open = true;
-              document.body.classList.add('dev-tools-detected');
-              document.getElementById('devToolsWarning').style.display = 'block';
-              
-              // Optional: Redirect after delay
-              setTimeout(() => {
-                if (devtools.open) {
-                  window.location.href = 'about:blank';
-                }
-              }, 5000);
-            }
-          } else {
-            if (devtools.open) {
-              devtools.open = false;
-              document.body.classList.remove('dev-tools-detected');
-              document.getElementById('devToolsWarning').style.display = 'none';
-            }
-          }
-        }, 500);
-        
-        // Enhanced text selection prevention
-        document.onselectstart = function() {
-          return false;
-        };
-        
-        document.onmousedown = function() {
-          return false;
-        };
-        
-        // Disable drag and drop
-        document.ondragstart = function() {
-          return false;
-        };
-        
-        // Disable image saving
-        document.addEventListener('dragstart', function(e) {
-          if (e.target.tagName === 'IMG') {
-            e.preventDefault();
-            return false;
-          }
-        });
-        
-        // Clear console (silent mode)
-        const clearConsole = () => {
-          if (window.console && window.console.clear) {
-            console.clear();
-          }
-          // Minimal console output
-        };
-        
-        // Clear console every second
-        //setInterval(clearConsole, 1000); // Disabled for debugging
-        
-        // Initial console clear
-        clearConsole();
-        
-        // Detect if page is being loaded in frame/iframe
-        if (window.top !== window.self) {
-          window.top.location = window.self.location;
-        }
-        
-        // Disable printing
-        window.addEventListener('beforeprint', function(e) {
-          e.preventDefault();
-          return false;
-        });
-        
-        // Monitor for suspicious activity (silent)
-        let suspiciousActivity = 0;
-        
-        // Detect rapid key combinations (automation)
-        let lastKeyTime = 0;
-        document.addEventListener('keydown', function() {
-          const now = Date.now();
-          if (now - lastKeyTime < 50) { // Very fast typing
-            suspiciousActivity++;
-            // Silent monitoring - no warnings
-          }
-          lastKeyTime = now;
-        });
-        
-        // Obfuscate source code view (enhanced)
-        setTimeout(function() {
-          const scripts = document.getElementsByTagName('script');
-          for (let script of scripts) {
-            if (script.innerHTML && !script.src) {
-              // Make scripts harder to read
-              const obfuscated = script.innerHTML
-                .replace(/\s+/g, ' ')
-                .replace(/\/\*[\s\S]*?\*\//g, '')
-                .replace(/\/\/.*$/gm, '');
-              script.innerHTML = obfuscated;
-            }
-          }
-        }, 2000);
-        
-        
-        // Dynamic Code Generation System
-        window.generateDynamicCode = () => {
-          const funcs = ['check', 'verify', 'secure', 'protect'];
-          const randomFunc = funcs[Math.floor(Math.random() * funcs.length)];
-          const randomVar = 'var_' + Math.random().toString(36).substr(2, 8);
-          
-          // Create dynamic function
-          window[randomVar] = new Function(`
-            return function ${randomFunc}() {
-              console.log('Protection: Dynamic layer active');
-              return true;
-            };
-          `)();
-          
-          // Execute and cleanup after 5 seconds
-          setTimeout(() => {
-            try {
-              window[randomVar]();
-              delete window[randomVar];
-            } catch(e) {}
-          }, 5000);
-        };
-        
-        // Code integrity verification
-        const checkIntegrity = () => {
-          const scripts = document.getElementsByTagName('script');
-          for (let script of scripts) {
-            if (script.src && !script.src.includes('gtm') && !script.src.includes('google')) {
-              if (!script.getAttribute('data-verified')) {
-                script.setAttribute('data-verified', 'protection_v2');
-              }
-            }
-          }
-        };
-        
-        // Memory cleanup to remove traces
-        const cleanup = () => {
-          if (window.gc) window.gc();
-          
-          const keys = Object.keys(window);
-          keys.forEach(key => {
-            if (key.startsWith('temp_') || key.startsWith('var_')) {
-              try {
-                delete window[key];
-              } catch(e) {}
-            }
-          });
-        };
-        
-        // Initialize dynamic features
-        document.addEventListener('DOMContentLoaded', () => {
-          window.generateDynamicCode();
-          setInterval(window.generateDynamicCode, 10000);
-          setInterval(checkIntegrity, 3000);
-          setInterval(cleanup, 30000);
-          console.log('Advanced Protection: All systems active');
-        });
-
-        // Silent detection for dev tools
-        window.addEventListener('resize', function() {
-          if (window.outerWidth - window.innerWidth > 200 || 
-              window.outerHeight - window.innerHeight > 200) {
-            // Silent protection - no warnings
-          }
-        });
-        
-        // Disable some global methods that might be used for inspection
-        if (window.console) {
-          window.console.log = function() {};
-          window.console.info = function() {};
-          window.console.warn = function() {};
-          window.console.error = function() {};
-        }
-        
-        // Hide source from view-source:
-        if (window.location.protocol === 'view-source:') {
-          window.location.href = 'about:blank';
-        }
-        
-      })();
-    </script>
-
-<script>
-if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('sw.js').then(function(registration) {
-            console.log('ServiceWorker registration successful');
-        }).catch(function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-        });
-    });
-}
-</script>
-
+    
 </body></html>
 
 

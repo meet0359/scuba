@@ -1,676 +1,1640 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KRT96J8");
+    </script>
+    <!-- End Google Tag Manager -->
 
-<head>
-  <link rel="preload" href="images/scuba9-700w.webp" as="image" fetchpriority="high">
-  
-  <link rel="preload" href="fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-  <style>    /* Preloader Styles Start */
-    .preloader {
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: #ffffff;
-      z-index: 999999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-    }
-    
-    .preloader.loaded {
-      opacity: 0;
-      visibility: hidden;
-    }
+    <meta charset="utf-8" />
 
-    .preloader .icon {
-      width: 60px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .infinity-path {
-      fill: none;
-      stroke: #ff4d4d;
-      stroke-width: 4;
-      stroke-dasharray: 250;
-      stroke-dashoffset: 250;
-      animation: dash 2.5s linear infinite;
-    }
-
-    @keyframes dash {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-    /* Preloader Styles End */</style>
-  
-  
-  <link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/Flaticon.woff2" as="font" type="font/woff2">
-  <!-- Google Tag Manager -->
-  <script>window.addEventListener("load",function(){window.addEventListener("load",function(){window.addEventListener("load",function(){
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-KRT96J8");
-  });});});</script>
-  <!-- End Google Tag Manager -->
-
-  <meta charset="utf-8" />
-
-  <!-- Security and protection meta tags -->
-  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-  <!-- X-Frame-Options removed by optimization script -->
-  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-  <meta name="referrer" content="no-referrer" />
-  <meta name="robots" content="INDEX, FOLLOW, noarchive, nosnippet, noimageindex" />
-  <meta name="description"
-    content="Discover hidden treasures with our perfect 4D/3N Goa tour packages! Dive into tropical paradise, explore marine life & create unforgettable memories today." />
-  <meta name="keywords" content=" goa tour packages, goa packages, goa trip package, goa honeymoon package, goa tour, goa trip cost, goa packages for couple, tour packages for goa with price, goa packages for couple with flight, goa tour packages from ahmedabad, goa package from delhi, goa holiday package, goa honeymoon, goa trip planner, goa packages for family, goa tour package for couple,
+    <!-- Security and protection meta tags -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      name="robots"
+      content="INDEX, FOLLOW, noarchive, nosnippet, noimageindex"
+    />
+    <meta
+      name="description"
+      content="Discover hidden treasures with our perfect 4D/3N Goa tour packages! Dive into tropical paradise, explore marine life & create unforgettable memories today."
+    />
+    <meta
+      name="keywords"
+      content=" goa tour packages, goa packages, goa trip package, goa honeymoon package, goa tour, goa trip cost, goa packages for couple, tour packages for goa with price, goa packages for couple with flight, goa tour packages from ahmedabad, goa package from delhi, goa holiday package, goa honeymoon, goa trip planner, goa packages for family, goa tour package for couple,
     goa trip cost per person, goa package from mumbai, goa trip package for couple, goa packages from ahmedabad goa tour package from mumbai, goa package from bangalore, goa honeymoon packages for 5 days, goa trip cost for couple, goa tour package from kolkata, goa trip budget, goa tour package from delhi, goa packages for friends, goa tour packages from surat, goa trip cost for 5 days
     goa tour package from chennai, goa hotels packages, goa packages from hyderabad, goa honeymoon packages for 7 days, goa travel packages, goa honeymoon packages for 7 days price, goa tour package with flight, delhi to goa package with flight
-    " />
-  <title>4D/3N Goa Tour Packages | Perfect for Beach Lovers</title>
-  <!-- Stylesheets -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/style.min.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet" /></noscript>
-  <link href="css/responsive.css" rel="stylesheet" />
-  <link href="css/owl.css" rel="stylesheet" />
-  <link rel="preload" href="css/fontawesome-all.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="css/fontawesome-all.css" /></noscript>
-  <link rel="preload" href="css/simple-line-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="css/simple-line-icons.css" /></noscript>
-  <link rel="preload" href="css/themify-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="css/themify-icons.css" /></noscript>
-  <link href="css/flaticon.css" rel="stylesheet" />
-  <link rel="preload" href="css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="css/animate.css" /></noscript>
-  <link rel="preload" href="css/jquery-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="css/jquery-ui.css" /></noscript>
-  <link rel="preload" href="css/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="css/jquery.fancybox.min.css" /></noscript>
-  <link rel="preload" href="css/scrollbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="css/scrollbar.css" /></noscript>
-  <link rel="preload" href="css/datetimepicker.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="css/datetimepicker.css" /></noscript>
-  <link rel="preload" href="css/hover.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="css/hover.css" /></noscript>
-  <link rel="preload" href="css/custom-animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="css/custom-animate.css" /></noscript>
-  <!-- Responsive Settings -->
-  <link rel="shortcut icon" href="images/gallery/logo%20icon.webp" type="image/x-icon" media="all" />
-  <link rel="icon" href="images/gallery/logo%20icon.webp" type="image/x-icon" media="all" />
-  <!-- Responsive Settings -->
+    "
+    />
+    <title>4D/3N Goa Tour Packages | Perfect for Beach Lovers</title>
+    <!-- Stylesheets -->
+    <link
+      rel="preload"
+      href="css/bootstrap.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="css/bootstrap.css" /></noscript>
+    <link
+      rel="preload"
+      href="css/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="css/style.css" /></noscript>
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <!--[if lt IE 9
-      ]><script async async async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+    <!-- Responsive File -->
+    <link
+      rel="preload"
+      href="css/responsive.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="css/responsive.css" /></noscript>
+
+    <link
+      rel="preload"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      as="font"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    /></noscript>
+    <link
+      rel="shortcut icon"
+      href="images/gallery/logo icon.webp"
+      type="image/x-icon"
+      media="all"
+    />
+    <link
+      rel="icon"
+      href="images/gallery/logo icon.webp"
+      type="image/x-icon"
+      media="all"
+    />
+    <!-- Responsive Settings -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
     ><![endif]-->
-  <!--[if lt IE 9]><script defer src="js/respond.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
+    <!-- Source Code Protection Styles -->
+    <style>
+      /* Disable text selection */
+      body {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+      }
 
-</head>
+      /* Hide content when developer tools are detected */
+      .dev-tools-warning {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        color: #fff;
+        text-align: center;
+        padding-top: 20%;
+        z-index: 99999;
+        font-size: 24px;
+      }
 
-<body>
-  <!-- Preloader -->
-<div class="preloader">
-  <div class="icon">
-    <svg width="60" height="30" viewBox="0 0 100 50">
-      <path class="infinity-path" d="M31.6,3.5C5.9,3.5,5.9,46.5,31.6,46.5c15.4,0,23.1-21.5,36.8-21.5c13.7,0,21.4,21.5,36.8,21.5c25.7,0,25.7-43,0-43 c-15.4,0-23.1,21.5-36.8,21.5C54.7,25,47,3.5,31.6,3.5z" />
-    </svg>
-  </div>
-</div>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe async src="https://www.googletagmanager.com/ns.html?id=GTM-KRT96J8" height="0" width="0"
-      style="display: none; visibility: hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+      /* Disable image dragging */
+      img {
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        pointer-events: none;
+      }
 
+      /* Additional protection measures */
+      * {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
+      /* Prevent highlighting */
+      ::selection {
+        background: transparent;
+      }
 
+      ::-moz-selection {
+        background: transparent;
+      }
 
+      /* Hide content from screen readers when dev tools detected */
+      .protected-content {
+        display: block;
+      }
 
-  <div class="page-wrapper">
-    
+      .dev-tools-detected .protected-content {
+        display: none !important;
+      }
 
-    <!-- Main Header -->
-    <header class="main-header header-style-three">
-      <!-- Header Top -->
+      /* Blur effect when dev tools open */
+      .dev-tools-detected {
+        filter: blur(10px);
+        pointer-events: none;
+      }
+    </style>
+  </head>
 
-      <!-- Header Upper -->
-      <div class="header-upper">
-        <div class="auto-container">
-          <div class="inner clearfix">
-            <!--Logo-->
-            <div class="logo-box">
-              <div class="logo">
-                <a href="goa-tour-packages.html" title="Goa tour packages"><img loading="lazy" src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." title="Goa tour packages" width="160" height="160" style="aspect-ratio: 1/1; width: auto; height: auto; max-width: 100%;" /></a>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        async
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KRT96J8"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Source Code Protection JavaScript --></div>
+
+    <div class="page-wrapper">
+      <!-- Preloader -->
+      <div class="preloader">
+        <div class="icon"></div>
+      </div>
+
+      <!-- Main Header -->
+      <header class="main-header header-style-three">
+        <!-- Header Top -->
+
+        <!-- Header Upper -->
+        <div class="header-upper">
+          <div class="auto-container">
+            <div class="inner clearfix">
+              <!--Logo-->
+              <div class="logo-box">
+                <div class="logo">
+                  <a href="goa-tour-packages.html" title="Goa tour packages"
+                    ><img
+                      src="images/gallery/6.webp"
+                      alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral."
+                      title="Goa tour packages"
+                  /></a>
+                </div>
               </div>
-            </div>
-            <div class="nav-content clearfix">
-              <div class="nav-outer clearfix">
-                <!--Mobile Navigation Toggler-->
-                <div class="mobile-nav-toggler" aria-label="Toggle Navigation" role="button" tabindex="0">
-                  <span class="icon flaticon-menu-1"></span>
+              <div class="nav-content clearfix">
+                <div class="nav-outer clearfix">
+                  <!--Mobile Navigation Toggler-->
+                  <div class="mobile-nav-toggler">
+                    <span class="icon flaticon-menu-1"></span>
+                  </div>
+
+                  <!-- Main Menu -->
+                  <nav class="main-menu navbar-expand-md navbar-light">
+                    <div
+                      class="collapse navbar-collapse show clearfix"
+                      id="navbarSupportedContent"
+                    >
+                      <ul class="navigation clearfix">
+                        <li><a href="index.html">Home</a></li>
+
+                        <li class="dropdown">
+                          <a href="goa-tour-packages.html">Goa Tour Packages</a>
+                          <ul>
+                            <li>
+                              <a href="goa-tour-package-4N-5D.html"
+                                >Goa 5D-4N Tour Package</a
+                              >
+                            </li>
+                            <li>
+                              <a href="goa-weekend-trip.html"
+                                >Goa Weekend Gateway Package</a
+                              >
+                            </li>
+                            <li>
+                              <a href="goa-tour-package-4D-3N.html"
+                                >Goa Tour Packages 4D-3N</a
+                              >
+                            </li>
+
+                            <div class="dropdown-btn">
+                              <span class="fa fa-angle-right"></span>
+                            </div>
+                          </ul>
+                        </li>
+
+                        <li class="dropdown">
+                          <a href="Water-Sports.html">Goa Sea Activities</a>
+                          <ul>
+                            <li>
+                              <a href="Scuba-Adventure.html"
+                                >Scubadiving in Goa</a
+                              >
+                            </li>
+                            <li>
+                              <a href="Watersport-Scuba-combo-goa.html"
+                                >Scuba Watersports Goa
+                              </a>
+                            </li>
+                            <li>
+                              <a href="Party-Cruise.html"
+                                >Dinner Party Cruise Goa
+                              </a>
+                            </li>
+
+                            <div class="dropdown-btn">
+                              <span class="fa fa-angle-right"></span>
+                            </div>
+                          </ul>
+                        </li>
+
+                        <li class="dropdown">
+                          <a href="about.html">About us</a>
+                          <ul>
+                            <li><a href="contact.html">Contact</a></li>
+
+                            <div class="dropdown-btn">
+                              <span class="fa fa-angle-right"></span>
+                            </div>
+                          </ul>
+                        </li>
+                        <li><a href="blog.html">Blogs</a></li>
+                      </ul>
+                    </div>
+                  </nav>
                 </div>
 
-                <!-- Main Menu -->
-                <nav class="main-menu navbar-expand-md navbar-light">
-                  <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                    <ul class="navigation clearfix">
-                      <li><a href="index.html">Home</a></li>
+                <!--Search Btn-->
 
-                      <li class="dropdown">
-                        <a href="goa-tour-packages.html">Goa Tour Packages</a>
-                        <ul>
-                          <li>
-                            <a href="goa-tour-package-4N-5D.html">Goa 5D-4N Tour Package</a>
-                          </li>
-                          <li>
-                            <a href="goa-weekend-trip.html">Goa Weekend Gateway Package</a>
-                          </li>
-                          <li>
-                            <a href="goa-tour-package-4D-3N.html">Goa Tour Packages 4D-3N</a>
-                          </li>
+                <!--Nav Toggler-->
+                <div class="max-nav-toggler">
+                  <button class="theme-btn toggle-btn">
+                    <span class="flaticon-menu-5"></span>
+                  </button>
+                </div>
 
-                          <div class="dropdown-btn">
-                            <span class="fa fa-angle-right"></span>
-                          </div>
-                        </ul>
-                      </li>
-
-                      <li class="dropdown">
-                        <a href="Water-Sports.html">Goa Sea Activities</a>
-                        <ul>
-                          <li>
-                            <a href="Scuba-Adventure.html">Scubadiving in Goa</a>
-                          </li>
-                          <li>
-                            <a href="Watersport-Scuba-combo-goa.html">Scuba Watersports Goa
-                            </a>
-                          </li>
-                          <li>
-                            <a href="Party-Cruise.html">Dinner Party Cruise Goa
-                            </a>
-                          </li>
-
-                          <div class="dropdown-btn">
-                            <span class="fa fa-angle-right"></span>
-                          </div>
-                        </ul>
-                      </li>
-
-                      <li class="dropdown">
-                        <a href="about.html">About us</a>
-                        <ul>
-                          <li><a href="contact.html">Contact</a></li>
-
-                          <div class="dropdown-btn">
-                            <span class="fa fa-angle-right"></span>
-                          </div>
-                        </ul>
-                      </li>
-                      <li><a href="blog.html">Blogs</a></li>
-                    </ul>
+                <!--Link Box-->
+                <div class="link-box">
+                  <div class="contact-text">
+                    <span class="txt">
+                      <a
+                        href="tel: 8287768117 "
+                        class="theme-btn btn-style-one"
+                      >
+                        <div class="btn-title">Call Now</div>
+                      </a>
+                    </span>
                   </div>
-                </nav>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <!--End Header Upper-->
+
+        <!-- Sticky Header  -->
+        <div class="sticky-header">
+          <div class="auto-container clearfix">
+            <!--Logo-->
+            <div class="logo pull-left">
+              <a href="goa-tour-packages.html" title="Goa tour Packages"
+                ><img
+                  src="images/gallery/6.webp"
+                  alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral."
+                  title="Scuba Diving Adventure Logo"
+              /></a>
+            </div>
+            <!--Right Col-->
+            <div class="pull-right clearfix">
+              <!-- Main Menu -->
+              <nav class="main-menu clearfix">
+                <!--Keep This Empty / Menu will come through Javascript-->
+              </nav>
+              <!-- Main Menu End-->
 
               <!--Search Btn-->
 
-              <!--Nav Toggler-->
-              <div class="max-nav-toggler">
-                <button class="theme-btn toggle-btn">
-                  <span class="flaticon-menu-5"></span>
-                </button>
+              <!--Book Btn-->
+              <div class="booking-link">
+                <a href="tel:8287768117 " class="theme-btn btn-style-one">
+                  <div class="btn-title">Call Us</div>
+                </a>
               </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Sticky Menu -->
 
-              <!--Link Box-->
-              <div class="link-box">
-                <div class="contact-text">
-                  <span class="txt">
-                    <a href="tel: 8287768117 " class="theme-btn btn-style-one">
-                      <div class="btn-title">Call Now</div>
-                    </a>
-                  </span>
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+          <div class="menu-backdrop"></div>
+          <div class="close-btn">
+            <span class="icon flaticon-targeting-cross"></span>
+          </div>
+
+          <nav class="menu-box">
+            <div class="nav-logo">
+              <a href="goa-tour-packages.html"
+                ><img
+                  src="images/gallery/6.webp"
+                  alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral."
+                  title="Scuba Diving Adventure Logo"
+              /></a>
+            </div>
+            <div class="menu-outer">
+              <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            </div>
+            <!--Social Links-->
+          </nav>
+        </div>
+        <!-- End Mobile Menu -->
+      </header>
+      <!-- End Main Header -->
+
+      <!--Search Popup-->
+
+      <!-- Hidden Navigation Bar -->
+      <section class="hidden-bar right-align">
+        <div class="hidden-bar-closer">
+          <button><span class="flaticon-letter-x"></span></button>
+        </div>
+
+        <!-- Hidden Bar Wrapper -->
+        <div class="hidden-bar-wrapper">
+          <div class="logo">
+            <a href="goa-tour-packages.html"
+              ><img
+                src="images/gallery/logo canva 10.webp"
+                alt="Logo featuring a diver's mask with fish and coral, labeled 'ScubaDivingAdventure.in.'"
+            /></a>
+          </div>
+          <div class="content-box">
+            <h3>Get In Touch</h3>
+            <div class="text">Experience best Holiday in Beautiful Goa.</div>
+            <a
+              href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour Packages details and further process"
+              class="theme-btn btn-style-two"
+            >
+              <div class="btn-title">Consultation</div>
+            </a>
+          </div>
+          <div class="contact-info">
+            <h2>Contact Info</h2>
+            <ul class="list-style-two">
+              <li>
+                <span class="flaticon-placeholder-1"></span>Calangute circle,
+                GOA
+              </li>
+              <li>
+                <span class="flaticon-placeholder-1"></span>Port Blair, Goa Tour
+              </li>
+
+              <li>
+                <span class="flaticon-phone-call"></span
+                ><a href="tel:8287768117 ">8287768117 </a>
+              </li>
+              <li>
+                <span class="flaticon-envelope"></span>
+                <a href="mailto:contact@scubadivingadventure.in"
+                  >contact@scubadivingadventure.in</a
+                >
+              </li>
+              <li><span class="flaticon-wall-clock"></span> 24*7</li>
+            </ul>
+          </div>
+        </div>
+        <!-- / Hidden Bar Wrapper -->
+      </section>
+      <!-- End / Hidden Bar -->
+
+      <!--Page Title-->
+      <section class="page-banner">
+        <div
+          class="image-layer"
+          style="
+            background-image: url(images/goa-tour/a44b2cd7559c119290660d9e6b62b37b_14_11zon.webp);
+          "
+        ></div>
+        <div class="banner-inner">
+          <div class="auto-container">
+            <div class="inner-container clearfix">
+              <h1 style="color: white">Goa Tour Package 3 Night 4 Day</h1>
+              <div class="page-nav">
+                <ul class="bread-crumb clearfix">
+                  <li><a href="goa-tour-packages.html">Tour Packages</a></li>
+                  <li>
+                    <a href="goa-tour-package-4D-3N.html"
+                      >Goa Tour Package 4D-3N</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="info-pop">
+        <div class="auto-container">
+          <div class="inner">
+            <div class="text">
+              Get Pre-Booking Discounts, Don't miss the Best Goa Experience,
+              Book Your’s Now
+            </div>
+            <div class="close-btn"><span class="flaticon-letter-x"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!--Yacht Tours Section-->
+      <section class="yacht-tours-container alternate-bg-two">
+        <div class="auto-container">
+          <div class="content-container">
+            <div class="row clearfix">
+              <!--Content Side-->
+              <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                <div class="content-inner">
+                  <!--Tour Details-->
+                  <div class="tour-details">
+                    <div class="info-title clearfix">
+                      <div class="left-info">
+                        <h2>4 Day 3 Night Goa Tour Package</h2>
+                        <div class="info">
+                          <span class="icon flaticon-wall-clock"></span> [ 4
+                          Days & 3 Nights ] &nbsp;
+                          <span class="icon flaticon-nature"></span>Best Sea
+                          Activities
+                          <span class="icon flaticon-yacht"></span> Goa Best
+                          Highlights Scuba Diving & Water sports &nbsp;
+                          <span class="icon flaticon-kitchen"></span>Breakfast
+                          Included &nbsp;
+                          <span class="icon flaticon-truck"></span> Personal
+                          Rented vehicle
+                        </div>
+                      </div>
+                      <div class="rating-info">
+                        <div class="rate-text">
+                          <strong>4.5</strong> <a href="#">[114 Reviews]</a>
+                        </div>
+                        <div class="rate">
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-block">
+                      <h4>Tour <strong> Overview</strong></h4>
+                      <p>
+                        <li style="list-style-type: disc">
+                          Welcome to Goa. Enjoy your 4 Day & 3 Night Stay at Top
+                          Beach side locations in Goa. Experience Scuba Diving
+                          best highlight of goa along with thrilling Water
+                          sports activity.
+                        </li>
+                      </p>
+
+                      <p>
+                        <li style="list-style-type: disc">
+                          This package has plans to cover Different Parts Of
+                          North Goa & South Goa, Dudhsagar Waterfall, Dinner
+                          Cruise. We surely recommend this plan for those
+                          travelers who are looking to cover most of the places
+                          in Goa With Adventure and Thrill.
+                        </li>
+                      </p>
+                    </div>
+                    <!-- Slideshow container -->
+                    <div class="carousel-box">
+                      <div class="team-carousel owl-theme owl-carousel">
+                        <!--Team Block-->
+
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
+                          <div class="image-box">
+                            <figure class="image">
+                              <a
+                                class="lightbox-image"
+                                href="images/goa-tour/-84120_8511_18_11zon.webp"
+                                ><img
+                                  src="images/goa-tour/-84120_8511_18_11zon.webp"
+                                  alt="Goa Tour Package"
+                                  title="Goa Packages"
+                              /></a>
+                            </figure>
+                            <div class="zoom-btn">
+                              <a
+                                class="lightbox-image zoom-link"
+                                href="images/goa-tour/-84120_8511_18_11zon.webp"
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Goa Tours</span
+                                ></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!--Team Block-->
+
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
+                          <div class="image-box">
+                            <figure class="image">
+                              <a
+                                class="lightbox-image"
+                                href="images/goa-tour/1576580324_NY_Party_Cruise_-_4.jpg_7_11zon.webp"
+                                alt="Boat Tour Goa Tours"
+                                title="Port Blair"
+                                ><img
+                                  src="images/goa-tour/1576580324_NY_Party_Cruise_-_4.jpg_7_11zon.webp"
+                                  alt="Boat Tour Goa Tours"
+                                  title="Goa Cruise Party"
+                              /></a>
+                            </figure>
+                            <div class="zoom-btn">
+                              <a
+                                class="lightbox-image zoom-link"
+                                href="images/goa-tour/1576580324_NY_Party_Cruise_-_4.jpg_7_11zon.webp"
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Boat Tour in Goa Tours</span
+                                ></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!--Team Block-->
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
+                          <div class="image-box">
+                            <figure class="image">
+                              <a
+                                class="lightbox-image"
+                                href="images/goa-tour/aguadajail.webp_15_11zon.webp"
+                                alt="Aguada Jail, Goa tour"
+                                title="Aguada Jail"
+                                ><img
+                                  src="images/goa-tour/aguadajail.webp_15_11zon.webp"
+                                  alt="Aguada Jail, Goa tour"
+                                  title="Aguada Jail"
+                              /></a>
+                            </figure>
+                            <div class="zoom-btn">
+                              <a
+                                class="lightbox-image zoom-link"
+                                href="images/goa-tour/aguadajail.webp_15_11zon.webp"
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Aguada Jail, Goa
+                                </span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <!--Team Block-->
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
+                          <div class="image-box">
+                            <figure class="image">
+                              <a
+                                class="lightbox-image"
+                                href="images/goa-tour/a44b2cd7559c119290660d9e6b62b37b_14_11zon.webp"
+                                alt="Grand Island"
+                                title="Grand Island"
+                                ><img
+                                  src="images/goa-tour/a44b2cd7559c119290660d9e6b62b37b_14_11zon.webp"
+                                  alt="Grand Island"
+                                  title="Grand Island"
+                              /></a>
+                            </figure>
+                            <div class="zoom-btn">
+                              <a
+                                class="lightbox-image zoom-link"
+                                href="images/goa-tour/a44b2cd7559c119290660d9e6b62b37b_14_11zon.webp"
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Grand Island Tour Goa</span
+                                ></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <!--Team Block-->
+
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
+                          <div class="image-box">
+                            <figure class="image">
+                              <a
+                                class="lightbox-image"
+                                href="images/goa-tour/BLOG_parasailing_19_11zon.webp"
+                                alt=" Parasailing in Goa"
+                                title="Parasailing in Goa"
+                                ><img
+                                  src="images/goa-tour/BLOG_parasailing_19_11zon.webp"
+                                  alt="Parasailing in Goa"
+                                  title="Parasailing in Goa"
+                              /></a>
+                            </figure>
+                            <div class="zoom-btn">
+                              <a
+                                class="lightbox-image zoom-link"
+                                href="images/goa-tour/BLOG_parasailing_19_11zon.webp"
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Parasailing in Goa</span
+                                ></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <!--Team Block-->
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
+                          <div class="image-box">
+                            <figure class="image">
+                              <a
+                                class="lightbox-image"
+                                href="images/goa-tour/unnamed-4_16_11zon.webp"
+                                alt=" Scuba Diving in Goa"
+                                title="Scuba Diving in Goa"
+                                ><img
+                                  src="images/goa-tour/unnamed-4_16_11zon.webp"
+                                  alt="Bharatpur Beach"
+                                  title="Scuba Diving in Goa"
+                              /></a>
+                            </figure>
+                            <div class="zoom-btn">
+                              <a
+                                class="lightbox-image zoom-link"
+                                href="images/goa-tour/unnamed-4_16_11zon.webp"
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Scuba Diving in Goa</span
+                                ></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!--Team Block-->
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
+                          <div class="image-box">
+                            <figure class="image">
+                              <a
+                                class="lightbox-image"
+                                href="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20 (1)_12_11zon.webp"
+                                alt=" Green Resort stay"
+                                title="Green Resort stay"
+                                ><img
+                                  src="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20 (1)_12_11zon.webp"
+                                  alt="Green Resort stay"
+                                  title="Green Resort stay"
+                              /></a>
+                            </figure>
+                            <div class="zoom-btn">
+                              <a
+                                class="lightbox-image zoom-link"
+                                href="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20 (1)_12_11zon.webp"
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Green Resort stay</span
+                                ></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <section class="yacht-details">
+                      <div class="auto-container">
+                        <div class="row clearfix">
+                          <div class="content-column">
+                            <div class="inner">
+                              <h2>Tour<strong> Highlights</strong></h2>
+                              <div class="scroller-box">
+                                <div class="scroller">
+                                  <div class="feature">
+                                    <div class="feature-inner">
+                                      <div class="icon">
+                                        <span class="flaticon-location"></span>
+                                      </div>
+                                      <h5>Visit the Offbeat Places in Goa.</h5>
+                                      <div class="text">
+                                        Relish a beautiful experience the former
+                                        Portuguese territory that offers the
+                                        beauty of golden shimmering beaches,
+                                        stellar nightlife, majestic waterfalls
+                                        and so much more.
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="feature">
+                                    <div class="feature-inner">
+                                      <div class="icon">
+                                        <span class="flaticon-picture"></span>
+                                      </div>
+                                      <h5>The Breathtaking Dudhsagar</h5>
+                                      <div class="text">
+                                        Trek to the top of the second largest
+                                        waterfall in India, Dudhsagar Waterfalls
+                                        and hear the mighty roar of white water
+                                        crashing over the boulders.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="feature">
+                                    <div class="feature-inner">
+                                      <div class="icon">
+                                        <span class="flaticon-picture"></span>
+                                      </div>
+                                      <h5>Dinner Cruise Party in Goa</h5>
+                                      <div class="text">
+                                        Enjoy your Best Evening in Goa at Our
+                                        cruise. Enjot Sailing and sightseeing,
+                                        Buffet Dinner, Soft Drinks, In House Dj
+                                        and cultural activities.
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="feature">
+                                    <div class="feature-inner">
+                                      <div class="icon">
+                                        <span class="flaticon-scuba"></span>
+                                      </div>
+                                      <h5>
+                                        Scuba Diving Adventure at Grand Island
+                                      </h5>
+                                      <div class="text">
+                                        The Grand Island in Goa is the most
+                                        popular one day trip adventure and Goa
+                                        vacation gateways for tourists. The
+                                        Grand Island Scuba diving adventure is a
+                                        half-day retreat in the middle of the
+                                        famous Arabian sea. Scuba diving
+                                        experience in goa should be on
+                                        everyone's list of must-visit places.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="feature">
+                                    <div class="feature-inner">
+                                      <div class="icon">
+                                        <span class="flaticon-sailboat"></span>
+                                      </div>
+                                      <h5>Thrilling Water Sports in Goa</h5>
+                                      <div class="text">
+                                        Enjoy Best Water Sports in Goa. Jet Skii
+                                        | Banana Ride| Bumper Ride| Parasailling
+                                        | Boat Ride | snorkeling
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="feature">
+                                    <div class="feature-inner">
+                                      <div class="icon">
+                                        <span class="flaticon-video"></span>
+                                      </div>
+                                      <h5>Amazing Beaches of Goa</h5>
+                                      <div class="text">
+                                        Explore the famous beaches of North Goa,
+                                        Witness amazing sunset at Arambol Beach
+                                        (Sweet Lake). Explore White Sandy
+                                        Beaches of South Goa..
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="feature">
+                                    <div class="feature-inner">
+                                      <div class="icon">
+                                        <span class="flaticon-location"></span>
+                                      </div>
+                                      <h5>Beautiful Locations to stay</h5>
+                                      <div class="text">
+                                        Enjoy Your Stay at Best Locations in
+                                        Goa. We Provide best Beach side stay
+                                        options Resorts, Hotel and villas.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <div class="specs">
+                      <h4>Package Details</h4>
+                      <table class="specs-table">
+                        <tbody>
+                          <tr>
+                            <td>Duration</td>
+                            <td>4 Days, 3 Nights</td>
+                          </tr>
+                          <tr>
+                            <td>On Site Transfer</td>
+                            <td>Private Rented Vehicle for Sightseeing.</td>
+                          </tr>
+                          <tr>
+                            <td>Accommodation</td>
+                            <td>
+                              At best Beach Side locations in Goa. Beautiful
+                              Resorts and Luxury Villas.
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <!--Facility-->
+                    <div class="facilities">
+                      <h4>Package Incusions</h4>
+                      <div class="facility-box">
+                        <ul class="clearfix">
+                          <h6 style="color: midnightblue">Accommodation</h6>
+                          <li>At North Goa (3 Nights)</li>
+                        </ul>
+                        <ul class="clearfix">
+                          <h6 style="color: midnightblue">Meals</h6>
+                          <li>Breakfast for All days</li>
+                          <li>Day 2 & Day 3 Lunch</li>
+                          <li>Day 1 Dinner at Cruise Party</li>
+                        </ul>
+                        <ul class="clearfix">
+                          <h6 style="color: midnightblue">On Site Transfer</h6>
+                          <li>Own Personal Rented Vehicle with Fule.</li>
+                        </ul>
+                        <ul class="clearfix">
+                          <h6 style="color: midnightblue">Tickets</h6>
+                          <li>
+                            Scuba Diving Adventure & Water Sports at Grand
+                            Island, Goa.
+                          </li>
+                          <li>Dudhsagar Waterfall Trip</li>
+                          <li>Romatic Dinner Cruise Party</li>
+                        </ul>
+                        <ul class="clearfix">
+                          <h6 style="color: midnightblue">Sightseeing</h6>
+                          <li>
+                            Grand Island, Mandovi River, Aguada Fort, Sinquerim
+                            Beach, Candolim Beach
+                          </li>
+                          <li>
+                            Calangute Beach, Baga Beach, Anjuna Beach, Vagator
+                            Beach, Arambol Beach, Sweet Lake
+                          </li>
+                          <li>
+                            Mangueshi Temple Old, Panjim, Dhudhsagar Falls &
+                            Spice Plantations,Basilica of Bom Jesus Church
+                          </li>
+                        </ul>
+                        <h5 style="color: midnightblue">
+                          ADDITIONAL ACTIVITIES
+                        </h5>
+                        <details style="color: midnightblue">
+                          *You Can Customize this package according to your
+                          Needs and Budget. We Offer full Customised Package and
+                          Air travel also.
+                          <hr />
+                          <a
+                            href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour package details and further process"
+                            class="theme-btn btn-style-one"
+                            ><div class="btn-title">
+                              Customize Your Tour Package
+                            </div></a
+                          >
+                        </details>
+                      </div>
+                    </div>
+
+                    <hr style="height: 2px" />
+                    <!--Included Material-->
+                    <div class="included-material">
+                      <h4>Goa Tour package Itinerary</h4>
+                      <div class="included-box">
+                        <div class="accordion-box">
+                          <!--Block-->
+                          <div class="accordion block">
+                            <div class="acc-btn">
+                              Day 1 : Check in to the Best Beach Side
+                              Hotels/Resort. Later Evening Enjoy Dinner cruise
+                              Party.
+                              <div class="icon flaticon-down-arrow"></div>
+                            </div>
+                            <div class="acc-content">
+                              <div class="content">
+                                <div class="text">
+                                  <li style="list-style-type: disc">
+                                    Upon Arriaval Reach your Hotel form Airport
+                                    & Station.
+                                  </li>
+
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
+                                    <div class="image-box">
+                                      <figure class="image">
+                                        <a
+                                          class="lightbox-image"
+                                          href="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.21_3_11zon.webp"
+                                          alt=" Goa Resort Stay"
+                                          title="Goa Resort Stay"
+                                          ><img
+                                            src="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.21_3_11zon.webp"
+                                            alt="Goa Resort Stay"
+                                            title="Goa Tour Stay"
+                                        /></a>
+                                      </figure>
+                                      <div class="zoom-btn">
+                                        <a
+                                          class="lightbox-image zoom-link"
+                                          href="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.21_3_11zon.webp"
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Enjoy Stay at best location.</span
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr />
+
+                                  <li style="list-style-type: disc">
+                                    Enjoy Dinner Cruise Party at evening. Pick
+                                    up from your pre-booked hotel. Traditional
+                                    Dance Performance Portuguese Dance, kottyo
+                                    Fugdi Dance, Goan Dance. Show Off Your Dance
+                                    Skills On The Popular Retro Songs And
+                                    Bollywood Numbers With The Dj.
+                                  </li>
+
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
+                                    <div class="image-box">
+                                      <figure class="image">
+                                        <a
+                                          class="lightbox-image"
+                                          href="images/goa-tour/cruise_7_11zon.webp"
+                                          alt=" Natural Bridge, Neil Island"
+                                          title=" Neil Island"
+                                          ><img
+                                            src="images/goa-tour/cruise_7_11zon.webp"
+                                            alt="Dinner Cruise"
+                                            title=" Dinner Cruise"
+                                        /></a>
+                                      </figure>
+                                      <div class="zoom-btn">
+                                        <a
+                                          class="lightbox-image zoom-link"
+                                          href="images/goa-tour/cruise_7_11zon.webp"
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Dinner Cruise Party</span
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr />
+                                  <li style="list-style-type: disc">
+                                    The Package Includes 2 beer,2 Complimentary
+                                    Beverage, Snacks, Dinner Buffet(veg / Non
+                                    Veg Meal), And Desserts That Reflect The
+                                    Goan Flavour And Culture.
+                                  </li>
+                                  <li style="list-style-type: disc">
+                                    Enjoy A Memorable Evening With Exquisite
+                                    Dining & Cruising Experience On The Mandovi
+                                    River. The River Cruise Route Takes You From
+                                    Below The Atal Sethu To The Mouth Of The
+                                    River Mandovi (Entrance Of The Arabian Sea).
+                                  </li>
+
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
+                                    <div class="image-box">
+                                      <figure class="image">
+                                        <a
+                                          class="lightbox-image"
+                                          href="images/goa-tour/D_XnqsbXUAErvLr_9_11zon.webp"
+                                          alt=" Hotel in Andaman"
+                                          title="Cruise Transport"
+                                          ><img
+                                            src="images/goa-tour/D_XnqsbXUAErvLr_9_11zon.webp"
+                                            alt="Cruise Party"
+                                            title="Cruise Party"
+                                        /></a>
+                                      </figure>
+                                      <div class="zoom-btn">
+                                        <a
+                                          class="lightbox-image zoom-link"
+                                          href="images/goa-tour/D_XnqsbXUAErvLr_9_11zon.webp"
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Party Cruise Goa</span
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!--Block-->
+                          <div class="accordion block">
+                            <div class="acc-btn">
+                              Day 2 : TRIP TO GRAND ISLAND, GOA. SCUBA DIVING
+                              ADVENTURE & THRILLING WATERSPORTS.
+                              <div class="icon flaticon-down-arrow"></div>
+                            </div>
+                            <div class="acc-content">
+                              <div class="content">
+                                <div class="text">
+                                  <li style="list-style-type: disc">
+                                    Pick-up for the enthralling activities will
+                                    be at 7 AM and pick-up locations would be
+                                    <strong>
+                                      Baga,Calangute, Candolim,Anjuna and
+                                      Arpora.</strong
+                                    >
+                                    The trip will be starting from Sinquerim
+                                    Boat Jetty in a Long Tail boat at 8:30 AM to
+                                    the Grand Island where you can witness
+                                    amazing views to soothe your senses.
+                                  </li>
+
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
+                                    <div class="image-box">
+                                      <figure class="image">
+                                        <a
+                                          class="lightbox-image"
+                                          href="images/goa-tour/parasailing-in-india_4_11zon.webp"
+                                          alt=" Parasailing with Dip in Goa"
+                                          title="Parasailing with Dip in Goa"
+                                          ><img
+                                            src="images/goa-tour/parasailing-in-india_4_11zon.webp"
+                                            alt="Parasailing with Dip in Goa"
+                                            title="Parasailing Goa"
+                                        /></a>
+                                      </figure>
+                                      <div class="zoom-btn">
+                                        <a
+                                          class="lightbox-image zoom-link"
+                                          href="images/goa-tour/parasailing-in-india_4_11zon.webp"
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Parasailing with Dip in Goa</span
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr />
+
+                                  <li style="list-style-type: disc">
+                                    Enjoy 45-60 minutes of a boat ride to the
+                                    vicinity of Grand islands till 10:30 AM. If
+                                    you are lucky enough, you might have a
+                                    chance to spot dolphins during the journey.
+                                    Curb your hunger pangs at 10:30 AM with
+                                    sumptuous meals such as light snacks and
+                                    unlimited VEG/NON-VEG lunch.
+                                  </li>
+
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
+                                    <div class="image-box">
+                                      <figure class="image">
+                                        <a
+                                          class="lightbox-image"
+                                          href="images/scuba9.webp"
+                                          alt=" Cruise Scuba Divingin Goa"
+                                          title="Scuba diving goa"
+                                          ><img
+                                            src="images/scuba9.webp"
+                                            alt="Scuba Goa"
+                                            title="Goa Scuba Diving"
+                                        /></a>
+                                      </figure>
+                                      <div class="zoom-btn">
+                                        <a
+                                          class="lightbox-image zoom-link"
+                                          href="images/scuba9.webp"
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Goa Scuba Diving Adventure</span
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr />
+                                  <li style="list-style-type: disc">
+                                    Get refreshing and chilled soft drinks or
+                                    beer (3 pints per person) as complimentary.
+                                    Relish the astonishing underwater views for
+                                    about 15 minutes depending on the factors
+                                    like weather and pressure of the water.
+                                  </li>
+
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
+                                    <div class="image-box">
+                                      <figure class="image">
+                                        <a
+                                          class="lightbox-image"
+                                          href="images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon.webp"
+                                          alt=" Grand Island, Goa"
+                                          title="Grand Island, Goa"
+                                          ><img
+                                            src="images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon.webp"
+                                            alt="Grand Island, Goa"
+                                            title="Grand Island, Goa"
+                                        /></a>
+                                      </figure>
+                                      <div class="zoom-btn">
+                                        <a
+                                          class="lightbox-image zoom-link"
+                                          href="images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon.webp"
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Grand Island, Goa</span
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr />
+                                  <li style="list-style-type: disc">
+                                    Grab the most thrilling water sports
+                                    experience at 4:00 PM that includes a Banana
+                                    ride, Speed Boat ride, Bumper ride, and
+                                    Jetski. (Included in certain packages).
+                                    Activities will be performed with proper
+                                    safety and with all the necessary safety
+                                    equipment. Get yourself dropped at the
+                                    drop-off locations same as mentioned above
+                                    at 5:30-6:00 PM.
+                                  </li>
+                                  <li style="list-style-type: disc">
+                                    Proceed for the drop at the hotel after an
+                                    exciting and fulfilling day.
+                                  </li>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!--Block-->
+                          <div class="accordion block">
+                            <div class="acc-btn">
+                              Day 3 : Embark on the trip to 2nd Highest
+                              Waterfall of india. Trip to Dudhsagar & Spice
+                              Plantations
+                              <div class="icon flaticon-down-arrow"></div>
+                            </div>
+                            <div class="acc-content">
+                              <div class="content">
+                                <div class="text">
+                                  <li style="list-style-type: disc">
+                                    Jungle Jeep Safari Ride to Dudhsagar Falls
+                                  </li>
+                                  <li style="list-style-type: disc">
+                                    Enjoy & swim at Dudhsagar Waterfall
+                                  </li>
+                                  <li style="list-style-type: disc">
+                                    We provide you with life jackets for your
+                                    safety.
+                                  </li>
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
+                                    <div class="image-box">
+                                      <figure class="image">
+                                        <a
+                                          class="lightbox-image"
+                                          href="images/Andaman/du_66_11zon.webp"
+                                          alt=" Dudhsagar Waterfall Trip"
+                                          title="Dudhsagar Waterfall Trip"
+                                          ><img
+                                            src="images/Andaman/du_66_11zon.webp"
+                                            alt="Dudhsagar Waterfall Trip"
+                                            title="Dudhsagar Waterfall Trip"
+                                        /></a>
+                                      </figure>
+                                      <div class="zoom-btn">
+                                        <a
+                                          class="lightbox-image zoom-link"
+                                          href="images/Andaman/du_66_11zon.webp"
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Dudhsagar Waterfall Trip</span
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr />
+                                  <li style="list-style-type: disc">
+                                    Tour at Spice Plantation, Unlimited
+                                    Traditional Buffet Lunch (veg/non veg) at
+                                    Spice Plantation
+                                  </li>
+
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
+                                    <div class="image-box">
+                                      <figure class="image">
+                                        <a
+                                          class="lightbox-image"
+                                          href="images/Andaman/IMG_20211104_134842_3_11zon.webp"
+                                          alt=" Jungle Jeep Safari"
+                                          title="Jungle Jeep Safari"
+                                          ><img
+                                            src="images/Andaman/IMG_20211104_134842_3_11zon.webp"
+                                            alt="Jungle Jeep Safari"
+                                            title="Trip to Neil Island"
+                                        /></a>
+                                      </figure>
+                                      <div class="zoom-btn">
+                                        <a
+                                          class="lightbox-image zoom-link"
+                                          href="images/Andaman/IMG_20211104_134842_3_11zon.webp"
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Jungle Jeep Safari</span
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr />
+                                  <li style="list-style-type: disc">
+                                    Visit Old Goa Churches. The UNESCO World
+                                    Heritage site. Basilica of Bom Jesus Church
+                                  </li>
+                                  <li style="list-style-type: disc">
+                                    Proceed for the drop at the hotel after an
+                                    exciting and fulfilling day.
+                                  </li>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!--Block-->
+                          <div class="accordion block">
+                            <div class="acc-btn">
+                              Day 4 : Morning Departure with Amazinf Memories.
+                              <div class="icon flaticon-down-arrow"></div>
+                            </div>
+                            <div class="acc-content">
+                              <div class="content">
+                                <div class="text">
+                                  <li style="list-style-type: disc">
+                                    Enjoy Breakfast at your Room. Later Checkout
+                                    from the hotel and back to home with amazing
+                                    experience of Goa.
+                                  </li>
+
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
+                                    <div class="image-box">
+                                      <figure class="image">
+                                        <a
+                                          class="lightbox-image"
+                                          href="images/goa-tour/1131540_5_11zon.webp"
+                                          alt=" Beautiful Sunset"
+                                          title="Beautiful Sunset"
+                                          ><img
+                                            src="images/goa-tour/1131540_5_11zon.webp"
+                                            alt="Beautiful Sunset"
+                                            title="Beautiful Sunset"
+                                        /></a>
+                                      </figure>
+                                      <div class="zoom-btn">
+                                        <a
+                                          class="lightbox-image zoom-link"
+                                          href="images/goa-tour/1131540_5_11zon.webp"
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Beautiful Sunset</span
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr />
+                                  <hr />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="instruction">
+                          * You Can Also book Flights at Best Price. Some
+                          surprise things waiting for you in tour. Get all your
+                          answers on your whatsapp number. you can book through
+                          whatsapp and .
+                        </div>
+                        <hr />
+                        <a
+                          href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tours package details and further process"
+                          class="theme-btn btn-style-one"
+                          ><div class="btn-title">Book Your Tour</div></a
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--End Header Upper-->
 
-      <!-- Sticky Header  -->
-      <div class="sticky-header">
-        <div class="auto-container clearfix">
-          <!--Logo-->
-          <div class="logo pull-left">
-            <a href="goa-tour-packages.html" title="Goa tour Packages"><img loading="lazy" src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." title="Scuba Diving Adventure Logo" width="160" height="160" style="aspect-ratio: 1/1; width: auto; height: auto; max-width: 100%;" /></a>
-          </div>
-          <!--Right Col-->
-          <div class="pull-right clearfix">
-            <!-- Main Menu -->
-            <nav class="main-menu clearfix">
-              <!--Keep This Empty / Menu will come through Javascript-->
-            </nav>
-            <!-- Main Menu End-->
-
-            <!--Search Btn-->
-
-            <!--Book Btn-->
-            <div class="booking-link">
-              <a href="tel:8287768117 " class="theme-btn btn-style-one">
-                <div class="btn-title">Call Us</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Sticky Menu -->
-
-      <!-- Mobile Menu  -->
-      <div class="mobile-menu">
-        <div class="menu-backdrop"></div>
-        <div class="close-btn">
-          <span class="icon flaticon-targeting-cross"></span>
-        </div>
-
-        <nav class="menu-box">
-          <div class="nav-logo">
-            <a href="goa-tour-packages.html"><img loading="lazy" src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." title="Scuba Diving Adventure Logo" width="160" height="160" style="aspect-ratio: 1/1; width: auto; height: auto; max-width: 100%;" /></a>
-          </div>
-          <div class="menu-outer">
-            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-          </div>
-          <!--Social Links-->
-        </nav>
-      </div>
-      <!-- End Mobile Menu -->
-    </header>
-
-    <main id="main-content">
-    <!-- End Main Header -->
-
-    <!--Search Popup-->
-
-    <!-- Hidden Navigation Bar -->
-    <section class="hidden-bar right-align">
-      <div class="hidden-bar-closer">
-        <button><span class="flaticon-letter-x"></span></button>
-      </div>
-
-      <!-- Hidden Bar Wrapper -->
-      <div class="hidden-bar-wrapper">
-        <div class="logo">
-          <a href="goa-tour-packages.html"><img loading="lazy" src="images/gallery/logo%20canva%2010.webp" alt="Logo featuring a diver's mask with fish and coral, labeled 'ScubaDivingAdventure.in.'" width="1280" height="960" srcset="images/gallery/logo%20canva%2010-mobile.webp 412w, images/gallery/logo%20canva%2010.webp 1280w" sizes="(max-width: 600px) 412px, 1280px" /></a>
-        </div>
-        <div class="content-box">
-          <h3>Get In Touch</h3>
-          <div class="text">Experience best Holiday in Beautiful Goa.</div>
-          <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour Packages details and further process"
-            class="theme-btn btn-style-two">
-            <div class="btn-title">Consultation</div>
-          </a>
-        </div>
-        <div class="contact-info">
-          <h2>Contact Info</h2>
-          <ul class="list-style-two">
-            <li>
-              <span class="flaticon-placeholder-1"></span>Calangute circle,
-              GOA
-            </li>
-            <li>
-              <span class="flaticon-placeholder-1"></span>Port Blair, Goa Tour
-            </li>
-
-            <li>
-              <span class="flaticon-phone-call"></span><a href="tel:8287768117 ">8287768117 </a>
-            </li>
-            <li>
-              <span class="flaticon-envelope"></span>
-              <a href="mailto:contact@scubadivingadventure.in">contact@scubadivingadventure.in</a>
-            </li>
-            <li><span class="flaticon-wall-clock"></span> 24*7</li>
-          </ul>
-        </div>
-      </div>
-      <!-- / Hidden Bar Wrapper -->
-    </section>
-    <!-- End / Hidden Bar -->
-
-    <!--Page Title-->
-    <section class="page-banner">
-      <div class="image-layer" style="
-            background-image: url(images/goa-tour/a44b2cd7559c119290660d9e6b62b37b_14_11zon.webp);
-          "></div>
-      <div class="banner-inner">
-        <div class="auto-container">
-          <div class="inner-container clearfix">
-            <h1 style="color: white">Goa Tour Package 3 Night 4 Day</h1>
-            <div class="page-nav">
-              <ul class="bread-crumb clearfix">
-                <li><a href="goa-tour-packages.html">Tour Packages</a></li>
-                <li>
-                  <a href="goa-tour-package-4D-3N.html">Goa Tour Package 4D-3N</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="info-pop">
-      <div class="auto-container">
-        <div class="inner">
-          <div class="text">
-            Get Pre-Booking Discounts, Don't miss the Best Goa Experience,
-            Book Your’s Now
-          </div>
-          <div class="close-btn"><span class="flaticon-letter-x"></span></div>
-        </div>
-      </div>
-    </div>
-
-    <!--Yacht Tours Section-->
-    <section class="yacht-tours-container alternate-bg-two">
-      <div class="auto-container">
-        <div class="content-container">
-          <div class="row clearfix">
-            <!--Content Side-->
-            <div class="content-side col-lg-8 col-md-12 col-sm-12">
-              <div class="content-inner">
-                <!--Tour Details-->
-                <div class="tour-details">
-                  <div class="info-title clearfix">
-                    <div class="left-info">
-                      <h2>4 Day 3 Night Goa Tour Package</h2>
-                      <div class="info">
-                        <span class="icon flaticon-wall-clock"></span> [ 4
-                        Days & 3 Nights ] &nbsp;
-                        <span class="icon flaticon-nature"></span>Best Sea
-                        Activities
-                        <span class="icon flaticon-yacht"></span> Goa Best
-                        Highlights Scuba Diving & Water sports &nbsp;
-                        <span class="icon flaticon-kitchen"></span>Breakfast
-                        Included &nbsp;
-                        <span class="icon flaticon-truck"></span> Personal
-                        Rented vehicle
-                      </div>
-                    </div>
-                    <div class="rating-info">
-                      <div class="rate-text">
-                        <strong>4.5</strong> <a href="#">[114 Reviews]</a>
-                      </div>
-                      <div class="rate">
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="text-block">
-                    <h4>Tour <strong> Overview</strong></h4>
-                    <p>
-                      <li style="list-style-type: disc">
-                        Welcome to Goa. Enjoy your 4 Day & 3 Night Stay at Top
-                        Beach side locations in Goa. Experience Scuba Diving
-                        best highlight of goa along with thrilling Water
-                        sports activity.
-                      </li>
-                    </p>
-
-                    <p>
-                      <li style="list-style-type: disc">
-                        This package has plans to cover Different Parts Of
-                        North Goa & South Goa, Dudhsagar Waterfall, Dinner
-                        Cruise. We surely recommend this plan for those
-                        travelers who are looking to cover most of the places
-                        in Goa With Adventure and Thrill.
-                      </li>
-                    </p>
-                  </div>
-                  <!-- Slideshow container -->
-                  <div class="carousel-box">
-                    <div class="team-carousel owl-theme owl-carousel">
-                      <!--Team Block-->
-
-                      <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                          <figure class="image">
-                            <a class="lightbox-image" href="images/goa-tour/-84120_8511_18_11zon.webp"><img width="400" height="300" src="images/goa-tour/-84120_8511_18_11zon.webp" alt="Goa Tour Package" title="Goa Packages" loading="lazy"  srcset="images/goa-tour/-84120_8511_18_11zon-mobile.webp 412w, images/goa-tour/-84120_8511_18_11zon-700w.webp 700w, images/goa-tour/-84120_8511_18_11zon.webp 768w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 768px" /></a>
-                          </figure>
-                          <div class="zoom-btn">
-                            <a class="lightbox-image zoom-link" href="images/goa-tour/-84120_8511_18_11zon.webp"
-                              data-fancybox="gallery"><span class="icon flaticon-expand">Goa Tours</span></a>
+              <!--Widgets Side-->
+              <div class="widgets-side col-lg-4 col-md-6 col-sm-12">
+                <div class="widgets-content">
+                  <!--Widget-->
+                  <div class="tour-widget single-booking-widget">
+                    <div class="widget-inner">
+                      <div class="upper-info clearfix">
+                        <div class="price-info">
+                          <div class="icon">
+                            <span class="flaticon-assistance"></span>
+                          </div>
+                          <div class="p-title">Send Your</div>
+                          <div class="p-amount">
+                            Booking <span>Details</span>
                           </div>
                         </div>
                       </div>
-                      <!--Team Block-->
+                      <div class="default-form main-booking-form">
+                        <form method="post" action="sendmail2.php">
+                          <h5>Get Free Goa Tour Guide & Special Discounts</h5>
 
-                      <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                          <figure class="image">
-                            <a class="lightbox-image"
-                              href="images/goa-tour/1576580324_NY_Party_Cruise_-_4.jpg_7_11zon.webp"
-                              alt="Boat Tour Goa Tours" title="Port Blair"><img width="400" height="300" src="images/goa-tour/1576580324_NY_Party_Cruise_-_4.jpg_7_11zon.webp" alt="Boat Tour Goa Tours" title="Goa Cruise Party" loading="lazy"  srcset="images/goa-tour/1576580324_NY_Party_Cruise_-_4.jpg_7_11zon-mobile.webp 412w, images/goa-tour/1576580324_NY_Party_Cruise_-_4.jpg_7_11zon.webp 731w" sizes="(max-width: 600px) 412px, 731px" /></a>
-                          </figure>
-                          <div class="zoom-btn">
-                            <a class="lightbox-image zoom-link"
-                              href="images/goa-tour/1576580324_NY_Party_Cruise_-_4.jpg_7_11zon.webp"
-                              data-fancybox="gallery"><span class="icon flaticon-expand">Boat Tour in Goa
-                                Tours</span></a>
+                          <div class="form-group">
+                            <div class="field-inner">
+                              <input
+                                type="text"
+                                name="username"
+                                placeholder="Your Name"
+                                required="yes"
+                                value=""
+                              />
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <!--Team Block-->
-                      <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                          <figure class="image">
-                            <a class="lightbox-image" href="images/goa-tour/aguadajail.webp_15_11zon.webp"
-                              alt="Aguada Jail, Goa tour" title="Aguada Jail"><img width="400" height="300" src="images/goa-tour/aguadajail.webp_15_11zon.webp" alt="Aguada Jail, Goa tour" title="Aguada Jail" loading="lazy"  srcset="images/goa-tour/aguadajail.webp_15_11zon-mobile.webp 412w, images/goa-tour/aguadajail.webp_15_11zon-700w.webp 700w, images/goa-tour/aguadajail.webp_15_11zon.webp 1440w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1440px" /></a>
-                          </figure>
-                          <div class="zoom-btn">
-                            <a class="lightbox-image zoom-link" href="images/goa-tour/aguadajail.webp_15_11zon.webp"
-                              data-fancybox="gallery"><span class="icon flaticon-expand">Aguada Jail, Goa
-                              </span></a>
-                          </div>
-                        </div>
-                      </div>
 
-                      <!--Team Block-->
-                      <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                          <figure class="image">
-                            <a class="lightbox-image"
-                              href="images/goa-tour/a44b2cd7559c119290660d9e6b62b37b_14_11zon.webp" alt="Grand Island"
-                              title="Grand Island"><img width="400" height="300" src="images/goa-tour/a44b2cd7559c119290660d9e6b62b37b_14_11zon.webp" alt="Grand Island" title="Grand Island" loading="lazy"  srcset="images/goa-tour/a44b2cd7559c119290660d9e6b62b37b_14_11zon-mobile.webp 412w, images/goa-tour/a44b2cd7559c119290660d9e6b62b37b_14_11zon-700w.webp 700w, images/goa-tour/a44b2cd7559c119290660d9e6b62b37b_14_11zon.webp 1440w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1440px" /></a>
-                          </figure>
-                          <div class="zoom-btn">
-                            <a class="lightbox-image zoom-link"
-                              href="images/goa-tour/a44b2cd7559c119290660d9e6b62b37b_14_11zon.webp"
-                              data-fancybox="gallery"><span class="icon flaticon-expand">Grand Island Tour
-                                Goa</span></a>
+                          <div class="form-group">
+                            <div class="field-inner">
+                              <input
+                                type="tel"
+                                name="phone"
+                                placeholder="Phone"
+                                required="yes"
+                                value=""
+                              />
+                            </div>
                           </div>
-                        </div>
-                      </div>
+                          <div class="form-group">
+                            <div class="field-inner">
+                              <input
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                required="yes"
+                                value=""
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="field-inner">
+                              Trip Date:
+                              <input
+                                type="date"
+                                name="tripdate"
+                                placeholder="Tripdate"
+                                required="yes"
+                                value=""
+                              />
+                            </div>
+                          </div>
 
-                      <!--Team Block-->
+                          <div class="form-group">
+                            <div class="field-inner">
+                              <select class="custom-select-box" name="guest">
+                                <option>No. of Guest</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>More than 5</option>
+                              </select>
+                            </div>
+                          </div>
 
-                      <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                          <figure class="image">
-                            <a class="lightbox-image" href="images/goa-tour/BLOG_parasailing_19_11zon.webp"
-                              alt=" Parasailing in Goa" title="Parasailing in Goa"><img width="400" height="300" src="images/goa-tour/BLOG_parasailing_19_11zon.webp" alt="Parasailing in Goa" title="Parasailing in Goa" loading="lazy"  srcset="images/goa-tour/BLOG_parasailing_19_11zon-mobile.webp 412w, images/goa-tour/BLOG_parasailing_19_11zon-700w.webp 700w, images/goa-tour/BLOG_parasailing_19_11zon.webp 1050w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1050px" /></a>
-                          </figure>
-                          <div class="zoom-btn">
-                            <a class="lightbox-image zoom-link" href="images/goa-tour/BLOG_parasailing_19_11zon.webp"
-                              data-fancybox="gallery"><span class="icon flaticon-expand">Parasailing in Goa</span></a>
+                          <div class="form-group">
+                            <div class="field-label">Are you intrested in?</div>
+                            <div class="field-inner">
+                              <ul class="additional-services">
+                                <li>
+                                  <div class="check-block">
+                                    <input
+                                      type="checkbox"
+                                      id="check-1"
+                                      name="check-1"
+                                    /><label for="check-1">Tour package</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="check-block">
+                                    <input
+                                      type="checkbox"
+                                      id="check-2"
+                                      name="check-2"
+                                    /><label for="check-2">Scuba Diving</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="check-block">
+                                    <input
+                                      type="checkbox"
+                                      id="check-3"
+                                      name="check-3"
+                                    /><label for="check-3">Watersports</label>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="check-block">
+                                    <input
+                                      type="checkbox"
+                                      id="check-4"
+                                      name="check-4"
+                                    /><label for="check-4">Boat Tour</label>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
-                        </div>
-                      </div>
 
-                      <!--Team Block-->
-                      <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                          <figure class="image">
-                            <a class="lightbox-image" href="images/goa-tour/unnamed-4_16_11zon.webp"
-                              alt=" Scuba Diving in Goa" title="Scuba Diving in Goa"><img width="400" height="300" src="images/goa-tour/unnamed-4_16_11zon.webp" alt="Bharatpur Beach" title="Scuba Diving in Goa" loading="lazy" /></a>
-                          </figure>
-                          <div class="zoom-btn">
-                            <a class="lightbox-image zoom-link" href="images/goa-tour/unnamed-4_16_11zon.webp"
-                              data-fancybox="gallery"><span class="icon flaticon-expand">Scuba Diving in Goa</span></a>
+                          <div class="form-group">
+                            <button type="submit" class="theme-btn">
+                              <span class="btn-title">Plan Your Tour</span>
+                            </button>
                           </div>
-                        </div>
-                      </div>
-                      <!--Team Block-->
-                      <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                          <figure class="image">
-                            <a class="lightbox-image"
-                              href="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20 (1)_12_11zon.webp"
-                              alt=" Green Resort stay" title="Green Resort stay"><img width="400" height="300" src="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20 (1)_12_11zon.webp" alt="Green Resort stay" title="Green Resort stay" loading="lazy"  srcset="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20 (1)_12_11zon-mobile.webp 412w, images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20 (1)_12_11zon-700w.webp 700w, images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20 (1)_12_11zon.webp 944w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 944px" /></a>
-                          </figure>
-                          <div class="zoom-btn">
-                            <a class="lightbox-image zoom-link"
-                              href="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20 (1)_12_11zon.webp"
-                              data-fancybox="gallery"><span class="icon flaticon-expand">Green Resort stay</span></a>
-                          </div>
+                        </form>
+
+                        <div class="instruction">
+                          Do you need Flights tickets & suggestion or want to
+                          Customize your tour please contact our expert team.
                         </div>
                       </div>
                     </div>
                   </div>
-                  <section class="yacht-details">
-                    <div class="auto-container">
-                      <div class="row clearfix">
-                        <div class="content-column">
-                          <div class="inner">
-                            <h2>Tour<strong> Highlights</strong></h2>
-                            <div class="scroller-box">
-                              <div class="scroller">
-                                <div class="feature">
-                                  <div class="feature-inner">
-                                    <div class="icon">
-                                      <span class="flaticon-location"></span>
-                                    </div>
-                                    <h5>Visit the Offbeat Places in Goa.</h5>
-                                    <div class="text">
-                                      Relish a beautiful experience the former
-                                      Portuguese territory that offers the
-                                      beauty of golden shimmering beaches,
-                                      stellar nightlife, majestic waterfalls
-                                      and so much more.
-                                    </div>
-                                  </div>
-                                </div>
 
-                                <div class="feature">
-                                  <div class="feature-inner">
-                                    <div class="icon">
-                                      <span class="flaticon-picture"></span>
-                                    </div>
-                                    <h5>The Breathtaking Dudhsagar</h5>
-                                    <div class="text">
-                                      Trek to the top of the second largest
-                                      waterfall in India, Dudhsagar Waterfalls
-                                      and hear the mighty roar of white water
-                                      crashing over the boulders.
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="feature">
-                                  <div class="feature-inner">
-                                    <div class="icon">
-                                      <span class="flaticon-picture"></span>
-                                    </div>
-                                    <h5>Dinner Cruise Party in Goa</h5>
-                                    <div class="text">
-                                      Enjoy your Best Evening in Goa at Our
-                                      cruise. Enjot Sailing and sightseeing,
-                                      Buffet Dinner, Soft Drinks, In House Dj
-                                      and cultural activities.
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="feature">
-                                  <div class="feature-inner">
-                                    <div class="icon">
-                                      <span class="flaticon-scuba"></span>
-                                    </div>
-                                    <h5>
-                                      Scuba Diving Adventure at Grand Island
-                                    </h5>
-                                    <div class="text">
-                                      The Grand Island in Goa is the most
-                                      popular one day trip adventure and Goa
-                                      vacation gateways for tourists. The
-                                      Grand Island Scuba diving adventure is a
-                                      half-day retreat in the middle of the
-                                      famous Arabian sea. Scuba diving
-                                      experience in goa should be on
-                                      everyone's list of must-visit places.
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="feature">
-                                  <div class="feature-inner">
-                                    <div class="icon">
-                                      <span class="flaticon-sailboat"></span>
-                                    </div>
-                                    <h5>Thrilling Water Sports in Goa</h5>
-                                    <div class="text">
-                                      Enjoy Best Water Sports in Goa. Jet Skii
-                                      | Banana Ride| Bumper Ride| Parasailling
-                                      | Boat Ride | snorkeling
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="feature">
-                                  <div class="feature-inner">
-                                    <div class="icon">
-                                      <span class="flaticon-video"></span>
-                                    </div>
-                                    <h5>Amazing Beaches of Goa</h5>
-                                    <div class="text">
-                                      Explore the famous beaches of North Goa,
-                                      Witness amazing sunset at Arambol Beach
-                                      (Sweet Lake). Explore White Sandy
-                                      Beaches of South Goa..
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="feature">
-                                  <div class="feature-inner">
-                                    <div class="icon">
-                                      <span class="flaticon-location"></span>
-                                    </div>
-                                    <h5>Beautiful Locations to stay</h5>
-                                    <div class="text">
-                                      Enjoy Your Stay at Best Locations in
-                                      Goa. We Provide best Beach side stay
-                                      options Resorts, Hotel and villas.
-                                    </div>
-                                  </div>
+                  <!--Widget-->
+                  <div class="tour-widget advisor-widget carousel-widget">
+                    <div class="widget-inner">
+                      <div class="tour-widget-title">
+                        <h4>Need Assistance</h4>
+                      </div>
+                      <div
+                        class="advisor-carousel single-item-carousel owl-theme owl-carousel"
+                      >
+                        <!--Advisor Block-->
+                        <div class="advisor-block">
+                          <div class="inner-box">
+                            <div class="image-box">
+                              <a
+                                href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour Package details and further process"
+                                ><img
+                                  src="images/Andaman/havelock_71_11zon.webp"
+                                  alt="Goa Tour"
+                                  title="Goa Tour Package"
+                              /></a>
+                            </div>
+                            <div class="lower-box clearfix">
+                              <div class="lower-content">
+                                <h4>
+                                  <a
+                                    href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour Package details and further process"
+                                  ></a
+                                  >Trip Planner
+                                </h4>
+                                <div class="info">
+                                  <li>
+                                    <a href="tel:8287768117 "
+                                      ><span
+                                        class="flaticon-technology-1"
+                                      ></span>
+                                      Get Help</a
+                                    >
+                                  </li>
+                                  <span class="icon flaticon-assistance"></span
+                                  >8287768117
                                 </div>
                               </div>
                             </div>
@@ -678,644 +1642,374 @@
                         </div>
                       </div>
                     </div>
-                  </section>
-
-                  <div class="specs">
-                    <h4>Package Details</h4>
-                    <table class="specs-table">
-                      <tbody>
-                        <tr>
-                          <td>Duration</td>
-                          <td>4 Days, 3 Nights</td>
-                        </tr>
-                        <tr>
-                          <td>On Site Transfer</td>
-                          <td>Private Rented Vehicle for Sightseeing.</td>
-                        </tr>
-                        <tr>
-                          <td>Accommodation</td>
-                          <td>
-                            At best Beach Side locations in Goa. Beautiful
-                            Resorts and Luxury Villas.
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
                   </div>
 
-                  <!--Facility-->
-                  <div class="facilities">
-                    <h4>Package Incusions</h4>
-                    <div class="facility-box">
-                      <ul class="clearfix">
-                        <h6 style="color: midnightblue">Accommodation</h6>
-                        <li>At North Goa (3 Nights)</li>
-                      </ul>
-                      <ul class="clearfix">
-                        <h6 style="color: midnightblue">Meals</h6>
-                        <li>Breakfast for All days</li>
-                        <li>Day 2 & Day 3 Lunch</li>
-                        <li>Day 1 Dinner at Cruise Party</li>
-                      </ul>
-                      <ul class="clearfix">
-                        <h6 style="color: midnightblue">On Site Transfer</h6>
-                        <li>Own Personal Rented Vehicle with Fule.</li>
-                      </ul>
-                      <ul class="clearfix">
-                        <h6 style="color: midnightblue">Tickets</h6>
-                        <li>
-                          Scuba Diving Adventure & Water Sports at Grand
-                          Island, Goa.
-                        </li>
-                        <li>Dudhsagar Waterfall Trip</li>
-                        <li>Romatic Dinner Cruise Party</li>
-                      </ul>
-                      <ul class="clearfix">
-                        <h6 style="color: midnightblue">Sightseeing</h6>
-                        <li>
-                          Grand Island, Mandovi River, Aguada Fort, Sinquerim
-                          Beach, Candolim Beach
-                        </li>
-                        <li>
-                          Calangute Beach, Baga Beach, Anjuna Beach, Vagator
-                          Beach, Arambol Beach, Sweet Lake
-                        </li>
-                        <li>
-                          Mangueshi Temple Old, Panjim, Dhudhsagar Falls &
-                          Spice Plantations,Basilica of Bom Jesus Church
-                        </li>
-                      </ul>
-                      <h5 style="color: midnightblue">
-                        ADDITIONAL ACTIVITIES
-                      </h5>
-                      <details style="color: midnightblue">
-                        *You Can Customize this package according to your
-                        Needs and Budget. We Offer full Customised Package and
-                        Air travel also.
-                        <hr />
-                        <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour package details and further process"
-                          class="theme-btn btn-style-one">
-                          <div class="btn-title">
-                            Customize Your Tour Package
+                  <!--Widget-->
+                  <div class="tour-widget reviews-widget">
+                    <div class="widget-inner">
+                      <!--Review Block-->
+                      <div class="review-block">
+                        <div class="inner">
+                          <div class="rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
                           </div>
-                        </a>
-                      </details>
-                    </div>
-                  </div>
-
-                  <hr style="height: 2px" />
-                  <!--Included Material-->
-                  <div class="included-material">
-                    <h4>Goa Tour package Itinerary</h4>
-                    <div class="included-box">
-                      <div class="accordion-box">
-                        <!--Block-->
-                        <div class="accordion block">
-                          <div class="acc-btn">
-                            Day 1 : Check in to the Best Beach Side
-                            Hotels/Resort. Later Evening Enjoy Dinner cruise
-                            Party.
-                            <div class="icon flaticon-down-arrow"></div>
+                          <h5 class="rev-title">Best Place For Booking</h5>
+                          <div class="rev-text">
+                            The Goa was without a doubt is one of the Beautiful
+                            place in India, It has amazing white sand baech with
+                            rich History and Deep Forests. I had a great time
+                            with my husband in goa with these guys. I got
+                            affordable weekend gateway package, best for couples
+                            because hotel stays are really good. Thank you for
+                            beautiful experience.
                           </div>
-                          <div class="acc-content">
-                            <div class="content">
-                              <div class="text">
-                                <li style="list-style-type: disc">
-                                  Upon Arriaval Reach your Hotel form Airport
-                                  & Station.
-                                </li>
-
-                                <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                  <div class="image-box">
-                                    <figure class="image">
-                                      <a class="lightbox-image"
-                                        href="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.21_3_11zon.webp"
-                                        alt=" Goa Resort Stay" title="Goa Resort Stay"><img width="400" height="300" src="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.21_3_11zon.webp" alt="Goa Resort Stay" title="Goa Tour Stay" loading="lazy"  srcset="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.21_3_11zon-mobile.webp 412w, images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.21_3_11zon-700w.webp 700w, images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.21_3_11zon.webp 944w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 944px" /></a>
-                                    </figure>
-                                    <div class="zoom-btn">
-                                      <a class="lightbox-image zoom-link"
-                                        href="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.21_3_11zon.webp"
-                                        data-fancybox="gallery"><span class="icon flaticon-expand"
-                                          style="position: relative">Enjoy Stay at best location.</span></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <hr />
-
-                                <li style="list-style-type: disc">
-                                  Enjoy Dinner Cruise Party at evening. Pick
-                                  up from your pre-booked hotel. Traditional
-                                  Dance Performance Portuguese Dance, kottyo
-                                  Fugdi Dance, Goan Dance. Show Off Your Dance
-                                  Skills On The Popular Retro Songs And
-                                  Bollywood Numbers With The Dj.
-                                </li>
-
-                                <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                  <div class="image-box">
-                                    <figure class="image">
-                                      <a class="lightbox-image" href="images/goa-tour/cruise_7_11zon.webp"
-                                        alt=" Natural Bridge, Neil Island" title=" Neil Island"><img width="400" height="300" src="images/goa-tour/cruise_7_11zon.webp" alt="Dinner Cruise" title=" Dinner Cruise" loading="lazy"  srcset="images/goa-tour/cruise_7_11zon-mobile.webp 412w, images/goa-tour/cruise_7_11zon-700w.webp 700w, images/goa-tour/cruise_7_11zon.webp 900w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 900px" /></a>
-                                    </figure>
-                                    <div class="zoom-btn">
-                                      <a class="lightbox-image zoom-link" href="images/goa-tour/cruise_7_11zon.webp"
-                                        data-fancybox="gallery"><span class="icon flaticon-expand"
-                                          style="position: relative">Dinner Cruise Party</span></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <hr />
-                                <li style="list-style-type: disc">
-                                  The Package Includes 2 beer,2 Complimentary
-                                  Beverage, Snacks, Dinner Buffet(veg / Non
-                                  Veg Meal), And Desserts That Reflect The
-                                  Goan Flavour And Culture.
-                                </li>
-                                <li style="list-style-type: disc">
-                                  Enjoy A Memorable Evening With Exquisite
-                                  Dining & Cruising Experience On The Mandovi
-                                  River. The River Cruise Route Takes You From
-                                  Below The Atal Sethu To The Mouth Of The
-                                  River Mandovi (Entrance Of The Arabian Sea).
-                                </li>
-
-                                <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                  <div class="image-box">
-                                    <figure class="image">
-                                      <a class="lightbox-image" href="images/goa-tour/D_XnqsbXUAErvLr_9_11zon.webp"
-                                        alt=" Hotel in Andaman" title="Cruise Transport"><img width="400" height="300" src="images/goa-tour/D_XnqsbXUAErvLr_9_11zon.webp" alt="Cruise Party" title="Cruise Party" loading="lazy"  srcset="images/goa-tour/D_XnqsbXUAErvLr_9_11zon-mobile.webp 412w, images/goa-tour/D_XnqsbXUAErvLr_9_11zon-700w.webp 700w, images/goa-tour/D_XnqsbXUAErvLr_9_11zon.webp 1554w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1554px" /></a>
-                                    </figure>
-                                    <div class="zoom-btn">
-                                      <a class="lightbox-image zoom-link"
-                                        href="images/goa-tour/D_XnqsbXUAErvLr_9_11zon.webp"
-                                        data-fancybox="gallery"><span class="icon flaticon-expand"
-                                          style="position: relative">Party Cruise Goa</span></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                          <div class="icon-box">
+                            <span class="flaticon-quotation-mark"></span>
+                          </div>
+                          <div class="rev-info">
+                            <div class="name">Anita Sharma</div>
+                            <div class="designation">Blogger</div>
                           </div>
                         </div>
-
-                        <!--Block-->
-                        <div class="accordion block">
-                          <div class="acc-btn">
-                            Day 2 : TRIP TO GRAND ISLAND, GOA. SCUBA DIVING
-                            ADVENTURE & THRILLING WATERSPORTS.
-                            <div class="icon flaticon-down-arrow"></div>
-                          </div>
-                          <div class="acc-content">
-                            <div class="content">
-                              <div class="text">
-                                <li style="list-style-type: disc">
-                                  Pick-up for the enthralling activities will
-                                  be at 7 AM and pick-up locations would be
-                                  <strong>
-                                    Baga,Calangute, Candolim,Anjuna and
-                                    Arpora.</strong>
-                                  The trip will be starting from Sinquerim
-                                  Boat Jetty in a Long Tail boat at 8:30 AM to
-                                  the Grand Island where you can witness
-                                  amazing views to soothe your senses.
-                                </li>
-
-                                <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                  <div class="image-box">
-                                    <figure class="image">
-                                      <a class="lightbox-image" href="images/goa-tour/parasailing-in-india_4_11zon.webp"
-                                        alt=" Parasailing with Dip in Goa" title="Parasailing with Dip in Goa"><img width="400" height="300" src="images/goa-tour/parasailing-in-india_4_11zon.webp" alt="Parasailing with Dip in Goa" title="Parasailing Goa" loading="lazy"  srcset="images/goa-tour/parasailing-in-india_4_11zon-mobile.webp 412w, images/goa-tour/parasailing-in-india_4_11zon-700w.webp 700w, images/goa-tour/parasailing-in-india_4_11zon.webp 1260w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1260px" /></a>
-                                    </figure>
-                                    <div class="zoom-btn">
-                                      <a class="lightbox-image zoom-link"
-                                        href="images/goa-tour/parasailing-in-india_4_11zon.webp"
-                                        data-fancybox="gallery"><span class="icon flaticon-expand"
-                                          style="position: relative">Parasailing with Dip in Goa</span></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <hr />
-
-                                <li style="list-style-type: disc">
-                                  Enjoy 45-60 minutes of a boat ride to the
-                                  vicinity of Grand islands till 10:30 AM. If
-                                  you are lucky enough, you might have a
-                                  chance to spot dolphins during the journey.
-                                  Curb your hunger pangs at 10:30 AM with
-                                  sumptuous meals such as light snacks and
-                                  unlimited VEG/NON-VEG lunch.
-                                </li>
-
-                                <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                  <div class="image-box">
-                                    <figure class="image">
-                                      <a class="lightbox-image" href="images/scuba9.webp"
-                                        alt=" Cruise Scuba Divingin Goa" title="Scuba diving goa"><img fetchpriority="high"
-                                          src="images/scuba9.webp" alt="Scuba Goa" title="Goa Scuba Diving"  loading="eager"  srcset="images/scuba9-mobile.webp 412w, images/scuba9-700w.webp 700w, images/scuba9.webp 800w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 800px" /></a>
-                                    </figure>
-                                    <div class="zoom-btn">
-                                      <a class="lightbox-image zoom-link" href="images/scuba9.webp"
-                                        data-fancybox="gallery"><span class="icon flaticon-expand"
-                                          style="position: relative">Goa Scuba Diving Adventure</span></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <hr />
-                                <li style="list-style-type: disc">
-                                  Get refreshing and chilled soft drinks or
-                                  beer (3 pints per person) as complimentary.
-                                  Relish the astonishing underwater views for
-                                  about 15 minutes depending on the factors
-                                  like weather and pressure of the water.
-                                </li>
-
-                                <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                  <div class="image-box">
-                                    <figure class="image">
-                                      <a class="lightbox-image"
-                                        href="images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon.webp"
-                                        alt=" Grand Island, Goa" title="Grand Island, Goa"><img width="400" height="300" src="images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon.webp" alt="Grand Island, Goa" title="Grand Island, Goa" loading="lazy"  srcset="images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon-mobile.webp 412w, images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon.webp 700w" sizes="(max-width: 600px) 412px, 700px" /></a>
-                                    </figure>
-                                    <div class="zoom-btn">
-                                      <a class="lightbox-image zoom-link"
-                                        href="images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon.webp"
-                                        data-fancybox="gallery"><span class="icon flaticon-expand"
-                                          style="position: relative">Grand Island, Goa</span></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <hr />
-                                <li style="list-style-type: disc">
-                                  Grab the most thrilling water sports
-                                  experience at 4:00 PM that includes a Banana
-                                  ride, Speed Boat ride, Bumper ride, and
-                                  Jetski. (Included in certain packages).
-                                  Activities will be performed with proper
-                                  safety and with all the necessary safety
-                                  equipment. Get yourself dropped at the
-                                  drop-off locations same as mentioned above
-                                  at 5:30-6:00 PM.
-                                </li>
-                                <li style="list-style-type: disc">
-                                  Proceed for the drop at the hotel after an
-                                  exciting and fulfilling day.
-                                </li>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!--Block-->
-                        <div class="accordion block">
-                          <div class="acc-btn">
-                            Day 3 : Embark on the trip to 2nd Highest
-                            Waterfall of india. Trip to Dudhsagar & Spice
-                            Plantations
-                            <div class="icon flaticon-down-arrow"></div>
-                          </div>
-                          <div class="acc-content">
-                            <div class="content">
-                              <div class="text">
-                                <li style="list-style-type: disc">
-                                  Jungle Jeep Safari Ride to Dudhsagar Falls
-                                </li>
-                                <li style="list-style-type: disc">
-                                  Enjoy & swim at Dudhsagar Waterfall
-                                </li>
-                                <li style="list-style-type: disc">
-                                  We provide you with life jackets for your
-                                  safety.
-                                </li>
-                                <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                  <div class="image-box">
-                                    <figure class="image">
-                                      <a class="lightbox-image" href="images/Andaman/du_66_11zon.webp"
-                                        alt=" Dudhsagar Waterfall Trip" title="Dudhsagar Waterfall Trip"><img width="400" height="300" src="images/Andaman/du_66_11zon.webp" alt="Dudhsagar Waterfall Trip" title="Dudhsagar Waterfall Trip" loading="lazy"  srcset="images/Andaman/du_66_11zon-mobile.webp 412w, images/Andaman/du_66_11zon.webp 720w" sizes="(max-width: 600px) 412px, 720px" /></a>
-                                    </figure>
-                                    <div class="zoom-btn">
-                                      <a class="lightbox-image zoom-link" href="images/Andaman/du_66_11zon.webp"
-                                        data-fancybox="gallery"><span class="icon flaticon-expand"
-                                          style="position: relative">Dudhsagar Waterfall Trip</span></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <hr />
-                                <li style="list-style-type: disc">
-                                  Tour at Spice Plantation, Unlimited
-                                  Traditional Buffet Lunch (veg/non veg) at
-                                  Spice Plantation
-                                </li>
-
-                                <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                  <div class="image-box">
-                                    <figure class="image">
-                                      <a class="lightbox-image" href="images/Andaman/IMG_20211104_134842_3_11zon.webp"
-                                        alt=" Jungle Jeep Safari" title="Jungle Jeep Safari"><img width="400" height="300" src="images/Andaman/IMG_20211104_134842_3_11zon.webp" alt="Jungle Jeep Safari" title="Trip to Neil Island" loading="lazy"  srcset="images/Andaman/IMG_20211104_134842_3_11zon-mobile.webp 412w, images/Andaman/IMG_20211104_134842_3_11zon-700w.webp 700w, images/Andaman/IMG_20211104_134842_3_11zon.webp 816w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 816px" /></a>
-                                    </figure>
-                                    <div class="zoom-btn">
-                                      <a class="lightbox-image zoom-link"
-                                        href="images/Andaman/IMG_20211104_134842_3_11zon.webp"
-                                        data-fancybox="gallery"><span class="icon flaticon-expand"
-                                          style="position: relative">Jungle Jeep Safari</span></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <hr />
-                                <li style="list-style-type: disc">
-                                  Visit Old Goa Churches. The UNESCO World
-                                  Heritage site. Basilica of Bom Jesus Church
-                                </li>
-                                <li style="list-style-type: disc">
-                                  Proceed for the drop at the hotel after an
-                                  exciting and fulfilling day.
-                                </li>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!--Block-->
-                        <div class="accordion block">
-                          <div class="acc-btn">
-                            Day 4 : Morning Departure with Amazinf Memories.
-                            <div class="icon flaticon-down-arrow"></div>
-                          </div>
-                          <div class="acc-content">
-                            <div class="content">
-                              <div class="text">
-                                <li style="list-style-type: disc">
-                                  Enjoy Breakfast at your Room. Later Checkout
-                                  from the hotel and back to home with amazing
-                                  experience of Goa.
-                                </li>
-
-                                <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                  <div class="image-box">
-                                    <figure class="image">
-                                      <a class="lightbox-image" href="images/goa-tour/1131540_5_11zon.webp"
-                                        alt=" Beautiful Sunset" title="Beautiful Sunset"><img width="400" height="300" src="images/goa-tour/1131540_5_11zon.webp" alt="Beautiful Sunset" title="Beautiful Sunset" loading="lazy"  srcset="images/goa-tour/1131540_5_11zon-mobile.webp 412w, images/goa-tour/1131540_5_11zon-700w.webp 700w, images/goa-tour/1131540_5_11zon.webp 1200w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1200px" /></a>
-                                    </figure>
-                                    <div class="zoom-btn">
-                                      <a class="lightbox-image zoom-link" href="images/goa-tour/1131540_5_11zon.webp"
-                                        data-fancybox="gallery"><span class="icon flaticon-expand"
-                                          style="position: relative">Beautiful Sunset</span></a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <hr />
-                                <hr />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="instruction">
-                        * You Can Also book Flights at Best Price. Some
-                        surprise things waiting for you in tour. Get all your
-                        answers on your whatsapp number. you can book through
-                        whatsapp and .
                       </div>
                       <hr />
-                      <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tours package details and further process"
-                        class="theme-btn btn-style-one">
-                        <div class="btn-title">Book Your Tour</div>
+                      <div class="review-block">
+                        <div class="inner">
+                          <div class="rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                          <h5 class="rev-title">Best tour Package</h5>
+                          <div class="rev-text">
+                            Thanks to Aarush, Who Booked this Amazing Tour for
+                            me at first, I thought that its the same tour
+                            package as other companies sell but they are
+                            different because they know some of the best
+                            locations in goa and provide you with the vehicle of
+                            your own choice. So I can travel anywhere I want
+                            this is a good package to allow me to travel with
+                            freedom.
+                          </div>
+                          <div class="icon-box">
+                            <span class="flaticon-quotation-mark"></span>
+                          </div>
+                          <div class="rev-info">
+                            <div class="name">Mohit Raina</div>
+                            <div class="designation">Business</div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="review-block">
+                        <div class="inner">
+                          <div class="rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                          <h5 class="rev-title">Great Experience in Goa</h5>
+                          <div class="rev-text">
+                            My Tour Package is full of Adventure I never thought
+                            that I was able to enjoy scuba diving and amazing
+                            water sports in this package. it was an amazing
+                            experience with very good prices. Hotel Stay are
+                            Very clean and at Best Locations. I explored South
+                            and North Goa with Hassle free transfer and stay.
+                          </div>
+                          <div class="icon-box">
+                            <span class="flaticon-quotation-mark"></span>
+                          </div>
+                          <div class="rev-info">
+                            <div class="name">Vartul Tyagi</div>
+                            <div class="designation">Business Developer</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Upcoming Tours Section-->
+      <section class="upcoming-tours">
+        <div class="auto-container">
+          <div class="upper-title">
+            <h4>Bestselling Tours & Packages</h4>
+          </div>
+          <div class="row clearfix">
+            <!--Package Block-->
+            <div class="package-block-two col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="image-box">
+                  <a href="Party-Cruise.html"
+                    ><img
+                      src="images/cruise.webp"
+                      alt="Dinner Cruise Party Goa"
+                      title="Goa Dinner Cruise"
+                  /></a>
+                  <div class="pricing">
+                    <div class="price">
+                      <div class="price-title">From</div>
+                      <div class="unit"><span>₹1,800/- PERSON</span></div>
+                    </div>
+                  </div>
+                  <div class="hover-box">
+                    <div class="hover-link">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Dinner Cruise Party package details and further process"
+                        class="default-link"
+                      >
+                        <span class="icon flaticon-logout"></span>
+                        <span class="link-text">Check Availability</span>
                       </a>
                     </div>
+                    <div class="rating">
+                      <span class="txt">4.8 [654 Reviews]</span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h4>
+                    <a href="Party-Cruise.html">Dinner Party Cruise in Goa</a>
+                  </h4>
+                  <div class="info">
+                    <ul class="clearfix">
+                      <li>
+                        <span class="icon flaticon-wall-clock"></span> Duration:
+                        4 Hour
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Package Block-->
+            <div class="package-block-two col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="image-box">
+                  <a href="goa-weekend-trip.html"
+                    ><img
+                      src="images/goa-tour/K34ZZZQ24YOOS2IX7UO4OU6QDM-scaled_19_11zon.webp"
+                      alt="Goa Weekend Gateway"
+                      title="Goa Weekend Gateway"
+                  /></a>
+                  <div class="pricing">
+                    <div class="price">
+                      <div class="price-title">From</div>
+                      <div class="unit"><span>₹18,000/- PERSON</span></div>
+                    </div>
+                  </div>
+                  <div class="hover-box">
+                    <div class="hover-link">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour package details and further process"
+                        class="default-link"
+                      >
+                        <span class="icon flaticon-logout"></span>
+                        <span class="link-text">Check Availability</span>
+                      </a>
+                    </div>
+                    <div class="rating">
+                      <span class="txt">4.7 [157 Reviews]</span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h4>
+                    <a href="goa-weekend-trip.html"
+                      >EXOTIC GOA TOUR Weekend Gateway PACKAGE</a
+                    >
+                  </h4>
+                  <div class="info">
+                    <ul class="clearfix">
+                      <li>
+                        <span class="icon flaticon-wall-clock"></span> Duration:
+                        3 Days + 2 Nights
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!--Widgets Side-->
-            <div class="widgets-side col-lg-4 col-md-6 col-sm-12">
-              <div class="widgets-content">
-                <!--Widget-->
-                <div class="tour-widget single-booking-widget">
-                  <div class="widget-inner">
-                    <div class="upper-info clearfix">
-                      <div class="price-info">
-                        <div class="icon">
-                          <span class="flaticon-assistance"></span>
-                        </div>
-                        <div class="p-title">Send Your</div>
-                        <div class="p-amount">
-                          Booking <span>Details</span>
-                        </div>
-                      </div>
+            <!--Package Block-->
+            <div class="package-block-two col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="image-box">
+                  <a href="Scuba-Adventure.html"
+                    ><img
+                      src="images/goa-tour/unnamed-4_16_11zon.webp"
+                      alt="Scuba Diving Package Goa"
+                      title="Scuba Diving Package Goa"
+                  /></a>
+                  <div class="pricing">
+                    <div class="price">
+                      <div class="price-title">From</div>
+                      <div class="unit"><span>₹3,500/- PERSON</span></div>
                     </div>
-                    <div class="default-form main-booking-form">
-                      <form method="post" action="sendmail2.php">
-                        <h5>Get Free Goa Tour Guide & Special Discounts</h5>
+                  </div>
+                  <div class="hover-box">
+                    <div class="hover-link">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Scuba Diving package details and further process"
+                        class="default-link"
+                      >
+                        <span class="icon flaticon-logout"></span>
+                        <span class="link-text">Check Availability</span>
+                      </a>
+                    </div>
+                    <div class="rating">
+                      <span class="txt">4.8 [980 Reviews]</span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h4>
+                    <a href="Watersport-Scuba-combo-goa.html"
+                      >Scuba Diving in Goa with Watersports Combo</a
+                    >
+                  </h4>
+                  <div class="info">
+                    <ul class="clearfix">
+                      <li>
+                        <span class="icon flaticon-wall-clock"></span> Duration:
+                        1 Days
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                        <div class="form-group">
-                          <div class="field-inner">
-                            <input type="text" name="username" placeholder="Your Name" required="yes" value="" />
-                          </div>
-                        </div>
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <!--Widgets Section-->
+        <div class="widgets-section">
+          <div class="auto-container">
+            <div class="row clearfix">
+              <!--Column-->
+              <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget info-widget">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral."
+                    /></a>
+                  </div>
+                  <div class="info">
+                    <ul>
+                      <li>
+                        <span class="flaticon-placeholder-1"></span> Clangute
+                        Circle <br />Goa Tour<br />403615
+                      </li>
+                      <li>
+                        <span class="flaticon-phone-call"></span>
+                        Call us <a href="tel:8287768117 ">8287768117 </a>
+                      </li>
+                      <li>
+                        <span class="flaticon-envelope"></span>
+                        <a href="mailto:contact@scubadivingadventure.in"
+                          >contact@scubadivingadventure.in</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-                        <div class="form-group">
-                          <div class="field-inner">
-                            <input type="tel" name="phone" placeholder="Phone" required="yes" value="" />
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="field-inner">
-                            <input type="email" name="email" placeholder="Email" required="yes" value="" />
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="field-inner">
-                            Trip Date:
-                            <input type="date" name="tripdate" placeholder="Tripdate" required="yes" value="" />
-                          </div>
-                        </div>
+              <!--Column-->
+              <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <div class="widget-content">
+                    <div class="widget-title">
+                      <h4>Goa Packages</h4>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <ul class="links">
+                          <li>
+                            <a href="goa-tour-packages.html"
+                              >Goa Tour Packages
+                            </a>
+                          </li>
+                          <li>
+                            <a href="goa-tour-package-4N-5D.html"
+                              >Goa Tour 5D-4N package</a
+                            >
+                          </li>
+                          <li>
+                            <a href="goa-tour-package-4D-3N.html"
+                              >Goa Tour 4D-3N package</a
+                            >
+                          </li>
+                          <li>
+                            <a href="goa-weekend-trip.html"
+                              >Goa Weekend Gateway</a
+                            >
+                          </li>
+                          <li>
+                            <a href="Scuba-Adventure.html"
+                              >Scuba Diving in Goa
+                            </a>
+                          </li>
 
-                        <div class="form-group">
-                          <div class="field-inner">
-                            <select class="custom-select-box" name="guest">
-                              <option>No. of Guest</option>
-                              <option>01</option>
-                              <option>02</option>
-                              <option>03</option>
-                              <option>04</option>
-                              <option>05</option>
-                              <option>More than 5</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div class="form-group">
-                          <div class="field-label">Are you intrested in?</div>
-                          <div class="field-inner">
-                            <ul class="additional-services">
-                              <li>
-                                <div class="check-block">
-                                  <input type="checkbox" id="check-1" name="check-1" /><label for="check-1">Tour
-                                    package</label>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="check-block">
-                                  <input type="checkbox" id="check-2" name="check-2" /><label for="check-2">Scuba
-                                    Diving</label>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="check-block">
-                                  <input type="checkbox" id="check-3" name="check-3" /><label
-                                    for="check-3">Watersports</label>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="check-block">
-                                  <input type="checkbox" id="check-4" name="check-4" /><label for="check-4">Boat
-                                    Tour</label>
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-
-                        <div class="form-group">
-                          <button type="submit" class="theme-btn">
-                            <span class="btn-title">Plan Your Tour</span>
-                          </button>
-                        </div>
-                      </form>
-
-                      <div class="instruction">
-                        Do you need Flights tickets & suggestion or want to
-                        Customize your tour please contact our expert team.
+                          <li>
+                            <a href="Party-Cruise.html"
+                              >Romantic Dinner Cruise Party</a
+                            >
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <!--Widget-->
-                <div class="tour-widget advisor-widget carousel-widget">
-                  <div class="widget-inner">
-                    <div class="tour-widget-title">
-                      <h4>Need Assistance</h4>
+              <!--Column-->
+              <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <div class="widget-content">
+                    <div class="widget-title">
+                      <h4>Popular Links</h4>
                     </div>
-                    <div class="advisor-carousel single-item-carousel owl-theme owl-carousel">
-                      <!--Advisor Block-->
-                      <div class="advisor-block">
-                        <div class="inner-box">
-                          <div class="image-box">
-                            <a
-                              href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour Package details and further process"><img width="400" height="300" src="images/Andaman/havelock_71_11zon.webp" alt="Goa Tour" title="Goa Tour Package" loading="lazy"  srcset="images/Andaman/havelock_71_11zon-mobile.webp 412w, images/Andaman/havelock_71_11zon-700w.webp 700w, images/Andaman/havelock_71_11zon.webp 975w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 975px" /></a>
-                          </div>
-                          <div class="lower-box clearfix">
-                            <div class="lower-content">
-                              <h4>
-                                <a
-                                  href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour Package details and further process"></a>Trip
-                                Planner
-                              </h4>
-                              <div class="info">
-                                <li>
-                                  <a href="tel:8287768117 "><span class="flaticon-technology-1"></span>
-                                    Get Help</a>
-                                </li>
-                                <span class="icon flaticon-assistance"></span>8287768117
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!--Widget-->
-                <div class="tour-widget reviews-widget">
-                  <div class="widget-inner">
-                    <!--Review Block-->
-                    <div class="review-block">
-                      <div class="inner">
-                        <div class="rating">
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                        </div>
-                        <h5 class="rev-title">Best Place For Booking</h5>
-                        <div class="rev-text">
-                          The Goa was without a doubt is one of the Beautiful
-                          place in India, It has amazing white sand baech with
-                          rich History and Deep Forests. I had a great time
-                          with my husband in goa with these guys. I got
-                          affordable weekend gateway package, best for couples
-                          because hotel stays are really good. Thank you for
-                          beautiful experience.
-                        </div>
-                        <div class="icon-box">
-                          <span class="flaticon-quotation-mark"></span>
-                        </div>
-                        <div class="rev-info">
-                          <div class="name">Anita Sharma</div>
-                          <div class="designation">Blogger</div>
-                        </div>
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="review-block">
-                      <div class="inner">
-                        <div class="rating">
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                        </div>
-                        <h5 class="rev-title">Best tour Package</h5>
-                        <div class="rev-text">
-                          Thanks to Aarush, Who Booked this Amazing Tour for
-                          me at first, I thought that its the same tour
-                          package as other companies sell but they are
-                          different because they know some of the best
-                          locations in goa and provide you with the vehicle of
-                          your own choice. So I can travel anywhere I want
-                          this is a good package to allow me to travel with
-                          freedom.
-                        </div>
-                        <div class="icon-box">
-                          <span class="flaticon-quotation-mark"></span>
-                        </div>
-                        <div class="rev-info">
-                          <div class="name">Mohit Raina</div>
-                          <div class="designation">Business</div>
-                        </div>
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="review-block">
-                      <div class="inner">
-                        <div class="rating">
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                        </div>
-                        <h5 class="rev-title">Great Experience in Goa</h5>
-                        <div class="rev-text">
-                          My Tour Package is full of Adventure I never thought
-                          that I was able to enjoy scuba diving and amazing
-                          water sports in this package. it was an amazing
-                          experience with very good prices. Hotel Stay are
-                          Very clean and at Best Locations. I explored South
-                          and North Goa with Hassle free transfer and stay.
-                        </div>
-                        <div class="icon-box">
-                          <span class="flaticon-quotation-mark"></span>
-                        </div>
-                        <div class="rev-info">
-                          <div class="name">Vartul Tyagi</div>
-                          <div class="designation">Business Developer</div>
-                        </div>
+                    <div class="row clearfix">
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <ul class="links">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About Us</a></li>
+                          <li><a href="contact.html">Contact Us</a></li>
+                          <li><a href="FAQ.html">FAQ</a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -1324,305 +2018,55 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!--Upcoming Tours Section-->
-    <section class="upcoming-tours">
-      <div class="auto-container">
-        <div class="upper-title">
-          <h4>Bestselling Tours & Packages</h4>
-        </div>
-        <div class="row clearfix">
-          <!--Package Block-->
-          <div class="package-block-two col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image-box">
-                <a href="Party-Cruise.html"><img width="400" height="300" loading="lazy" src="images/cruise.webp" alt="Dinner Cruise Party Goa" title="Goa Dinner Cruise"  srcset="images/cruise-mobile.webp 412w, images/cruise-700w.webp 700w, images/cruise.webp 1200w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1200px" /></a>
-                <div class="pricing">
-                  <div class="price">
-                    <div class="price-title">From</div>
-                    <div class="unit"><span>₹1,800/- PERSON</span></div>
-                  </div>
-                </div>
-                <div class="hover-box">
-                  <div class="hover-link">
-                    <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Dinner Cruise Party package details and further process"
-                      class="default-link">
-                      <span class="icon flaticon-logout"></span>
-                      <span class="link-text">Check Availability</span>
-                    </a>
-                  </div>
-                  <div class="rating">
-                    <span class="txt">4.8 [654 Reviews]</span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="auto-container">
+            <div class="inner clearfix">
+              <div class="copyright">
+                Copyright &copy; 2025 Scuba Adventure. All Rights Reserved.
               </div>
-              <div class="content">
-                <h4>
-                  <a href="Party-Cruise.html">Dinner Party Cruise in Goa</a>
-                </h4>
-                <div class="info">
-                  <ul class="clearfix">
-                    <li>
-                      <span class="icon flaticon-wall-clock"></span> Duration:
-                      4 Hour
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Package Block-->
-          <div class="package-block-two col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image-box">
-                <a href="goa-weekend-trip.html"><img width="400" height="300" src="images/goa-tour/K34ZZZQ24YOOS2IX7UO4OU6QDM-scaled_19_11zon.webp" alt="Goa Weekend Gateway" title="Goa Weekend Gateway" loading="lazy"  srcset="images/goa-tour/K34ZZZQ24YOOS2IX7UO4OU6QDM-scaled_19_11zon-mobile.webp 412w, images/goa-tour/K34ZZZQ24YOOS2IX7UO4OU6QDM-scaled_19_11zon-700w.webp 700w, images/goa-tour/K34ZZZQ24YOOS2IX7UO4OU6QDM-scaled_19_11zon.webp 1920w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1920px" /></a>
-                <div class="pricing">
-                  <div class="price">
-                    <div class="price-title">From</div>
-                    <div class="unit"><span>₹18,000/- PERSON</span></div>
-                  </div>
-                </div>
-                <div class="hover-box">
-                  <div class="hover-link">
-                    <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour package details and further process"
-                      class="default-link">
-                      <span class="icon flaticon-logout"></span>
-                      <span class="link-text">Check Availability</span>
-                    </a>
-                  </div>
-                  <div class="rating">
-                    <span class="txt">4.7 [157 Reviews]</span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="content">
-                <h4>
-                  <a href="goa-weekend-trip.html">EXOTIC GOA TOUR Weekend Gateway PACKAGE</a>
-                </h4>
-                <div class="info">
-                  <ul class="clearfix">
-                    <li>
-                      <span class="icon flaticon-wall-clock"></span> Duration:
-                      3 Days + 2 Nights
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Package Block-->
-          <div class="package-block-two col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image-box">
-                <a href="Scuba-Adventure.html"><img width="400" height="300" loading="lazy" src="images/goa-tour/unnamed-4_16_11zon.webp" alt="Scuba Diving Package Goa" title="Scuba Diving Package Goa" /></a>
-                <div class="pricing">
-                  <div class="price">
-                    <div class="price-title">From</div>
-                    <div class="unit"><span>₹3,500/- PERSON</span></div>
-                  </div>
-                </div>
-                <div class="hover-box">
-                  <div class="hover-link">
-                    <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Scuba Diving package details and further process"
-                      class="default-link">
-                      <span class="icon flaticon-logout"></span>
-                      <span class="link-text">Check Availability</span>
-                    </a>
-                  </div>
-                  <div class="rating">
-                    <span class="txt">4.8 [980 Reviews]</span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="content">
-                <h4>
-                  <a href="Watersport-Scuba-combo-goa.html">Scuba Diving in Goa with Watersports Combo</a>
-                </h4>
-                <div class="info">
-                  <ul class="clearfix">
-                    <li>
-                      <span class="icon flaticon-wall-clock"></span> Duration:
-                      1 Days
-                    </li>
-                  </ul>
-                </div>
+              <div class="bottom-links">
+                <a href="terms-and-condition.html">Terms of Use</a> &
+                <a href="privacy-policy.html">Private Policy</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </footer>
+    </div>
 
-        </main>
+    <!--End pagewrapper-->
 
-<!-- Main Footer -->
-    <footer class="main-footer">
-      <!--Widgets Section-->
-      <div class="widgets-section">
-        <div class="auto-container">
-          <div class="row clearfix">
-            <!--Column-->
-            <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
-              <div class="footer-widget info-widget">
-                <div class="logo">
-                  <a href="index.html"><img loading="lazy" src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." width="160" height="160" style="aspect-ratio: 1/1; width: auto; height: auto; max-width: 100%;" /></a>
-                </div>
-                <div class="info">
-                  <ul>
-                    <li>
-                      <span class="flaticon-placeholder-1"></span> Clangute
-                      Circle <br />Goa Tour<br />403615
-                    </li>
-                    <li>
-                      <span class="flaticon-phone-call"></span>
-                      Call us <a href="tel:8287768117 ">8287768117 </a>
-                    </li>
-                    <li>
-                      <span class="flaticon-envelope"></span>
-                      <a href="mailto:contact@scubadivingadventure.in">contact@scubadivingadventure.in</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+    <!--Scroll to top-->
+    <a
+      href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour package details and further process"
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <div class="scroll-to-top scroll-to-target" data-target="html">
+      <span class="icon flaticon-back"></span>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/datetimepicker.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/element-in-view.js"></script>
+    <script src="js/custom-script.js"></script>
 
-            <!--Column-->
-            <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
-              <div class="footer-widget links-widget">
-                <div class="widget-content">
-                  <div class="widget-title">
-                    <h4>Goa Packages</h4>
-                  </div>
-                  <div class="row clearfix">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                      <ul class="links">
-                        <li>
-                          <a href="goa-tour-packages.html">Goa Tour Packages
-                          </a>
-                        </li>
-                        <li>
-                          <a href="goa-tour-package-4N-5D.html">Goa Tour 5D-4N package</a>
-                        </li>
-                        <li>
-                          <a href="goa-tour-package-4D-3N.html">Goa Tour 4D-3N package</a>
-                        </li>
-                        <li>
-                          <a href="goa-weekend-trip.html">Goa Weekend Gateway</a>
-                        </li>
-                        <li>
-                          <a href="Scuba-Adventure.html">Scuba Diving in Goa
-                          </a>
-                        </li>
+    <!--Coockie-->
 
-                        <li>
-                          <a href="Party-Cruise.html">Romantic Dinner Cruise Party</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <!-- Source Code Protection JavaScript --></div>
 
-            <!--Column-->
-            <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
-              <div class="footer-widget links-widget">
-                <div class="widget-content">
-                  <div class="widget-title">
-                    <h4>Popular Links</h4>
-                  </div>
-                  <div class="row clearfix">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                      <ul class="links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="FAQ.html">FAQ</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-        <div class="auto-container">
-          <div class="inner clearfix">
-            <div class="copyright">
-              Copyright &copy; 2025 Scuba Adventure. All Rights Reserved.
-            </div>
-            <div class="bottom-links">
-              <a href="terms-and-condition.html">Terms of Use</a> &
-              <a href="privacy-policy.html">Private Policy</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <!--End pagewrapper-->
-
-  <!--Scroll to top-->
-  <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour package details and further process"
-    class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
-  </a>
-  <div class="scroll-to-top scroll-to-target" aria-label="Scroll to top" data-target="html">
-    <span class="icon flaticon-back"></span>
-  </div>
-  <script defer src="js/jquery.js"></script>
-  <script src="js/popper.min.js" defer></script>
-  <script src="js/bootstrap.min.js" defer></script>
-  <script src="js/jquery.fancybox.min.js" defer></script>
-  <script src="js/jquery-ui.min.js" defer></script>
-  <script src="js/owl.min.js" defer></script>
-  <script src="js/wow.js" defer></script>
-  <script src="js/appear.js" defer></script>
-  <script src="js/scrollbar.js" defer></script>
-  <script src="js/paroller.js" defer></script>
-  <script src="js/isotope.js" defer></script>
-  <script src="js/element-in-view.js" defer></script>
-  <script src="js/custom-script.min.js" defer></script>
-
-  <!--Coockie-->
-
-
-
-<script>
-if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('sw.js').then(function(registration) {
-            console.log('ServiceWorker registration successful');
-        }).catch(function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-        });
-    });
-}
-</script>
-
-</body>
-
+    
+  </body>
 </html>

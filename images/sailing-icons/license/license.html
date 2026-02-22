@@ -1,50 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-  <style>    /* Preloader Styles Start */
-    .preloader {
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: #ffffff;
-      z-index: 999999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-    }
-    
-    .preloader.loaded {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    .preloader .icon {
-      width: 60px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .infinity-path {
-      fill: none;
-      stroke: #ff4d4d;
-      stroke-width: 4;
-      stroke-dasharray: 250;
-      stroke-dashoffset: 250;
-      animation: dash 2.5s linear infinite;
-    }
-
-    @keyframes dash {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-    /* Preloader Styles End */</style>
-  
 	<meta charset="UTF-8">
 	<title>User License</title>
 	<meta http-equiv="refresh" content="1; url="https://www.flaticon.com/profile/license/fi/SwkgUxJEL3JglsTgaFIv-7Lfhb7w7SVQlh01IZZJdyFdCikWkOQMB_si9cSO7vWILU5QekSe9Ql9PUpgkXTpmCVvYUZwcfw1fdreaHQ8rDLkEb6Pgnf-NY2Qhdc3nnZDNx_kYe2eoFlKFja1bERIWzhCqD_yauRPTlcp-nmWRz8bVOenX9lFgZYeaSJGi8Ho0X-0rbm9OgKkk3igyF-Z12eG1YATY40kABnC6utvTj3-FgrbPak283a-fVryVOZvFC5O447tkxaIa86Rlc1oyokWLGkn7cwq0E8uCkfsqOru0fZbUynkc4trAclpvsU4voTT0pUQM21--2Ycn1gp31PITI9_HFzHc-udOvJ_WBqBLj1ahK3ruH_0AXxVWKPRy5jfG-oQyB-GdoaC056HqtFBF_bCuzLeRXPrgSYt3P3ylap9qdBC2n7irBCRumXLFSk2eBpWHRoperb12ZU6_6jDneQ9QadK85NWalEro83Z0YTWx7Bm-pvkEBrYWQCasQMKUtK8Z0E9R2qDPvv6x4XNjbMuc2PnbEIDzm9KvarZfz71XM38rV4Sfb2aq3bFvBdiilSA57PpXmx7fhMlhBNZNkC9s5KAquldeaFjmbkiYm3hQ8BYhBc1UKLIVzwxOkXBbbyquilv9lsNj_sAxERK6n8pxnPPRph-gh9e_zgKq1vlTYeccygWg_J1eZLyfq6bCWGMdTUahsMpiEHPhABX5XwzT2VTWeVkt56cLO74AU0fvs3rxJ4dwYygcgrmDkdb8cLSwGUqXIOr3N3tdj8DvOwUTOlRXx2OyaMGzMvesHt5jmrgR6slq7qd2eZKxBxudQPodI_4irKn76IV1ec3QVLw9ii37YQkH8v9cfy70fUAol8_iSmsW3DL7OLfL-EQF5-FCXvfx9J8eKrXC3Rx-Ez_0N9jDc9Usj4K6thX9cIKIsYTMGSPXWyLce1M_injiNDSbG5evOVfwcwiEO-5lk3pxLgD42cTzXBZ6H4u6XgbST-vUG6CGgr7FqC3hg45yFbIExg-NLR6CZ6b6CtO3xXjbHfCxseAEOxxjHy7pzPKjJKr5KGt3HhAGAzxJHSuZ6KR0arFhrvTnE2HzWKIpVgE_uTyYKaA2b1S9kITgdwH2wObcm0tpWrz9Uv_xBr9NrLFguXfgRbMd2aA073ZFeETa7otQC8Ao6cZVlZSTG3NF8aZgzE2vjbTNFThmXnPsPWiGiztzK7kUv5_F3s01i9KG0UBk44G78PRVOi6AexnYq8SwcErsSI-Twx2-joOPmEaJ2nJwTCpPNFQ9Qbs_YB9QPMXMoTkbZNMFpkgpEvlpcgLafYk0KffhVPQ8XnIdT1gh83jE8s0aS8U_cN_AKVK6AnEA72GDY6PWOKfOxGOtkkm2RWWAmSXiNtH76LM9bHYQaq0TAAxB8CyDcOEdrg7LjoVdSkLbESE1oNZBs0QE-9p-2hEIR85rn6st_X2bh-YOt-AsCVXryfUyQhmSLh7yyk9UmINg5cH6gviX9TwdW7Vw41P6_ZgnkX-iq9Kmw01Fchyw0oARehlhMCSIQ1XEK8pAuziNvbs8muofvWN3EpYa5CTq7mk5dasQ5Lm3lis--bP8MjiWgv8q33pE68IlTmxp8gcNbh83Lg1LVmx5Up44_Tfsv9bH4LyxejIiMHdokpT7g-l1qYCYcCwsN4bUYhCfO-JD1M2Esdd2eokYiDwf7irXbvFP8X1bxVgNXDqC2G8B0U_lkqxPP4Fz-VRbUoAzNfk9TzAsgqBmcXTN8c_0cvStnGUkLel3jK8juMmkMNKLlTZe8Vy0OJNboHcPT0XdFUF7ttbBTMABykwhkhCyTGhLhdGMpt5A4wrzATsf3u0dVFdFsXUJ9nnPYrYBSVe17B2G1m_89g7JaGYyvNaWzon5S-A7c9KVkEU0ZTiH3oYzd2aeTMbb2HLCpJ-SKytSmBxY7FzitxtBu4GNtC6fXBKLxrUz0xCUYSaqevmLO5vbQxeK0BQy0ZSAY2ktQyqaS3COsKJbJcQh6AzvTkpCEbIr-ZU_xQ9moDG1BdR4lmuMCMvdGtZpT90ThggvtKWMpDnWQ7WopJZqNKM4BtnKP2PcqAHy0LbVs62DDG1DRpMVV9vn1ueYVJ83mjbHj5DypoT5-L_R6kPXXwIca6AA-qfn6ZfrA6FxGNpQezEQfDXzMpkHMeJ6sQb0UXneEYCarf6wz0ud6zWDZXUxR2ncfTOmylrVbtOxmFkdvqI0F8fLjdJz6oukffi4fwCfsKS68fHDMFg70OUdir2XPl7qtUMLrx5G7rOcfin21qwYThL6itbHqSG4K-d43I_1LBT7fAXc_qzqjmlzhrOUxmF-iMyviPbY_naLLDZDS3A4XttoMYOdbck5KN0COxtzZb0F39NXMOdajDSoQLvzXhcR_X9BCQf0jezrFrA_ofz30U6opFAJvvz6gnzH_p4oYCQ47hBi6oMpHzx1xdeWmYSnc1sMLgvviZP-XvWP0LcNB2iVvjf4NriQWJP6f0o8d3oYMp5ae-1DEoax3QNqg0H8A5brZTg8hGP">
@@ -111,17 +67,11 @@
         .img-block {
             display: block;
             max-width: 100%;
-            margin: auto;</style>
+            margin: auto;
+        }
+	</style>
 </head>
 <body>
-  <!-- Preloader -->
-<div class="preloader">
-  <div class="icon">
-    <svg width="60" height="30" viewBox="0 0 100 50">
-      <path class="infinity-path" d="M31.6,3.5C5.9,3.5,5.9,46.5,31.6,46.5c15.4,0,23.1-21.5,36.8-21.5c13.7,0,21.4,21.5,36.8,21.5c25.7,0,25.7-43,0-43 c-15.4,0-23.1,21.5-36.8,21.5C54.7,25,47,3.5,31.6,3.5z" />
-    </svg>
-  </div>
-</div>
 <main>
 		<a href="http://www.flaticon.com">
 			<svg width="187px" height="34px" viewBox="0 0 187 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="img-block">
@@ -1246,18 +1196,5 @@
 				Flaticon is a project by Freepik Company &reg; 2013-2019 Freepik Company S.L. All rights reserved.			</p>
 		</footer>
 	</main>
-
-<script>
-if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../../../sw.js').then(function(registration) {
-            console.log('ServiceWorker registration successful');
-        }).catch(function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-        });
-    });
-}
-</script>
-
 </body>
 </html>

@@ -1,52 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>    /* Preloader Styles Start */
-    .preloader {
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: #ffffff;
-      z-index: 999999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-    }
-    
-    .preloader.loaded {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    .preloader .icon {
-      width: 60px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .infinity-path {
-      fill: none;
-      stroke: #ff4d4d;
-      stroke-width: 4;
-      stroke-dasharray: 250;
-      stroke-dashoffset: 250;
-      animation: dash 2.5s linear infinite;
-    }
-
-    @keyframes dash {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-    /* Preloader Styles End */</style>
-  
-  <link rel="preload" href="../fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="../fonts/Flaticon.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Under construction - Awesome site in the making!</title>
@@ -119,17 +73,11 @@
     }
     @media screen and (max-width: 767px) {
         .error--bg__cover { display: none; }
-        .abstract-half-dot--circle { left: 0;</style>
+        .abstract-half-dot--circle { left: 0; }
+    }
+</style>
 </head>
 <body>
-  <!-- Preloader -->
-<div class="preloader">
-  <div class="icon">
-    <svg width="60" height="30" viewBox="0 0 100 50">
-      <path class="infinity-path" d="M31.6,3.5C5.9,3.5,5.9,46.5,31.6,46.5c15.4,0,23.1-21.5,36.8-21.5c13.7,0,21.4,21.5,36.8,21.5c25.7,0,25.7-43,0-43 c-15.4,0-23.1,21.5-36.8,21.5C54.7,25,47,3.5,31.6,3.5z" />
-    </svg>
-  </div>
-</div>
     <div id="container">
         <section class="error content background-wrap cloud-blue">
             <div class="fit-wide">
@@ -147,7 +95,8 @@
                         <style type="text/css">
                             .st0{fill:#FFFFFF;}
                             .st1{fill:#226D7A;}
-                            .st2{fill:#22B8D1;</style>
+                            .st2{fill:#22B8D1;}
+                        </style>
                         <polygon class="st0" points="247.1,211.2 262.6,195.6 262.6,65.5 247.1,50 52.9,50 37.4,65.5 37.4,195.6 52.9,211.2 "/>
                         <path class="st1" d="M263.6,65.5c0-0.3-0.1-0.5-0.3-0.7l-15.5-15.5c-0.2-0.2-0.4-0.3-0.7-0.3H52.9c-0.3,0-0.5,0.1-0.7,0.3L36.7,64.8
                             c-0.2,0.2-0.3,0.5-0.3,0.7v130.1c0,0.3,0.1,0.5,0.3,0.7l15.5,15.5c0.2,0.2,0.4,0.3,0.7,0.3h72.9l-8.1,36.9h-12.3c-0.6,0-1,0.4-1,1
@@ -216,18 +165,5 @@
             </div>
         </section>
     </div>
-
-<script>
-if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../sw.js').then(function(registration) {
-            console.log('ServiceWorker registration successful');
-        }).catch(function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-        });
-    });
-}
-</script>
-
 </body>
 </html>

@@ -1,353 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KRT96J8");
+    </script>
+    <!-- End Google Tag Manager -->
 
-<head>
-  <link rel="preload" href="fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-  <style>    /* Preloader Styles Start */
-    .preloader {
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: #ffffff;
-      z-index: 999999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-    }
-    
-    .preloader.loaded {
-      opacity: 0;
-      visibility: hidden;
-    }
+    <meta charset="utf-8" />
 
-    .preloader .icon {
-      width: 60px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .infinity-path {
-      fill: none;
-      stroke: #ff4d4d;
-      stroke-width: 4;
-      stroke-dasharray: 250;
-      stroke-dashoffset: 250;
-      animation: dash 2.5s linear infinite;
-    }
-
-    @keyframes dash {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-    /* Preloader Styles End */</style>
-  
-  <link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/Flaticon.woff2" as="font" type="font/woff2">
-  <!-- Google Tag Manager -->
-  <script>window.addEventListener("load",function(){window.addEventListener("load",function(){window.addEventListener("load",function(){
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-KRT96J8");
-  });});});</script>
-  <!-- End Google Tag Manager -->
-
-  <meta charset="utf-8" />
-
-  <!-- Security and protection meta tags -->
-  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-  <!-- X-Frame-Options removed by optimization script -->
-  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-  <meta name="referrer" content="no-referrer" />
-  <meta name="robots" content="INDEX, FOLLOW, noarchive, nosnippet, noimageindex" />
-  <meta name="description"
-    content="Escape to paradise with our ultimate Goa weekend trip. Experience thrilling adventures, pristine beaches & vibrant nightlife in just 2 days of pure bliss!" />
-  <meta name="keywords" content=" goa tour packages, goa packages, goa trip package, goa honeymoon package, goa tour, goa trip cost, goa packages for couple, tour packages for goa with price, goa packages for couple with flight, goa tour packages from ahmedabad, goa package from delhi, goa holiday package, goa honeymoon, goa trip planner, goa packages for family, goa tour package for couple,
+    <!-- Security and protection meta tags -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      name="robots"
+      content="INDEX, FOLLOW, noarchive, nosnippet, noimageindex"
+    />
+    <meta
+      name="description"
+      content="Escape to paradise with our ultimate Goa weekend trip. Experience thrilling adventures, pristine beaches & vibrant nightlife in just 2 days of pure bliss!"
+    />
+    <meta
+      name="keywords"
+      content=" goa tour packages, goa packages, goa trip package, goa honeymoon package, goa tour, goa trip cost, goa packages for couple, tour packages for goa with price, goa packages for couple with flight, goa tour packages from ahmedabad, goa package from delhi, goa holiday package, goa honeymoon, goa trip planner, goa packages for family, goa tour package for couple,
     goa trip cost per person, goa package from mumbai, goa trip package for couple, goa packages from ahmedabad goa tour package from mumbai, goa package from bangalore, goa honeymoon packages for 5 days, goa trip cost for couple, goa tour package from kolkata, goa trip budget, goa tour package from delhi, goa packages for friends, goa tour packages from surat, goa trip cost for 5 days
     goa tour package from chennai, goa hotels packages, goa packages from hyderabad, goa honeymoon packages for 7 days, goa travel packages, goa honeymoon packages for 7 days price, goa tour package with flight, delhi to goa package with flight
-" />
-  <title>Plan Your Ultimate Goa Weekend Trip for Fun & Relaxation</title>
-  <!-- Stylesheets -->
-  <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-  </noscript>
-  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link href="css/style.css" rel="stylesheet" />
-  </noscript>
-  <link rel="preload" href="css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link href="css/responsive.css" rel="stylesheet" />
-  </noscript>
-  <link rel="preload" href="css/owl.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link href="css/owl.css" rel="stylesheet" />
-  </noscript>
-  <link rel="preload" href="css/flaticon.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link href="css/flaticon.css" rel="stylesheet" />
-  </noscript>
-  <link rel="preload" href="css/fontawesome-all.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="css/fontawesome-all.css" />
-  </noscript>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
-    rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
+"
+    />
+    <title>Plan Your Ultimate Goa Weekend Trip for Fun & Relaxation</title>
+    <!-- Stylesheets -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
-      rel="stylesheet" />
-  </noscript>
-  <link href="css/responsive.css" rel="stylesheet" />
-  <link href="css/owl.css" rel="stylesheet" />
-  <link rel="preload" href="css/fontawesome-all.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="css/fontawesome-all.css" />
-  </noscript>
-  <link rel="preload" href="css/simple-line-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="css/simple-line-icons.css" />
-  </noscript>
-  <link rel="preload" href="css/themify-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="css/themify-icons.css" />
-  </noscript>
-  <link href="css/flaticon.css" rel="stylesheet" />
-  <link rel="preload" href="css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="css/animate.css" />
-  </noscript>
-  <link rel="preload" href="css/jquery-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="css/jquery-ui.css" />
-  </noscript>
-  <link rel="preload" href="css/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
-  </noscript>
-  <link rel="preload" href="css/scrollbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="css/scrollbar.css" />
-  </noscript>
-  <link rel="preload" href="css/datetimepicker.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="css/datetimepicker.css" />
-  </noscript>
-  <link rel="preload" href="css/hover.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="css/hover.css" />
-  </noscript>
-  <link rel="preload" href="css/custom-animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="css/custom-animate.css" />
-  </noscript>
-  <link rel="shortcut icon" href="images/gallery/logo%20icon.webp" type="image/x-icon" media="all" />
-  <link rel="icon" href="images/gallery/logo%20icon.webp" type="image/x-icon" media="all" />
-  <!-- Responsive Settings -->
+      rel="preload"
+      href="css/bootstrap.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="css/bootstrap.css" /></noscript>
+    <link
+      rel="preload"
+      href="css/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="css/style.css" /></noscript>
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--[if lt IE 9
-      ]><script async async async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+    <!-- Responsive File -->
+    <link
+      rel="preload"
+      href="css/responsive.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="css/responsive.css" /></noscript>
+
+    <link
+      rel="preload"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      as="font"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    /></noscript>
+    <link
+      rel="shortcut icon"
+      href="images/gallery/logo icon.webp"
+      type="image/x-icon"
+      media="all"
+    />
+    <link
+      rel="icon"
+      href="images/gallery/logo icon.webp"
+      type="image/x-icon"
+      media="all"
+    />
+    <!-- Responsive Settings -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
     ><![endif]-->
-  <!--[if lt IE 9]><script defer src="js/respond.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
+    <!-- Source Code Protection Styles -->
+    <style>
+      /* Disable text selection */
+      body {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+      }
 
-</head>
+      /* Hide content when developer tools are detected */
+      .dev-tools-warning {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        color: #fff;
+        text-align: center;
+        padding-top: 20%;
+        z-index: 99999;
+        font-size: 24px;
+      }
 
-<body>
-  <!-- Preloader -->
-<div class="preloader">
-  <div class="icon">
-    <svg width="60" height="30" viewBox="0 0 100 50">
-      <path class="infinity-path" d="M31.6,3.5C5.9,3.5,5.9,46.5,31.6,46.5c15.4,0,23.1-21.5,36.8-21.5c13.7,0,21.4,21.5,36.8,21.5c25.7,0,25.7-43,0-43 c-15.4,0-23.1,21.5-36.8,21.5C54.7,25,47,3.5,31.6,3.5z" />
-    </svg>
-  </div>
-</div>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe async src="https://www.googletagmanager.com/ns.html?id=GTM-KRT96J8" height="0" width="0"
-      style="display: none; visibility: hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+      /* Disable image dragging */
+      img {
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        pointer-events: none;
+      }
 
+      /* Additional protection measures */
+      * {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
+      /* Prevent highlighting */
+      ::selection {
+        background: transparent;
+      }
 
+      ::-moz-selection {
+        background: transparent;
+      }
 
+      /* Hide content from screen readers when dev tools detected */
+      .protected-content {
+        display: block;
+      }
 
-  <div class="page-wrapper">
-    
+      .dev-tools-detected .protected-content {
+        display: none !important;
+      }
 
-    <!-- Main Header -->
-    <header class="main-header header-style-three">
-      <!-- Header Top -->
+      /* Blur effect when dev tools open */
+      .dev-tools-detected {
+        filter: blur(10px);
+        pointer-events: none;
+      }
+    </style>
+  </head>
 
-      <!-- Header Upper -->
-      <div class="header-upper">
-        <div class="auto-container">
-          <div class="inner clearfix">
-            <!--Logo-->
-            <div class="logo-box">
-              <div class="logo">
-                <a href="goa-tour-packages.html" title="Goa tour packages"><img loading="lazy" src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." title="Goa tour packages" width="160" height="160" style="aspect-ratio: 1/1; width: auto; height: auto; max-width: 100%;" /></a>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        async
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KRT96J8"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Source Code Protection JavaScript --></div>
+
+    <div class="page-wrapper">
+      <!-- Preloader -->
+      <div class="preloader">
+        <div class="icon"></div>
+      </div>
+
+      <!-- Main Header -->
+      <header class="main-header header-style-three">
+        <!-- Header Top -->
+
+        <!-- Header Upper -->
+        <div class="header-upper">
+          <div class="auto-container">
+            <div class="inner clearfix">
+              <!--Logo-->
+              <div class="logo-box">
+                <div class="logo">
+                  <a href="goa-tour-packages.html" title="Goa tour packages"
+                    ><img
+                      src="images/gallery/6.webp"
+                      alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral."
+                      title="Goa tour packages"
+                  /></a>
+                </div>
               </div>
-            </div>
-            <div class="nav-content clearfix">
-              <div class="nav-outer clearfix">
-                <!--Mobile Navigation Toggler-->
-                <div class="mobile-nav-toggler" aria-label="Toggle Navigation" role="button" tabindex="0">
-                  <span class="icon flaticon-menu-1"></span>
+              <div class="nav-content clearfix">
+                <div class="nav-outer clearfix">
+                  <!--Mobile Navigation Toggler-->
+                  <div class="mobile-nav-toggler">
+                    <span class="icon flaticon-menu-1"></span>
+                  </div>
+
+                  <!-- Main Menu -->
+                  <nav class="main-menu navbar-expand-md navbar-light">
+                    <div
+                      class="collapse navbar-collapse show clearfix"
+                      id="navbarSupportedContent"
+                    >
+                      <ul class="navigation clearfix">
+                        <li><a href="index.html">Home</a></li>
+
+                        <li class="dropdown">
+                          <a href="goa-tour-packages.html">Goa Tour Packages</a>
+                          <ul>
+                            <li>
+                              <a href="goa-tour-package-4N-5D.html"
+                                >Goa 5D-4N Tour Package</a
+                              >
+                            </li>
+                            <li>
+                              <a href="goa-weekend-trip.html"
+                                >Goa Weekend Gateway Package</a
+                              >
+                            </li>
+
+                            <div class="dropdown-btn">
+                              <span class="fa fa-angle-right"></span>
+                            </div>
+                          </ul>
+                        </li>
+
+                        <li class="dropdown">
+                          <a href="Water-Sports.html">Goa Sea Activities</a>
+                          <ul>
+                            <li>
+                              <a href="Scuba-Adventure.html"
+                                >Scubadiving in Goa</a
+                              >
+                            </li>
+                            <li>
+                              <a href="Watersport-Scuba-combo-goa.html"
+                                >Scuba Watersports Goa
+                              </a>
+                            </li>
+                            <li>
+                              <a href="Party-Cruise.html"
+                                >Dinner Party Cruise Goa
+                              </a>
+                            </li>
+
+                            <div class="dropdown-btn">
+                              <span class="fa fa-angle-right"></span>
+                            </div>
+                          </ul>
+                        </li>
+
+                        <li class="dropdown">
+                          <a href="about.html">About us</a>
+                          <ul>
+                            <li><a href="contact.html">Contact</a></li>
+
+                            <div class="dropdown-btn">
+                              <span class="fa fa-angle-right"></span>
+                            </div>
+                          </ul>
+                        </li>
+                        <li><a href="blog.html">Blogs</a></li>
+                      </ul>
+                    </div>
+                  </nav>
                 </div>
 
-                <!-- Main Menu -->
-                <nav class="main-menu navbar-expand-md navbar-light">
-                  <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                    <ul class="navigation clearfix">
-                      <li><a href="index.html">Home</a></li>
+                <!--Search Btn-->
 
-                      <li class="dropdown">
-                        <a href="goa-tour-packages.html">Goa Tour Packages</a>
-                        <ul>
-                          <li>
-                            <a href="goa-tour-package-4N-5D.html">Goa 5D-4N Tour Package</a>
-                          </li>
-                          <li>
-                            <a href="goa-weekend-trip.html">Goa Weekend Gateway Package</a>
-                          </li>
+                <!--Nav Toggler-->
+                <div class="max-nav-toggler">
+                  <button class="theme-btn toggle-btn">
+                    <span class="flaticon-menu-5"></span>
+                  </button>
+                </div>
 
-                          <div class="dropdown-btn">
-                            <span class="fa fa-angle-right"></span>
-                          </div>
-                        </ul>
-                      </li>
-
-                      <li class="dropdown">
-                        <a href="Water-Sports.html">Goa Sea Activities</a>
-                        <ul>
-                          <li>
-                            <a href="Scuba-Adventure.html">Scubadiving in Goa</a>
-                          </li>
-                          <li>
-                            <a href="Watersport-Scuba-combo-goa.html">Scuba Watersports Goa
-                            </a>
-                          </li>
-                          <li>
-                            <a href="Party-Cruise.html">Dinner Party Cruise Goa
-                            </a>
-                          </li>
-
-                          <div class="dropdown-btn">
-                            <span class="fa fa-angle-right"></span>
-                          </div>
-                        </ul>
-                      </li>
-
-                      <li class="dropdown">
-                        <a href="about.html">About us</a>
-                        <ul>
-                          <li><a href="contact.html">Contact</a></li>
-
-                          <div class="dropdown-btn">
-                            <span class="fa fa-angle-right"></span>
-                          </div>
-                        </ul>
-                      </li>
-                      <li><a href="blog.html">Blogs</a></li>
-                    </ul>
+                <!--Link Box-->
+                <div class="link-box">
+                  <div class="contact-text">
+                    <span class="txt">
+                      <a
+                        href="tel: 8287768117 "
+                        class="theme-btn btn-style-one"
+                      >
+                        <div class="btn-title">Call Now</div>
+                      </a>
+                    </span>
                   </div>
-                </nav>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <!--End Header Upper-->
+
+        <!-- Sticky Header  -->
+        <div class="sticky-header">
+          <div class="auto-container clearfix">
+            <!--Logo-->
+            <div class="logo pull-left">
+              <a href="goa-tour-packages.html" title="Goa tour Packages"
+                ><img
+                  src="images/gallery/6.webp"
+                  alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral."
+                  title="Goa tour package"
+              /></a>
+            </div>
+            <!--Right Col-->
+            <div class="pull-right clearfix">
+              <!-- Main Menu -->
+              <nav class="main-menu clearfix">
+                <!--Keep This Empty / Menu will come through Javascript-->
+              </nav>
+              <!-- Main Menu End-->
 
               <!--Search Btn-->
 
-              <!--Nav Toggler-->
-              <div class="max-nav-toggler">
-                <button class="theme-btn toggle-btn" aria-label="Toggle Navigation">
-                  <span class="flaticon-menu-5"></span>
-                </button>
-              </div>
-
-              <!--Link Box-->
-              <div class="link-box">
-                <div class="contact-text">
-                  <span class="txt">
-                    <a href="tel: 8287768117 " class="theme-btn btn-style-one" aria-label="Call Us: +91 82877 68117">
-                      <div class="btn-title">Call Now</div>
-                    </a>
-                  </span>
-                </div>
+              <!--Book Btn-->
+              <div class="booking-link">
+                <a href="tel:8287768117 " class="theme-btn btn-style-one">
+                  <div class="btn-title">Call Us</div>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--End Header Upper-->
+        <!-- End Sticky Menu -->
 
-      <!-- Sticky Header  -->
-      <div class="sticky-header">
-        <div class="auto-container clearfix">
-          <!--Logo-->
-          <div class="logo pull-left">
-            <a href="goa-tour-packages.html" title="Goa tour Packages"><img loading="lazy" src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." title="Goa tour package" width="160" height="160" style="aspect-ratio: 1/1; width: auto; height: auto; max-width: 100%;" /></a>
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+          <div class="menu-backdrop"></div>
+          <div class="close-btn">
+            <span class="icon flaticon-targeting-cross"></span>
           </div>
-          <!--Right Col-->
-          <div class="pull-right clearfix">
-            <!-- Main Menu -->
-            <nav class="main-menu clearfix">
-              <!--Keep This Empty / Menu will come through Javascript-->
-            </nav>
-            <!-- Main Menu End-->
 
-            <!--Search Btn-->
-
-            <!--Book Btn-->
-            <div class="booking-link">
-              <a href="tel:8287768117 " class="theme-btn btn-style-one">
-                <div class="btn-title">Call Us</div>
-              </a>
+          <nav class="menu-box">
+            <div class="nav-logo">
+              <a href="goa-tour-packages.html"
+                ><img
+                  src="images/gallery/6.webp"
+                  alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral."
+                  title="goa-tour-packages"
+              /></a>
             </div>
-          </div>
+            <div class="menu-outer">
+              <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            </div>
+            <!--Social Links-->
+          </nav>
         </div>
-      </div>
-      <!-- End Sticky Menu -->
-
-      <!-- Mobile Menu  -->
-      <div class="mobile-menu">
-        <div class="menu-backdrop"></div>
-        <div class="close-btn">
-          <span class="icon flaticon-targeting-cross"></span>
-        </div>
-
-        <nav class="menu-box">
-          <div class="nav-logo">
-            <a href="goa-tour-packages.html"><img loading="lazy" src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." title="goa-tour-packages" width="160" height="160" style="aspect-ratio: 1/1; width: auto; height: auto; max-width: 100%;" /></a>
-          </div>
-          <div class="menu-outer">
-            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-          </div>
-          <!--Social Links-->
-        </nav>
-      </div>
-      <!-- End Mobile Menu -->
-    </header>
-
-    <main id="main-content">
+        <!-- End Mobile Menu -->
+      </header>
       <!-- End Main Header -->
 
       <!--Search Popup-->
@@ -361,13 +385,19 @@
         <!-- Hidden Bar Wrapper -->
         <div class="hidden-bar-wrapper">
           <div class="logo">
-            <a href="goa-tour-packages.html"><img loading="lazy" src="images/gallery/logo%20canva%2010.webp" alt="Logo featuring a diver's mask with fish and coral, labeled 'ScubaDivingAdventure.in.'" width="1280" height="960" srcset="images/gallery/logo%20canva%2010-mobile.webp 412w, images/gallery/logo%20canva%2010.webp 1280w" sizes="(max-width: 600px) 412px, 1280px" /></a>
+            <a href="goa-tour-packages.html"
+              ><img
+                src="images/gallery/logo canva 10.webp"
+                alt="Logo featuring a diver's mask with fish and coral, labeled 'ScubaDivingAdventure.in.'"
+            /></a>
           </div>
           <div class="content-box">
             <h3>Get In Touch</h3>
             <div class="text">Experience best Holiday in Beautiful Goa.</div>
-            <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour Packages details and further process"
-              class="theme-btn btn-style-two">
+            <a
+              href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour Packages details and further process"
+              class="theme-btn btn-style-two"
+            >
               <div class="btn-title">Consultation</div>
             </a>
           </div>
@@ -383,11 +413,14 @@
               </li>
 
               <li>
-                <span class="flaticon-phone-call"></span><a href="tel:8287768117 ">8287768117 </a>
+                <span class="flaticon-phone-call"></span
+                ><a href="tel:8287768117 ">8287768117 </a>
               </li>
               <li>
                 <span class="flaticon-envelope"></span>
-                <a href="mailto:contact@scubadivingadventure.in">contact@scubadivingadventure.in</a>
+                <a href="mailto:contact@scubadivingadventure.in"
+                  >contact@scubadivingadventure.in</a
+                >
               </li>
               <li><span class="flaticon-wall-clock"></span> 24*7</li>
             </ul>
@@ -399,7 +432,10 @@
 
       <!--Page Title-->
       <section class="page-banner">
-        <div class="image-layer" style="background-image: url(images/goa-tour/Bike-Trip_18_11zon.webp)"></div>
+        <div
+          class="image-layer"
+          style="background-image: url(images/goa-tour/Bike-Trip_18_11zon.webp)"
+        ></div>
         <div class="banner-inner">
           <div class="auto-container">
             <div class="inner-container clearfix">
@@ -498,109 +534,223 @@
                       <div class="team-carousel owl-theme owl-carousel">
                         <!--Team Block-->
 
-                        <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
                           <div class="image-box">
                             <figure class="image">
-                              <a class="lightbox-image" href="images/goa-tour/-84120_8511_18_11zon.webp"><img width="400" height="300" src="images/goa-tour/-84120_8511_18_11zon.webp" alt="Goa Tour Package" title="Goa Packages" loading="lazy"  srcset="images/goa-tour/-84120_8511_18_11zon-mobile.webp 412w, images/goa-tour/-84120_8511_18_11zon-700w.webp 700w, images/goa-tour/-84120_8511_18_11zon.webp 768w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 768px" /></a>
+                              <a
+                                class="lightbox-image"
+                                href="images/goa-tour/-84120_8511_18_11zon.webp"
+                                ><img
+                                  src="images/goa-tour/-84120_8511_18_11zon.webp"
+                                  alt="Goa Tour Package"
+                                  title="Goa Packages"
+                              /></a>
                             </figure>
                             <div class="zoom-btn">
-                              <a class="lightbox-image zoom-link" href="images/goa-tour/-84120_8511_18_11zon.webp"
-                                data-fancybox="gallery"><span class="icon flaticon-expand">Goa Tours</span></a>
+                              <a
+                                class="lightbox-image zoom-link"
+                                href="images/goa-tour/-84120_8511_18_11zon.webp"
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Goa Tours</span
+                                ></a
+                              >
                             </div>
                           </div>
                         </div>
                         <!--Team Block-->
 
                         <!--Team Block-->
-                        <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
                           <div class="image-box">
                             <figure class="image">
-                              <a class="lightbox-image"
+                              <a
+                                class="lightbox-image"
                                 href="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20_1_11zon.webp"
-                                alt=" Goa Resort stay" title="Goa Resort stay"><img width="400" height="300" src="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20_1_11zon.webp" alt="Goa Resort stay" title="Goa Resort stay" loading="lazy"  srcset="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20_1_11zon-mobile.webp 412w, images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20_1_11zon-700w.webp 700w, images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20_1_11zon.webp 944w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 944px" /></a>
+                                alt=" Goa Resort stay"
+                                title="Goa Resort stay"
+                                ><img
+                                  src="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20_1_11zon.webp"
+                                  alt="Goa Resort stay"
+                                  title="Goa Resort stay"
+                              /></a>
                             </figure>
                             <div class="zoom-btn">
-                              <a class="lightbox-image zoom-link"
+                              <a
+                                class="lightbox-image zoom-link"
                                 href="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.20_1_11zon.webp"
-                                data-fancybox="gallery"><span class="icon flaticon-expand">Luxury Stay at Beach Side
-                                  Resort</span></a>
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Luxury Stay at Beach Side Resort</span
+                                ></a
+                              >
                             </div>
                           </div>
                         </div>
                         <!--Team Block-->
-                        <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
                           <div class="image-box">
                             <figure class="image">
-                              <a class="lightbox-image" href="images/goa-tour/aguadajail.webp_15_11zon.webp"
-                                alt="Aguada Jail, Goa tour" title="Aguada Jail"><img width="400" height="300" src="images/goa-tour/aguadajail.webp_15_11zon.webp" alt="Aguada Jail, Goa tour" title="Aguada Jail" loading="lazy"  srcset="images/goa-tour/aguadajail.webp_15_11zon-mobile.webp 412w, images/goa-tour/aguadajail.webp_15_11zon-700w.webp 700w, images/goa-tour/aguadajail.webp_15_11zon.webp 1440w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1440px" /></a>
+                              <a
+                                class="lightbox-image"
+                                href="images/goa-tour/aguadajail.webp_15_11zon.webp"
+                                alt="Aguada Jail, Goa tour"
+                                title="Aguada Jail"
+                                ><img
+                                  src="images/goa-tour/aguadajail.webp_15_11zon.webp"
+                                  alt="Aguada Jail, Goa tour"
+                                  title="Aguada Jail"
+                              /></a>
                             </figure>
                             <div class="zoom-btn">
-                              <a class="lightbox-image zoom-link" href="images/goa-tour/aguadajail.webp_15_11zon.webp"
-                                data-fancybox="gallery"><span class="icon flaticon-expand">Aguada Jail, Goa
-                                </span></a>
+                              <a
+                                class="lightbox-image zoom-link"
+                                href="images/goa-tour/aguadajail.webp_15_11zon.webp"
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Aguada Jail, Goa
+                                </span></a
+                              >
                             </div>
                           </div>
                         </div>
 
                         <!--Team Block-->
-                        <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
                           <div class="image-box">
                             <figure class="image">
-                              <a class="lightbox-image" href="images/goa-tour/Snorkeling In The Bahamas_11_11zon.webp"
-                                alt="Grand Island" title="Grand Island"><img width="400" height="300" src="images/goa-tour/Snorkeling In The Bahamas_11_11zon.webp" alt="Grand Island" title="Grand Island" loading="lazy" /></a>
-                            </figure>
-                            <div class="zoom-btn">
-                              <a class="lightbox-image zoom-link"
+                              <a
+                                class="lightbox-image"
                                 href="images/goa-tour/Snorkeling In The Bahamas_11_11zon.webp"
-                                data-fancybox="gallery"><span class="icon flaticon-expand">Grand Island Tour
-                                  Goa</span></a>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!--Team Block-->
-
-                        <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                          <div class="image-box">
-                            <figure class="image">
-                              <a class="lightbox-image" href="images/goa-tour/parasailing-in-india_4_11zon.webp"
-                                alt=" Parasailing in Goa" title="Parasailing in Goa"><img width="400" height="300" src="images/goa-tour/parasailing-in-india_4_11zon.webp" alt="Parasailing in Goa" title="Parasailing in Goa" loading="lazy"  srcset="images/goa-tour/parasailing-in-india_4_11zon-mobile.webp 412w, images/goa-tour/parasailing-in-india_4_11zon-700w.webp 700w, images/goa-tour/parasailing-in-india_4_11zon.webp 1260w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1260px" /></a>
+                                alt="Grand Island"
+                                title="Grand Island"
+                                ><img
+                                  src="images/goa-tour/Snorkeling In The Bahamas_11_11zon.webp"
+                                  alt="Grand Island"
+                                  title="Grand Island"
+                              /></a>
                             </figure>
                             <div class="zoom-btn">
-                              <a class="lightbox-image zoom-link"
-                                href="images/goa-tour/parasailing-in-india_4_11zon.webp" data-fancybox="gallery"><span
-                                  class="icon flaticon-expand">Parasailing in Goa</span></a>
+                              <a
+                                class="lightbox-image zoom-link"
+                                href="images/goa-tour/Snorkeling In The Bahamas_11_11zon.webp"
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Grand Island Tour Goa</span
+                                ></a
+                              >
                             </div>
                           </div>
                         </div>
 
                         <!--Team Block-->
-                        <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
                           <div class="image-box">
                             <figure class="image">
-                              <a class="lightbox-image" href="images/scuba3.webp" alt=" Scuba Diving in Goa"
-                                title="Scuba Diving in Goa"><img width="400" height="300" loading="lazy" src="images/scuba3.webp" alt="Scuba Diving in Goa" title="Scuba Diving in Goa"  srcset="images/scuba3-mobile.webp 412w, images/scuba3-700w.webp 700w, images/scuba3.webp 1000w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1000px" /></a>
+                              <a
+                                class="lightbox-image"
+                                href="images/goa-tour/parasailing-in-india_4_11zon.webp"
+                                alt=" Parasailing in Goa"
+                                title="Parasailing in Goa"
+                                ><img
+                                  src="images/goa-tour/parasailing-in-india_4_11zon.webp"
+                                  alt="Parasailing in Goa"
+                                  title="Parasailing in Goa"
+                              /></a>
                             </figure>
                             <div class="zoom-btn">
-                              <a class="lightbox-image zoom-link" href="images/scuba3.webp"
-                                data-fancybox="gallery"><span class="icon flaticon-expand">Scuba Diving in
-                                  Goa</span></a>
+                              <a
+                                class="lightbox-image zoom-link"
+                                href="images/goa-tour/parasailing-in-india_4_11zon.webp"
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Parasailing in Goa</span
+                                ></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <!--Team Block-->
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
+                          <div class="image-box">
+                            <figure class="image">
+                              <a
+                                class="lightbox-image"
+                                href="images/scuba3.webp"
+                                alt=" Scuba Diving in Goa"
+                                title="Scuba Diving in Goa"
+                                ><img
+                                  src="images/scuba3.webp"
+                                  alt="Scuba Diving in Goa"
+                                  title="Scuba Diving in Goa"
+                              /></a>
+                            </figure>
+                            <div class="zoom-btn">
+                              <a
+                                class="lightbox-image zoom-link"
+                                href="images/scuba3.webp"
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Scuba Diving in Goa</span
+                                ></a
+                              >
                             </div>
                           </div>
                         </div>
                         <!--Team Block-->
-                        <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div
+                          class="inner-box wow fadeInUp"
+                          data-wow-delay="300ms"
+                          data-wow-duration="1500ms"
+                        >
                           <div class="image-box">
                             <figure class="image">
-                              <a class="lightbox-image"
+                              <a
+                                class="lightbox-image"
                                 href="images/goa-tour/13cf6578-a81b-4d8d-9014-aa8ed1513ba6_9_11zon.webp"
-                                alt=" Sweet Lake, arambol Beach" title="Sweet Lake, Arambol Beach"><img width="400" height="300" src="images/goa-tour/13cf6578-a81b-4d8d-9014-aa8ed1513ba6_9_11zon.webp" alt="Sweet Lake, arambol Beach" title="Sweet Lake, arambol Beach" loading="lazy"  srcset="images/goa-tour/13cf6578-a81b-4d8d-9014-aa8ed1513ba6_9_11zon-mobile.webp 412w, images/goa-tour/13cf6578-a81b-4d8d-9014-aa8ed1513ba6_9_11zon-700w.webp 700w, images/goa-tour/13cf6578-a81b-4d8d-9014-aa8ed1513ba6_9_11zon.webp 960w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 960px" /></a>
+                                alt=" Sweet Lake, arambol Beach"
+                                title="Sweet Lake, Arambol Beach"
+                                ><img
+                                  src="images/goa-tour/13cf6578-a81b-4d8d-9014-aa8ed1513ba6_9_11zon.webp"
+                                  alt="Sweet Lake, arambol Beach"
+                                  title="Sweet Lake, arambol Beach"
+                              /></a>
                             </figure>
                             <div class="zoom-btn">
-                              <a class="lightbox-image zoom-link"
+                              <a
+                                class="lightbox-image zoom-link"
                                 href="images/goa-tour/13cf6578-a81b-4d8d-9014-aa8ed1513ba6_9_11zon.webp"
-                                data-fancybox="gallery"><span class="icon flaticon-expand">Sweet Lake, Arambol
-                                  Beach</span></a>
+                                data-fancybox="gallery"
+                                ><span class="icon flaticon-expand"
+                                  >Sweet Lake, Arambol Beach</span
+                                ></a
+                              >
                             </div>
                           </div>
                         </div>
@@ -772,12 +922,13 @@
                           Needs and Budget. We Offer full Customised Package and
                           Air travel also.
                           <hr />
-                          <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Weekend Tour package details and further process"
-                            class="theme-btn btn-style-one">
-                            <div class="btn-title">
+                          <a
+                            href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Weekend Tour package details and further process"
+                            class="theme-btn btn-style-one"
+                            ><div class="btn-title">
                               Customize Your Tour Package
-                            </div>
-                          </a>
+                            </div></a
+                          >
                         </details>
                       </div>
                     </div>
@@ -803,19 +954,36 @@
                                     & Station.
                                   </li>
 
-                                  <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
                                     <div class="image-box">
                                       <figure class="image">
-                                        <a class="lightbox-image"
+                                        <a
+                                          class="lightbox-image"
                                           href="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.22_4_11zon.webp"
-                                          alt=" Goa Resort Stay" title="Goa Resort Stay"><img width="400" height="300" src="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.22_4_11zon.webp" alt="Goa Resort Stay" title="Goa Tour Stay" loading="lazy"  srcset="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.22_4_11zon-mobile.webp 412w, images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.22_4_11zon-700w.webp 700w, images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.22_4_11zon.webp 944w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 944px" /></a>
+                                          alt=" Goa Resort Stay"
+                                          title="Goa Resort Stay"
+                                          ><img
+                                            src="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.22_4_11zon.webp"
+                                            alt="Goa Resort Stay"
+                                            title="Goa Tour Stay"
+                                        /></a>
                                       </figure>
                                       <div class="zoom-btn">
-                                        <a class="lightbox-image zoom-link"
+                                        <a
+                                          class="lightbox-image zoom-link"
                                           href="images/goa-tour/hotels/WhatsApp Image 2022-04-02 at 21.01.22_4_11zon.webp"
-                                          data-fancybox="gallery"><span class="icon flaticon-expand"
-                                            style="position: relative">Enjoy Stay at Green Stay
-                                            Resort</span></a>
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Enjoy Stay at Green Stay
+                                            Resort</span
+                                          ></a
+                                        >
                                       </div>
                                     </div>
                                   </div>
@@ -840,25 +1008,43 @@
                                     be at 7:30 AM and pick-up locations would be
                                     <strong>
                                       Baga,Calangute, Candolim,Anjuna and
-                                      Arpora.</strong>
+                                      Arpora.</strong
+                                    >
                                     The trip will be starting from Sinquerim
                                     Boat Jetty in a Long Tail boat at 8:30 AM to
                                     the Grand Island where you can witness
                                     amazing views to soothe your senses.
                                   </li>
 
-                                  <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
                                     <div class="image-box">
                                       <figure class="image">
-                                        <a class="lightbox-image"
+                                        <a
+                                          class="lightbox-image"
                                           href="images/goa-tour/parasailing-in-india_4_11zon.webp"
-                                          alt=" Parasailing with Dip in Goa" title="Parasailing with Dip in Goa"><img width="400" height="300" src="images/goa-tour/parasailing-in-india_4_11zon.webp" alt="Parasailing with Dip in Goa" title="Parasailing Goa" loading="lazy"  srcset="images/goa-tour/parasailing-in-india_4_11zon-mobile.webp 412w, images/goa-tour/parasailing-in-india_4_11zon-700w.webp 700w, images/goa-tour/parasailing-in-india_4_11zon.webp 1260w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1260px" /></a>
+                                          alt=" Parasailing with Dip in Goa"
+                                          title="Parasailing with Dip in Goa"
+                                          ><img
+                                            src="images/goa-tour/parasailing-in-india_4_11zon.webp"
+                                            alt="Parasailing with Dip in Goa"
+                                            title="Parasailing Goa"
+                                        /></a>
                                       </figure>
                                       <div class="zoom-btn">
-                                        <a class="lightbox-image zoom-link"
+                                        <a
+                                          class="lightbox-image zoom-link"
                                           href="images/goa-tour/parasailing-in-india_4_11zon.webp"
-                                          data-fancybox="gallery"><span class="icon flaticon-expand"
-                                            style="position: relative">Parasailing with Dip in Goa</span></a>
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Parasailing with Dip in Goa</span
+                                          ></a
+                                        >
                                       </div>
                                     </div>
                                   </div>
@@ -874,18 +1060,35 @@
                                     unlimited VEG/NON-VEG lunch.
                                   </li>
 
-                                  <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
                                     <div class="image-box">
                                       <figure class="image">
-                                        <a class="lightbox-image"
+                                        <a
+                                          class="lightbox-image"
                                           href="images/goa-tour/Cenote-Scuba-Diving_5_11zon.webp"
-                                          alt=" Cruise Scuba Divingin Goa" title="Scuba diving goa"><img width="400" height="300" src="images/goa-tour/Cenote-Scuba-Diving_5_11zon.webp" alt="Scuba Goa" title="Goa Scuba Diving" loading="lazy"  srcset="images/goa-tour/Cenote-Scuba-Diving_5_11zon-mobile.webp 412w, images/goa-tour/Cenote-Scuba-Diving_5_11zon-700w.webp 700w, images/goa-tour/Cenote-Scuba-Diving_5_11zon.webp 1440w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1440px" /></a>
+                                          alt=" Cruise Scuba Divingin Goa"
+                                          title="Scuba diving goa"
+                                          ><img
+                                            src="images/goa-tour/Cenote-Scuba-Diving_5_11zon.webp"
+                                            alt="Scuba Goa"
+                                            title="Goa Scuba Diving"
+                                        /></a>
                                       </figure>
                                       <div class="zoom-btn">
-                                        <a class="lightbox-image zoom-link"
+                                        <a
+                                          class="lightbox-image zoom-link"
                                           href="images/goa-tour/Cenote-Scuba-Diving_5_11zon.webp"
-                                          data-fancybox="gallery"><span class="icon flaticon-expand"
-                                            style="position: relative">Scuba Diving in Goa</span></a>
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Scuba Diving in Goa</span
+                                          ></a
+                                        >
                                       </div>
                                     </div>
                                   </div>
@@ -898,18 +1101,35 @@
                                     like weather and pressure of the water.
                                   </li>
 
-                                  <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
                                     <div class="image-box">
                                       <figure class="image">
-                                        <a class="lightbox-image"
+                                        <a
+                                          class="lightbox-image"
                                           href="images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon.webp"
-                                          alt=" Grand Island, Goa" title="Grand Island, Goa"><img width="400" height="300" src="images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon.webp" alt="Grand Island, Goa" title="Grand Island, Goa" loading="lazy"  srcset="images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon-mobile.webp 412w, images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon.webp 700w" sizes="(max-width: 600px) 412px, 700px" /></a>
+                                          alt=" Grand Island, Goa"
+                                          title="Grand Island, Goa"
+                                          ><img
+                                            src="images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon.webp"
+                                            alt="Grand Island, Goa"
+                                            title="Grand Island, Goa"
+                                        /></a>
                                       </figure>
                                       <div class="zoom-btn">
-                                        <a class="lightbox-image zoom-link"
+                                        <a
+                                          class="lightbox-image zoom-link"
                                           href="images/Andaman/cover-for-North-Bay-Island_20th-nov_62_11zon.webp"
-                                          data-fancybox="gallery"><span class="icon flaticon-expand"
-                                            style="position: relative">Grand Island, Goa</span></a>
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Grand Island, Goa</span
+                                          ></a
+                                        >
                                       </div>
                                     </div>
                                   </div>
@@ -951,17 +1171,35 @@
                                     SCENE), Baga Beach,
                                   </li>
 
-                                  <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
                                     <div class="image-box">
                                       <figure class="image">
-                                        <a class="lightbox-image" href="images/goa-tour/Bike-Trip_18_11zon.webp"
-                                          alt=" Elephant Beach" title="Bike Trip Goa"><img width="400" height="300" src="images/goa-tour/Bike-Trip_18_11zon.webp" alt="Bike Trip Goa" title="Bike Trip Goa" loading="lazy"  srcset="images/goa-tour/Bike-Trip_18_11zon-mobile.webp 412w, images/goa-tour/Bike-Trip_18_11zon-700w.webp 700w, images/goa-tour/Bike-Trip_18_11zon.webp 1440w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1440px" /></a>
+                                        <a
+                                          class="lightbox-image"
+                                          href="images/goa-tour/Bike-Trip_18_11zon.webp"
+                                          alt=" Elephant Beach"
+                                          title="Bike Trip Goa"
+                                          ><img
+                                            src="images/goa-tour/Bike-Trip_18_11zon.webp"
+                                            alt="Bike Trip Goa"
+                                            title="Bike Trip Goa"
+                                        /></a>
                                       </figure>
                                       <div class="zoom-btn">
-                                        <a class="lightbox-image zoom-link"
-                                          href="images/goa-tour/Bike-Trip_18_11zon.webp" data-fancybox="gallery"><span
-                                            class="icon flaticon-expand" style="position: relative">Bike Trip
-                                            Goa</span></a>
+                                        <a
+                                          class="lightbox-image zoom-link"
+                                          href="images/goa-tour/Bike-Trip_18_11zon.webp"
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Bike Trip Goa</span
+                                          ></a
+                                        >
                                       </div>
                                     </div>
                                   </div>
@@ -973,18 +1211,35 @@
                                     With Bike or Jeep Riding.
                                   </li>
 
-                                  <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                  <div
+                                    class="inner-box wow fadeInUp"
+                                    data-wow-delay="300ms"
+                                    data-wow-duration="1500ms"
+                                  >
                                     <div class="image-box">
                                       <figure class="image">
-                                        <a class="lightbox-image" href="images/goa-tour/maxresdefault_20_11zon.webp"
-                                          alt=" Sunset at Beach, Goa" title="Sunset at Beach, Goa"><img width="400" height="300" src="images/goa-tour/maxresdefault_20_11zon.webp" alt="Sunset at Beach, Goa" title="Sunset at Beach, Goa" loading="lazy"  srcset="images/goa-tour/maxresdefault_20_11zon-mobile.webp 412w, images/goa-tour/maxresdefault_20_11zon-700w.webp 700w, images/goa-tour/maxresdefault_20_11zon.webp 960w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 960px" /></a>
+                                        <a
+                                          class="lightbox-image"
+                                          href="images/goa-tour/maxresdefault_20_11zon.webp"
+                                          alt=" Sunset at Beach, Goa"
+                                          title="Sunset at Beach, Goa"
+                                          ><img
+                                            src="images/goa-tour/maxresdefault_20_11zon.webp"
+                                            alt="Sunset at Beach, Goa"
+                                            title="Sunset at Beach, Goa"
+                                        /></a>
                                       </figure>
                                       <div class="zoom-btn">
-                                        <a class="lightbox-image zoom-link"
+                                        <a
+                                          class="lightbox-image zoom-link"
                                           href="images/goa-tour/maxresdefault_20_11zon.webp"
-                                          data-fancybox="gallery"><span class="icon flaticon-expand"
-                                            style="position: relative">Sunset at Beach,
-                                            Goa</span></a>
+                                          data-fancybox="gallery"
+                                          ><span
+                                            class="icon flaticon-expand"
+                                            style="position: relative"
+                                            >Sunset at Beach, Goa</span
+                                          ></a
+                                        >
                                       </div>
                                     </div>
                                   </div>
@@ -1007,10 +1262,11 @@
                           whatsapp and .
                         </div>
                         <hr />
-                        <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tours package details and further process"
-                          class="theme-btn btn-style-one">
-                          <div class="btn-title">Book Your Tour</div>
-                        </a>
+                        <a
+                          href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tours package details and further process"
+                          class="theme-btn btn-style-one"
+                          ><div class="btn-title">Book Your Tour</div></a
+                        >
                       </div>
                     </div>
                   </div>
@@ -1040,24 +1296,48 @@
 
                           <div class="form-group">
                             <div class="field-inner">
-                              <input type="text" name="username" placeholder="Your Name" required="yes" value="" />
+                              <input
+                                type="text"
+                                name="username"
+                                placeholder="Your Name"
+                                required="yes"
+                                value=""
+                              />
                             </div>
                           </div>
 
                           <div class="form-group">
                             <div class="field-inner">
-                              <input type="tel" name="phone" placeholder="Phone" required="yes" value="" />
+                              <input
+                                type="tel"
+                                name="phone"
+                                placeholder="Phone"
+                                required="yes"
+                                value=""
+                              />
                             </div>
                           </div>
                           <div class="form-group">
                             <div class="field-inner">
-                              <input type="email" name="email" placeholder="Email" required="yes" value="" />
+                              <input
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                required="yes"
+                                value=""
+                              />
                             </div>
                           </div>
                           <div class="form-group">
                             <div class="field-inner">
                               Trip Date:
-                              <input type="date" name="tripdate" placeholder="Tripdate" required="yes" value="" />
+                              <input
+                                type="date"
+                                name="tripdate"
+                                placeholder="Tripdate"
+                                required="yes"
+                                value=""
+                              />
                             </div>
                           </div>
 
@@ -1081,26 +1361,38 @@
                               <ul class="additional-services">
                                 <li>
                                   <div class="check-block">
-                                    <input type="checkbox" id="check-1" name="check-1" /><label for="check-1">Tour
-                                      package</label>
+                                    <input
+                                      type="checkbox"
+                                      id="check-1"
+                                      name="check-1"
+                                    /><label for="check-1">Tour package</label>
                                   </div>
                                 </li>
                                 <li>
                                   <div class="check-block">
-                                    <input type="checkbox" id="check-2" name="check-2" /><label for="check-2">Scuba
-                                      Diving</label>
+                                    <input
+                                      type="checkbox"
+                                      id="check-2"
+                                      name="check-2"
+                                    /><label for="check-2">Scuba Diving</label>
                                   </div>
                                 </li>
                                 <li>
                                   <div class="check-block">
-                                    <input type="checkbox" id="check-3" name="check-3" /><label
-                                      for="check-3">Watersports</label>
+                                    <input
+                                      type="checkbox"
+                                      id="check-3"
+                                      name="check-3"
+                                    /><label for="check-3">Watersports</label>
                                   </div>
                                 </li>
                                 <li>
                                   <div class="check-block">
-                                    <input type="checkbox" id="check-4" name="check-4" /><label for="check-4">Boat
-                                      Tour</label>
+                                    <input
+                                      type="checkbox"
+                                      id="check-4"
+                                      name="check-4"
+                                    /><label for="check-4">Boat Tour</label>
                                   </div>
                                 </li>
                               </ul>
@@ -1128,27 +1420,40 @@
                       <div class="tour-widget-title">
                         <h4>Need Assistance</h4>
                       </div>
-                      <div class="advisor-carousel single-item-carousel owl-theme owl-carousel">
+                      <div
+                        class="advisor-carousel single-item-carousel owl-theme owl-carousel"
+                      >
                         <!--Advisor Block-->
                         <div class="advisor-block">
                           <div class="inner-box">
                             <div class="image-box">
                               <a
-                                href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour Package details and further process"><img width="400" height="300" src="images/Andaman/havelock_71_11zon.webp" alt="Goa Tour" title="Goa Tour Package" loading="lazy"  srcset="images/Andaman/havelock_71_11zon-mobile.webp 412w, images/Andaman/havelock_71_11zon-700w.webp 700w, images/Andaman/havelock_71_11zon.webp 975w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 975px" /></a>
+                                href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour Package details and further process"
+                                ><img
+                                  src="images/Andaman/havelock_71_11zon.webp"
+                                  alt="Goa Tour"
+                                  title="Goa Tour Package"
+                              /></a>
                             </div>
                             <div class="lower-box clearfix">
                               <div class="lower-content">
                                 <h4>
                                   <a
-                                    href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour Package details and further process"></a>Trip
-                                  Planner
+                                    href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour Package details and further process"
+                                  ></a
+                                  >Trip Planner
                                 </h4>
                                 <div class="info">
                                   <li>
-                                    <a href="tel:8287768117 "><span class="flaticon-technology-1"></span>
-                                      Get Help</a>
+                                    <a href="tel:8287768117 "
+                                      ><span
+                                        class="flaticon-technology-1"
+                                      ></span>
+                                      Get Help</a
+                                    >
                                   </li>
-                                  <span class="icon flaticon-assistance"></span>8287768117
+                                  <span class="icon flaticon-assistance"></span
+                                  >8287768117
                                 </div>
                               </div>
                             </div>
@@ -1268,7 +1573,12 @@
             <div class="package-block-two col-lg-4 col-md-6 col-sm-12">
               <div class="inner-box">
                 <div class="image-box">
-                  <a href="Water-Sports.html"><img width="400" height="300" loading="lazy" src="images/scuba19.webp" alt="Water Sports in goa" title="Water Sports in goa"  srcset="images/scuba19-mobile.webp 412w, images/scuba19-700w.webp 700w, images/scuba19.webp 1000w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1000px" /></a>
+                  <a href="Water-Sports.html"
+                    ><img
+                      src="images/scuba19.webp"
+                      alt="Water Sports in goa"
+                      title="Water Sports in goa"
+                  /></a>
                   <div class="pricing">
                     <div class="price">
                       <div class="price-title">From</div>
@@ -1277,8 +1587,10 @@
                   </div>
                   <div class="hover-box">
                     <div class="hover-link">
-                      <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Water Sports in goa package details and further process"
-                        class="default-link">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Water Sports in goa package details and further process"
+                        class="default-link"
+                      >
                         <span class="icon flaticon-logout"></span>
                         <span class="link-text">Check Availability</span>
                       </a>
@@ -1312,7 +1624,12 @@
             <div class="package-block-two col-lg-4 col-md-6 col-sm-12">
               <div class="inner-box">
                 <div class="image-box">
-                  <a href="goa-weekend-trip.html"><img width="400" height="300" loading="lazy" src="images/goa-tour/1124180_4_11zon.webp" alt="Goa Tour Package " title="Goa Tours"  srcset="images/goa-tour/1124180_4_11zon-mobile.webp 412w, images/goa-tour/1124180_4_11zon-700w.webp 700w, images/goa-tour/1124180_4_11zon.webp 1440w" sizes="(max-width: 600px) 412px, (max-width: 1200px) 700px, 1440px" /></a>
+                  <a href="goa-weekend-trip.html"
+                    ><img
+                      src="images/goa-tour/1124180_4_11zon.webp"
+                      alt="Goa Tour Package "
+                      title="Goa Tours"
+                  /></a>
                   <div class="pricing">
                     <div class="price">
                       <div class="price-title">From</div>
@@ -1321,8 +1638,10 @@
                   </div>
                   <div class="hover-box">
                     <div class="hover-link">
-                      <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour package details and further process"
-                        class="default-link">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour package details and further process"
+                        class="default-link"
+                      >
                         <span class="icon flaticon-logout"></span>
                         <span class="link-text">Check Availability</span>
                       </a>
@@ -1357,7 +1676,12 @@
             <div class="package-block-two col-lg-4 col-md-6 col-sm-12">
               <div class="inner-box">
                 <div class="image-box">
-                  <a href="Scuba-Adventure.html"><img width="400" height="300" loading="lazy" src="images/goa-tour/unnamed-4_16_11zon.webp" alt="Scuba Diving Package Goa" title="Scuba Diving Package Goa" /></a>
+                  <a href="Scuba-Adventure.html"
+                    ><img
+                      src="images/goa-tour/unnamed-4_16_11zon.webp"
+                      alt="Scuba Diving Package Goa"
+                      title="Scuba Diving Package Goa"
+                  /></a>
                   <div class="pricing">
                     <div class="price">
                       <div class="price-title">From</div>
@@ -1366,8 +1690,10 @@
                   </div>
                   <div class="hover-box">
                     <div class="hover-link">
-                      <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Scuba Diving package details and further process"
-                        class="default-link">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Scuba Diving package details and further process"
+                        class="default-link"
+                      >
                         <span class="icon flaticon-logout"></span>
                         <span class="link-text">Check Availability</span>
                       </a>
@@ -1384,7 +1710,9 @@
                 </div>
                 <div class="content">
                   <h4>
-                    <a href="Watersport-Scuba-combo-goa.html">Scuba Diving in Goa with Watersports Combo</a>
+                    <a href="Watersport-Scuba-combo-goa.html"
+                      >Scuba Diving in Goa with Watersports Combo</a
+                    >
                   </h4>
                   <div class="info">
                     <ul class="clearfix">
@@ -1401,93 +1729,104 @@
         </div>
       </section>
 
-    </main>
-
-    <!-- Main Footer -->
-    <footer class="main-footer">
-      <!--Widgets Section-->
-      <div class="widgets-section">
-        <div class="auto-container">
-          <div class="row clearfix">
-            <!--Column-->
-            <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
-              <div class="footer-widget info-widget">
-                <div class="logo">
-                  <a href="index.html"><img loading="lazy" src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral." width="160" height="160" style="aspect-ratio: 1/1; width: auto; height: auto; max-width: 100%;" /></a>
-                </div>
-                <div class="info">
-                  <ul>
-                    <li>
-                      <span class="flaticon-placeholder-1"></span> Clangute
-                      Circle <br />Goa Tour<br />403615
-                    </li>
-                    <li>
-                      <span class="flaticon-phone-call"></span>
-                      Call us <a href="tel:8287768117 ">8287768117 </a>
-                    </li>
-                    <li>
-                      <span class="flaticon-envelope"></span>
-                      <a href="mailto:contact@scubadivingadventure.in">contact@scubadivingadventure.in</a>
-                    </li>
-                  </ul>
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <!--Widgets Section-->
+        <div class="widgets-section">
+          <div class="auto-container">
+            <div class="row clearfix">
+              <!--Column-->
+              <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget info-widget">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img src="images/gallery/6.webp" alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral."
+                    /></a>
+                  </div>
+                  <div class="info">
+                    <ul>
+                      <li>
+                        <span class="flaticon-placeholder-1"></span> Clangute
+                        Circle <br />Goa Tour<br />403615
+                      </li>
+                      <li>
+                        <span class="flaticon-phone-call"></span>
+                        Call us <a href="tel:8287768117 ">8287768117 </a>
+                      </li>
+                      <li>
+                        <span class="flaticon-envelope"></span>
+                        <a href="mailto:contact@scubadivingadventure.in"
+                          >contact@scubadivingadventure.in</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!--Column-->
-            <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
-              <div class="footer-widget links-widget">
-                <div class="widget-content">
-                  <div class="widget-title">
-                    <h4>Goa Packages</h4>
-                  </div>
-                  <div class="row clearfix">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                      <ul class="links">
-                        <li>
-                          <a href="goa-tour-packages.html">Goa Tour Packages
-                          </a>
-                        </li>
-                        <li>
-                          <a href="goa-tour-package-4N-5D.html">Goa Tour 5D-4N package</a>
-                        </li>
-                        <li>
-                          <a href="goa-weekend-trip.html">Goa Weekend Gateway</a>
-                        </li>
-                        <li>
-                          <a href="Scuba-Adventure.html">Scuba Diving in Goa
-                          </a>
-                        </li>
+              <!--Column-->
+              <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <div class="widget-content">
+                    <div class="widget-title">
+                      <h4>Goa Packages</h4>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <ul class="links">
+                          <li>
+                            <a href="goa-tour-packages.html"
+                              >Goa Tour Packages
+                            </a>
+                          </li>
+                          <li>
+                            <a href="goa-tour-package-4N-5D.html"
+                              >Goa Tour 5D-4N package</a
+                            >
+                          </li>
+                          <li>
+                            <a href="goa-weekend-trip.html"
+                              >Goa Weekend Gateway</a
+                            >
+                          </li>
+                          <li>
+                            <a href="Scuba-Adventure.html"
+                              >Scuba Diving in Goa
+                            </a>
+                          </li>
 
-                        <li>
-                          <span class="icon flaticon-yacht"></span> Romantic
-                          Dinner Cruise
-                        </li>
-                        <li>
-                          <a href="Party-Cruise.html">Romantic Dinner Cruise Party</a>
-                        </li>
-                      </ul>
+                          <li>
+                            <span class="icon flaticon-yacht"></span> Romantic
+                            Dinner Cruise
+                          </li>
+                          <li>
+                            <a href="Party-Cruise.html"
+                              >Romantic Dinner Cruise Party</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!--Column-->
-            <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
-              <div class="footer-widget links-widget">
-                <div class="widget-content">
-                  <div class="widget-title">
-                    <h4>Popular Links</h4>
-                  </div>
-                  <div class="row clearfix">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                      <ul class="links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="FAQ.html">FAQ</a></li>
-                      </ul>
+              <!--Column-->
+              <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <div class="widget-content">
+                    <div class="widget-title">
+                      <h4>Popular Links</h4>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <ul class="links">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About Us</a></li>
+                          <li><a href="contact.html">Contact Us</a></li>
+                          <li><a href="FAQ.html">FAQ</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1495,65 +1834,55 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-        <div class="auto-container">
-          <div class="inner clearfix">
-            <div class="copyright">
-              Copyright &copy; 2025 Scuba Adventure. All Rights Reserved.
-            </div>
-            <div class="bottom-links">
-              <a href="terms-and-condition.html">Terms of Use</a> &
-              <a href="privacy-policy.html">Private Policy</a>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="auto-container">
+            <div class="inner clearfix">
+              <div class="copyright">
+                Copyright &copy; 2025 Scuba Adventure. All Rights Reserved.
+              </div>
+              <div class="bottom-links">
+                <a href="terms-and-condition.html">Terms of Use</a> &
+                <a href="privacy-policy.html">Private Policy</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
+      </footer>
+    </div>
 
-  <!--End pagewrapper-->
+    <!--End pagewrapper-->
 
-  <!--Scroll to top-->
-  <a href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour package details and further process"
-    class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
-  </a>
-  <div class="scroll-to-top scroll-to-target" aria-label="Scroll to top" data-target="html">
-    <span class="icon flaticon-back"></span>
-  </div>
-  <script defer src="js/jquery.js"></script>
-  <script src="js/popper.min.js" defer></script>
-  <script src="js/bootstrap.min.js" defer></script>
-  <script src="js/jquery.fancybox.min.js" defer></script>
-  <script src="js/jquery-ui.min.js" defer></script>
-  <script src="js/owl.min.js" defer></script>
-  <script src="js/wow.js" defer></script>
-  <script src="js/appear.js" defer></script>
-  <script src="js/scrollbar.js" defer></script>
-  <script src="js/paroller.js" defer></script>
-  <script src="js/isotope.js" defer></script>
-  <script src="js/element-in-view.js" defer></script>
-  <script src="js/custom-script.min.js" defer></script>
+    <!--Scroll to top-->
+    <a
+      href="https://api.whatsapp.com/send?phone=918287768117 &text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Tour package details and further process"
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <div class="scroll-to-top scroll-to-target" data-target="html">
+      <span class="icon flaticon-back"></span>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/datetimepicker.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/element-in-view.js"></script>
+    <script src="js/custom-script.js"></script>
 
-  <!--Coockie-->
+    <!--Coockie-->
 
+    <!-- Source Code Protection JavaScript --></div>
 
-
-<script>
-if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('sw.js').then(function(registration) {
-            console.log('ServiceWorker registration successful');
-        }).catch(function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-        });
-    });
-}
-</script>
-
-</body>
-
+    
+  </body>
 </html>
